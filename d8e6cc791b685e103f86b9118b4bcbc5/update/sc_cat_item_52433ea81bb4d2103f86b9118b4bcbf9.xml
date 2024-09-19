@@ -5,12 +5,12 @@
         <availability>on_desktop</availability>
         <billable>false</billable>
         <category display_value="Agency Invoices">f7de0f161b6812501ef387306b4bcb22</category>
-        <checked_out/>
+        <checked_out>false</checked_out>
         <cost>0</cost>
         <custom_cart/>
         <delivery_plan/>
         <delivery_plan_script/>
-        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <delivery_time>1970-01-02 00:00:00</delivery_time>
         <description><![CDATA[<p>Here you could order the invoice for the selected month</p>]]></description>
         <display_price_property>non_zero</display_price_property>
         <entitlement_script/>
@@ -32,7 +32,7 @@
         <name>Request an invoice for selected time period</name>
         <no_attachment_v2>true</no_attachment_v2>
         <no_cart>true</no_cart>
-        <no_cart_v2>false</no_cart_v2>
+        <no_cart_v2>true</no_cart_v2>
         <no_delivery_time_v2>false</no_delivery_time_v2>
         <no_order>false</no_order>
         <no_order_now>false</no_order_now>
@@ -52,7 +52,7 @@
         <published_ref/>
         <recurring_frequency/>
         <recurring_price>0</recurring_price>
-        <request_method/>
+        <request_method>request</request_method>
         <roles/>
         <sc_catalogs>954e0f921b6812501ef387306b4bcb28</sc_catalogs>
         <sc_ic_item_staging/>
@@ -61,13 +61,13 @@
         <short_description/>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
-        <state/>
+        <state>published</state>
         <sys_class_name>sc_cat_item</sys_class_name>
         <sys_created_by>bogdan.konovalov@agineo.de</sys_created_by>
         <sys_created_on>2024-09-19 09:46:55</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>52433ea81bb4d2103f86b9118b4bcbf9</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>Request an invoice for selected time period</sys_name>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
         <sys_policy/>
@@ -75,14 +75,14 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>sc_cat_item_52433ea81bb4d2103f86b9118b4bcbf9</sys_update_name>
         <sys_updated_by>bogdan.konovalov@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-09-19 10:24:31</sys_updated_on>
+        <sys_updated_on>2024-09-19 10:44:34</sys_updated_on>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
         <type>task</type>
         <use_sc_layout>false</use_sc_layout>
         <vendor/>
-        <version>20</version>
+        <version>21</version>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>

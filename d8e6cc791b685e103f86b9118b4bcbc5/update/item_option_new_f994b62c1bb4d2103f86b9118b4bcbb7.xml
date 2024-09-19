@@ -42,7 +42,7 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>month_of_the_invoice</name>
-        <order>101</order>
+        <order>200</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -78,7 +78,7 @@
         <sys_created_on>2024-09-19 09:55:12</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f994b62c1bb4d2103f86b9118b4bcbb7</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Please select the month of the invoice you need</sys_name>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
         <sys_policy/>
@@ -86,7 +86,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>item_option_new_f994b62c1bb4d2103f86b9118b4bcbb7</sys_update_name>
         <sys_updated_by>bogdan.konovalov@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-09-19 09:57:41</sys_updated_on>
+        <sys_updated_on>2024-09-19 10:44:30</sys_updated_on>
         <table/>
         <tooltip/>
         <type>5</type>

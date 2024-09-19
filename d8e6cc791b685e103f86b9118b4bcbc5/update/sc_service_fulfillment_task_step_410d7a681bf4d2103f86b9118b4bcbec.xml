@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_service_fulfillment_task_step">
+    <sc_service_fulfillment_task_step action="INSERT_OR_UPDATE">
+        <assigned_group display_value="AAP Provider" name="AAP Provider">8b1e3ae81bf4d2103f86b9118b4bcbcc</assigned_group>
+        <assigned_to/>
+        <catalog_conditions/>
+        <description/>
+        <include_variables>all</include_variables>
+        <priority/>
+        <published_ref/>
+        <service_fulfillment_stage display_value="">c560cb2c1bf4d2103f86b9118b4bcb40</service_fulfillment_stage>
+        <service_fulfillment_step_configuration display_value="Task">dc0f364873122010ae42d31ee2f6a7f3</service_fulfillment_step_configuration>
+        <short_description>Attach the required invoice to the ticket</short_description>
+        <sys_class_name>sc_service_fulfillment_task_step</sys_class_name>
+        <sys_created_by>bogdan.konovalov@agineo.de</sys_created_by>
+        <sys_created_on>2024-09-19 10:43:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>410d7a681bf4d2103f86b9118b4bcbec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>bogdan.konovalov@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-09-19 10:43:27</sys_updated_on>
+        <title>Attach the required invoice to the ticket</title>
+    </sc_service_fulfillment_task_step>
+</record_update>
