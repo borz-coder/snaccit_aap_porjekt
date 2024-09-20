@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Agency Asset Portal">de5476901b3c92101ef387306b4bcb22</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter table="alm_asset">owned_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ<item endquery="false" field="owned_by" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Service Catalog </mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>alm_asset</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>jason.roesgen@agineo.de</sys_created_by>
+        <sys_created_on>2024-09-19 06:53:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7319c6e81bf0d2103f86b9118b4bcb32</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Assets</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_app_module_7319c6e81bf0d2103f86b9118b4bcb32</sys_update_name>
+        <sys_updated_by>bogdan.konovalov@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-09-19 14:54:51</sys_updated_on>
+        <timeline_page/>
+        <title>Assets</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>
