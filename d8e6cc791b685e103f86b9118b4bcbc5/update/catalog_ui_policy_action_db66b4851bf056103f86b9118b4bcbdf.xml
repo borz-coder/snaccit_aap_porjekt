@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Order some Hardware">129fa7ab1ba896503f86b9118b4bcbed</catalog_item>
+        <catalog_variable>IO:f1957b231ba096501ef387306b4bcba4</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>bogdan.konovalov@agineo.de</sys_created_by>
+        <sys_created_on>2024-09-20 13:57:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>db66b4851bf056103f86b9118b4bcbdf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>select_the_item</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_db66b4851bf056103f86b9118b4bcbdf</sys_update_name>
+        <sys_updated_by>bogdan.konovalov@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-09-20 13:57:54</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide variable select_the_item">db2630851bf056103f86b9118b4bcb9c</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>select_the_item</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+</record_update>
