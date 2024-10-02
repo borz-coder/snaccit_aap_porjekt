@@ -14,7 +14,7 @@
         <sys_created_on>2024-09-19 22:46:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3eb5e93c1bf016103f86b9118b4bcbb9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>hardware_item_description</sys_name>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
         <sys_policy/>
@@ -22,9 +22,9 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>catalog_ui_policy_action_3eb5e93c1bf016103f86b9118b4bcbb9</sys_update_name>
         <sys_updated_by>bogdan.konovalov@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-09-19 22:46:00</sys_updated_on>
+        <sys_updated_on>2024-10-02 14:22:16</sys_updated_on>
         <table/>
-        <ui_policy display_value="Hide description and set it to read only">7c95a53c1bf016103f86b9118b4bcb53</ui_policy>
+        <ui_policy display_value="Hide description">7c95a53c1bf016103f86b9118b4bcb53</ui_policy>
         <value/>
         <value_action>ignore</value_action>
         <variable>hardware_item_description</variable>
