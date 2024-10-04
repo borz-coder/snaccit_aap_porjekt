@@ -1,0 +1,2872 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2382000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>In the flow, the provider should approve the request and then a PDF attachment of the invoice is returned to the user.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>invoice_request_approval</internal_name>
+        <label_cache>[{"name":"255c4922-8937-4ac7-b4ef-4fdad4df399c.Record.attachment","label":"5 - Look Up Record➛Invoices Record➛Attachment","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","parent_table_name":"x_sigh_a_a_portal_invoices","column_name":"attachment","usedInstances":{"a7311f3a-f192-43ed-af6d-0fd99af2006e":["attachment_record"]}},{"name":"255c4922-8937-4ac7-b4ef-4fdad4df399c.Record","label":"5 - Look Up Record➛Invoices Record","reference":"x_sigh_a_a_portal_invoices","reference_display":"Invoices Record","type":"reference","base_type":"reference","usedInstances":{"a7311f3a-f192-43ed-af6d-0fd99af2006e":["attachment_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"{{static.8b1e3ae81bf4d2103f86b9118b4bcbcc}}","label":"AAP Provider","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"9adccc7f-0db0-44f1-ad0a-44a7ad751e1d":["approval_conditions"]}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"9adccc7f-0db0-44f1-ad0a-44a7ad751e1d":["record"],"7bb007b1-d8c0-4cc0-8206-b735d02ef614":["record"],"0eb867d9-6794-4979-a784-250c824b20e1":["record"],"a7311f3a-f192-43ed-af6d-0fd99af2006e":["target_record"],"6e7ea87b-284e-4c94-b776-a37890316032":["record"],"02bc6231-f7d7-46d6-8aa3-cdc110e95d2f":["record"]},"attributes":{"default_search_field":"number"}},{"name":"9adccc7f-0db0-44f1-ad0a-44a7ad751e1d.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"56ef1eba-71e7-4542-a95f-6a7b958de0dd":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.variable","label":"Flow Variables➛Requested Date","reference":"","reference_display":"","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"255c4922-8937-4ac7-b4ef-4fdad4df399c":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"0bb654a6-d812-4b7c-9e76-865457db567e"}},{"name":"Service Catalog_1.request_item.requested_for.company","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for➛Company","reference":"core_company","reference_display":"Company","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"company","usedInstances":{"255c4922-8937-4ac7-b4ef-4fdad4df399c":["conditions"]}},{"name":"255c4922-8937-4ac7-b4ef-4fdad4df399c.status","label":"5 - Look Up Record➛status","reference_display":"status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"beac336b-8307-4e21-9218-363e27375493":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"Service Catalog_1.request_item.close_notes","label":"Trigger - Service Catalog➛Requested Item Record➛Close notes","reference":"","reference_display":"Close notes","type":"string","base_type":"string","parent_table_name":"sc_req_item","column_name":"close_notes","usedInstances":{"02bc6231-f7d7-46d6-8aa3-cdc110e95d2f":["table_name"]}}]</label_cache>
+        <master_snapshot>581ae461db895a100c760023f39619de</master_snapshot>
+        <name>Invoice Request Approval and Delivery</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>551a6861db895a100c760023f3961930</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 11:56:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c2f0a4a1db495a100c760023f3961931</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Invoice Request Approval and Delivery</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_hub_flow_c2f0a4a1db495a100c760023f3961931</sys_update_name>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:45:16</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=c2f0a4a1db495a100c760023f3961931"/>
+    <sys_flow_catalog_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <catalog_item/>
+        <name/>
+        <run_flow_in>background</run_flow_in>
+        <sys_class_name>sys_flow_catalog_trigger</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>551a6861db895a100c760023f3961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:22</sys_updated_on>
+    </sys_flow_catalog_trigger>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=c2f0a4a1db495a100c760023f3961931"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=c2f0a4a1db495a100c760023f3961931^sys_idNOT INf151a4e1db495a100c760023f39619cc"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Invoice Request Approval and Delivery">c2f0a4a1db495a100c760023f3961931</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 11:58:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f151a4e1db495a100c760023f39619cc</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:45:16</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f151a4e1db495a100c760023f39619cc"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=c2f0a4a1db495a100c760023f3961931"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c2f0a4a1db495a100c760023f3961931^sys_idNOT INc2f0a4a1db495a100c760023f3961932"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c2f0a4a1db495a100c760023f3961931</id>
+        <name>Invoice Request Approval</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 11:56:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c2f0a4a1db495a100c760023f3961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 11:56:33</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=c2f0a4a1db495a100c760023f3961932"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=c2f0a4a1db495a100c760023f3961931^sys_idNOT IN6151aca1db495a100c760023f3961971,e551aca1db495a100c760023f3961975"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Invoice Request Approval and Delivery">c2f0a4a1db495a100c760023f3961931</model>
+        <model_id>c2f0a4a1db495a100c760023f3961931</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c2f0a4a1db495a100c760023f3961931</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 11:58:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6151aca1db495a100c760023f3961971</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:45:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6151aca1db495a100c760023f3961971"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Invoice Request Approval and Delivery">c2f0a4a1db495a100c760023f3961931</model>
+        <model_id>c2f0a4a1db495a100c760023f3961931</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c2f0a4a1db495a100c760023f3961931</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 11:58:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e551aca1db495a100c760023f3961975</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:45:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e551aca1db495a100c760023f3961975"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=c2f0a4a1db495a100c760023f3961931"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c2f0a4a1db495a100c760023f3961931"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=c2f0a4a1db495a100c760023f3961931^sys_idNOT IN12f12425db495a100c760023f3961987,1884e8e5db495a100c760023f3961929,5c84e8e5db495a100c760023f396190c,7af3aca5db495a100c760023f39619a3,f151a4e1db495a100c760023f39619d4"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Invoice Request Approval and Delivery">c2f0a4a1db495a100c760023f3961931</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>56ef1eba-71e7-4542-a95f-6a7b958de0dd</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:00:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>12f12425db495a100c760023f3961987</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:45:16</sys_updated_on>
+        <ui_id>7bb007b1-d8c0-4cc0-8206-b735d02ef614</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=12f12425db495a100c760023f3961987"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>12f12425db495a100c760023f3961987</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:00:56</sys_created_on>
+        <sys_id>16f12425db495a100c760023f3961989</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:00:56</sys_updated_on>
+        <value>state=4</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>12f12425db495a100c760023f3961987</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>2f0ae461db895a100c760023f3961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>12f12425db495a100c760023f3961987</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>6b0ae461db895a100c760023f3961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <value>state=4</value>
+        <variable display_value="Fields">e7d270ccc3c632002841b63b12d3ae8b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>12f12425db495a100c760023f3961987</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:00:56</sys_created_on>
+        <sys_id>d6f12425db495a100c760023f3961989</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:00:56</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=12f12425db495a100c760023f3961987"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>12f12425db495a100c760023f3961987</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>270ae461db895a100c760023f3961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>12f12425db495a100c760023f3961987</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:00:56</sys_created_on>
+        <sys_id>92f12425db495a100c760023f3961989</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:00:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>12f12425db495a100c760023f3961987</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>630ae461db895a100c760023f3961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>12f12425db495a100c760023f3961987</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:00:56</sys_created_on>
+        <sys_id>1ef12425db495a100c760023f3961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:00:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>12f12425db495a100c760023f3961987</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>e70ae461db895a100c760023f3961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>12f12425db495a100c760023f3961987</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:00:56</sys_created_on>
+        <sys_id>def12425db495a100c760023f3961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:00:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=12f12425db495a100c760023f3961987"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=12f12425db495a100c760023f3961987"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Copy Attachment">95849c2a9353130079b5925cf67ffb91</action_type>
+        <action_type_parent display_value="Copy Attachment">95849c2a9353130079b5925cf67ffb91</action_type_parent>
+        <attributes/>
+        <comment>Copy an attachment from an invoice record to the requested item record.</comment>
+        <display_text/>
+        <flow display_value="Invoice Request Approval and Delivery">c2f0a4a1db495a100c760023f3961931</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>71929fb3-7afb-4cf6-8c41-9f8ac15fa62b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:12:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1884e8e5db495a100c760023f3961929</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:45:16</sys_updated_on>
+        <ui_id>a7311f3a-f192-43ed-af6d-0fd99af2006e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1884e8e5db495a100c760023f3961929"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>1884e8e5db495a100c760023f3961929</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:12:00</sys_created_on>
+        <sys_id>1884e8e5db495a100c760023f396192b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:12:00</sys_updated_on>
+        <value/>
+        <variable display_value="Target Record">b0fe6cdb0f973300dfd3694e68767e60</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>1884e8e5db495a100c760023f3961929</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>370ae461db895a100c760023f3961918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="Target Record">a1849c2a9353130079b5925cf67ffb9a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>1884e8e5db495a100c760023f3961929</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:12:00</sys_created_on>
+        <sys_id>d884e8e5db495a100c760023f396192b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:12:00</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">f4fe6cdb0f973300dfd3694e68767e67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>1884e8e5db495a100c760023f3961929</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>f70ae461db895a100c760023f3961918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">ed849c2a9353130079b5925cf67ffb9f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=1884e8e5db495a100c760023f3961929"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_record</field>
+        <id>1884e8e5db495a100c760023f3961929</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:12:00</sys_created_on>
+        <sys_id>9484e8e5db495a100c760023f396192b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:12:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_30fe6cdb0f973300dfd3694e68767e5a</table>
+        <value>{{255c4922-8937-4ac7-b4ef-4fdad4df399c.Record.attachment}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_record</field>
+        <id>1884e8e5db495a100c760023f3961929</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>b30ae461db895a100c760023f3961918</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_95849c2a9353130079b5925cf67ffb91</table>
+        <value>{{255c4922-8937-4ac7-b4ef-4fdad4df399c.Record.attachment}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>1884e8e5db495a100c760023f3961929</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:12:00</sys_created_on>
+        <sys_id>d084e8e5db495a100c760023f396192b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:12:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_30fe6cdb0f973300dfd3694e68767e5a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>1884e8e5db495a100c760023f3961929</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>ff0ae461db895a100c760023f3961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_95849c2a9353130079b5925cf67ffb91</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_record</field>
+        <id>1884e8e5db495a100c760023f3961929</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:12:00</sys_created_on>
+        <sys_id>1084e8e5db495a100c760023f396192b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:12:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_30fe6cdb0f973300dfd3694e68767e5a</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_record</field>
+        <id>1884e8e5db495a100c760023f3961929</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>3f0ae461db895a100c760023f3961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_95849c2a9353130079b5925cf67ffb91</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1884e8e5db495a100c760023f3961929"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1884e8e5db495a100c760023f3961929"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Add Additional comment that there no invoices for this period of time. And change the state to Closed Skipped.</comment>
+        <display_text/>
+        <flow display_value="Invoice Request Approval and Delivery">c2f0a4a1db495a100c760023f3961931</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>beac336b-8307-4e21-9218-363e27375493</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:12:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5c84e8e5db495a100c760023f396190c</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:45:16</sys_updated_on>
+        <ui_id>0eb867d9-6794-4979-a784-250c824b20e1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5c84e8e5db495a100c760023f396190c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5c84e8e5db495a100c760023f396190c</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>a30ae461db895a100c760023f3961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5c84e8e5db495a100c760023f396190c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:12:00</sys_created_on>
+        <sys_id>d084e8e5db495a100c760023f396190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:12:00</sys_updated_on>
+        <value>comments=There are no invoices for this period of time.^state=7</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5c84e8e5db495a100c760023f396190c</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:12:00</sys_created_on>
+        <sys_id>d884e8e5db495a100c760023f396190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:12:00</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5c84e8e5db495a100c760023f396190c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>ef0ae461db895a100c760023f3961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <value>comments=There are no invoices for this period of time.^state=7</value>
+        <variable display_value="Fields">e7d270ccc3c632002841b63b12d3ae8b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5c84e8e5db495a100c760023f396190c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>5c84e8e5db495a100c760023f396190c</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>ab0ae461db895a100c760023f3961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>5c84e8e5db495a100c760023f396190c</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:12:00</sys_created_on>
+        <sys_id>5084e8e5db495a100c760023f396190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:12:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>5c84e8e5db495a100c760023f396190c</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>e70ae461db895a100c760023f3961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>5c84e8e5db495a100c760023f396190c</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:12:00</sys_created_on>
+        <sys_id>d484e8e5db495a100c760023f396190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:12:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>5c84e8e5db495a100c760023f396190c</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>6f0ae461db895a100c760023f3961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>5c84e8e5db495a100c760023f396190c</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:12:00</sys_created_on>
+        <sys_id>9c84e8e5db495a100c760023f396190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:12:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5c84e8e5db495a100c760023f396190c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5c84e8e5db495a100c760023f396190c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment>Check if there is an invoice record for the requested date and for the requester's company.</comment>
+        <display_text/>
+        <flow display_value="Invoice Request Approval and Delivery">c2f0a4a1db495a100c760023f3961931</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:09:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7af3aca5db495a100c760023f39619a3</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:45:16</sys_updated_on>
+        <ui_id>255c4922-8937-4ac7-b4ef-4fdad4df399c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7af3aca5db495a100c760023f39619a3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7af3aca5db495a100c760023f39619a3</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>670ae461db895a100c760023f3961909</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <value>x_sigh_a_a_portal_invoices</value>
+        <variable display_value="Table">79305e810b30030085c083eb37673a85</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7af3aca5db495a100c760023f39619a3</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:09:43</sys_created_on>
+        <sys_id>76f3aca5db495a100c760023f39619bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:09:43</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">ceab42a673110010d70877186bf6a74f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7af3aca5db495a100c760023f39619a3</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:09:43</sys_created_on>
+        <sys_id>7ef3aca5db495a100c760023f39619bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:09:43</sys_updated_on>
+        <value>x_sigh_a_a_portal_invoices</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7af3aca5db495a100c760023f39619a3</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>a30ae461db895a100c760023f3961909</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">631a79a673110010d70877186bf6a70b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7af3aca5db495a100c760023f39619a3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>7af3aca5db495a100c760023f39619a3</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:09:43</sys_created_on>
+        <sys_id>32f3aca5db495a100c760023f39619bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:09:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>dateON{{flow_variable.variable}}^company={{Service Catalog_1.request_item.requested_for.company}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>7af3aca5db495a100c760023f39619a3</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>6f0ae461db895a100c760023f3961908</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b93f42810b30030085c083eb37673a63</table>
+        <value>dateON{{flow_variable.variable}}^company={{Service Catalog_1.request_item.requested_for.company}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>7af3aca5db495a100c760023f39619a3</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:09:43</sys_created_on>
+        <sys_id>f2f3aca5db495a100c760023f39619bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:09:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>7af3aca5db495a100c760023f39619a3</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>230ae461db895a100c760023f3961909</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b93f42810b30030085c083eb37673a63</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__snc_dont_fail_on_error</field>
+        <id>7af3aca5db495a100c760023f39619a3</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:09:43</sys_created_on>
+        <sys_id>7af3aca5db495a100c760023f39619be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:09:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__snc_dont_fail_on_error</field>
+        <id>7af3aca5db495a100c760023f39619a3</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>ab0ae461db895a100c760023f3961908</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b93f42810b30030085c083eb37673a63</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7af3aca5db495a100c760023f39619a3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7af3aca5db495a100c760023f39619a3"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment>Ask AAP Provider for approval.</comment>
+        <display_text/>
+        <flow display_value="Invoice Request Approval and Delivery">c2f0a4a1db495a100c760023f3961931</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 11:58:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f151a4e1db495a100c760023f39619d4</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:45:16</sys_updated_on>
+        <ui_id>9adccc7f-0db0-44f1-ad0a-44a7ad751e1d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f151a4e1db495a100c760023f39619d4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f151a4e1db495a100c760023f39619d4</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>2f0aa461db895a100c760023f39619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">d2d2a9920b10030085c083eb37673aa0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f151a4e1db495a100c760023f39619d4</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 11:58:10</sys_created_on>
+        <sys_id>3d51a4e1db495a100c760023f39619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 11:58:10</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f151a4e1db495a100c760023f39619d4</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>6b0aa461db895a100c760023f39619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">26d2a9920b10030085c083eb37673ad9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f151a4e1db495a100c760023f39619d4</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>a70aa461db895a100c760023f39619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">22d2a9920b10030085c083eb37673ac3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f151a4e1db495a100c760023f39619d4</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>af0aa461db895a100c760023f39619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">1ed2a9920b10030085c083eb37673ab7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f151a4e1db495a100c760023f39619d4</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 11:58:10</sys_created_on>
+        <sys_id>b151a4e1db495a100c760023f39619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 11:58:10</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f151a4e1db495a100c760023f39619d4</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 11:58:10</sys_created_on>
+        <sys_id>b151a4e1db495a100c760023f39619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 11:58:10</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f151a4e1db495a100c760023f39619d4</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 11:58:10</sys_created_on>
+        <sys_id>fd51a4e1db495a100c760023f39619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 11:58:10</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f151a4e1db495a100c760023f39619d4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>f151a4e1db495a100c760023f39619d4</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>6b0aa461db895a100c760023f39619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value>ApprovesRejectsAnyG[{{static.8b1e3ae81bf4d2103f86b9118b4bcbcc}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>f151a4e1db495a100c760023f39619d4</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 11:58:10</sys_created_on>
+        <sys_id>7d51a4e1db495a100c760023f39619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 11:58:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesRejectsAnyG[{{static.8b1e3ae81bf4d2103f86b9118b4bcbcc}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>f151a4e1db495a100c760023f39619d4</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 11:58:10</sys_created_on>
+        <sys_id>3d51a4e1db495a100c760023f39619d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 11:58:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>f151a4e1db495a100c760023f39619d4</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>6b0aa461db895a100c760023f39619f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>f151a4e1db495a100c760023f39619d4</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 11:58:10</sys_created_on>
+        <sys_id>b951a4e1db495a100c760023f39619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 11:58:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>f151a4e1db495a100c760023f39619d4</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>a70aa461db895a100c760023f39619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>f151a4e1db495a100c760023f39619d4</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>230aa461db895a100c760023f39619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>f151a4e1db495a100c760023f39619d4</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 11:58:10</sys_created_on>
+        <sys_id>3551a4e1db495a100c760023f39619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 11:58:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>f151a4e1db495a100c760023f39619d4</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>e30aa461db895a100c760023f39619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>f151a4e1db495a100c760023f39619d4</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 11:58:10</sys_created_on>
+        <sys_id>f551a4e1db495a100c760023f39619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 11:58:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>f151a4e1db495a100c760023f39619d4</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:15</sys_created_on>
+        <sys_id>2f0aa461db895a100c760023f39619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>f151a4e1db495a100c760023f39619d4</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 11:58:10</sys_created_on>
+        <sys_id>3151a4e1db495a100c760023f39619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 11:58:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f151a4e1db495a100c760023f39619d4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f151a4e1db495a100c760023f39619d4"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=c2f0a4a1db495a100c760023f3961931"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=c2f0a4a1db495a100c760023f3961931^sys_idNOT IN4af12425db495a100c760023f3961970,76f3aca5db495a100c760023f3961999,9c84e8e5db495a100c760023f3961910,faf3aca5db495a100c760023f39619c0"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8af12425db495a100c760023f396196f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Invoice Request Approval and Delivery">c2f0a4a1db495a100c760023f3961931</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:00:55</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4af12425db495a100c760023f3961970</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:45:16</sys_updated_on>
+        <ui_id>56ef1eba-71e7-4542-a95f-6a7b958de0dd</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4af12425db495a100c760023f3961970"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>4af12425db495a100c760023f3961970</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:00:56</sys_created_on>
+        <sys_id>0ef12425db495a100c760023f3961974</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:00:56</sys_updated_on>
+        <value>approval is Rejected or Cancelled</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_c2f0a4a1db495a100c760023f3961931^id=4af12425db495a100c760023f3961970"/>
+    <sys_element_mapping action="delete_multiple" query="id=4af12425db495a100c760023f3961970"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>4af12425db495a100c760023f3961970</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:00:56</sys_created_on>
+        <sys_id>8af12425db495a100c760023f3961974</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:00:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{9adccc7f-0db0-44f1-ad0a-44a7ad751e1d.approval_state}}=rejected^NQ{{9adccc7f-0db0-44f1-ad0a-44a7ad751e1d.approval_state}}=cancelled</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>4af12425db495a100c760023f3961970</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:00:56</sys_created_on>
+        <sys_id>c2f12425db495a100c760023f3961974</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:00:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=4af12425db495a100c760023f3961970"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4af12425db495a100c760023f3961970"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">72f3aca5db495a100c760023f396198c</block>
+        <comment>Converting Requested Item Variables into date.</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Invoice Request Approval and Delivery">c2f0a4a1db495a100c760023f3961931</flow>
+        <flow_variable/>
+        <flow_variables_assigned>variable</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:09:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>76f3aca5db495a100c760023f3961999</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:45:16</sys_updated_on>
+        <ui_id>a6a870d0-f464-4c36-a810-3b24082a1149</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=76f3aca5db495a100c760023f3961999"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_c2f0a4a1db495a100c760023f3961931^id=76f3aca5db495a100c760023f3961999"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=76f3aca5db495a100c760023f3961999"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=76f3aca5db495a100c760023f3961999^sys_idNOT IN76f3aca5db495a100c760023f396199a"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>variable</input_name>
+        <instance>76f3aca5db495a100c760023f3961999</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"variable":{"scriptActive":true,"script":"var ritmSysId \u003d fd_data.trigger.request_item.sys_id;\nvar reqItem \u003d new GlideRecord(\u0027sc_req_item\u0027);\n\nvar requestedMonth \u003d \u0027\u0027;\nvar requestedYear \u003d \u0027\u0027;\n\nif(reqItem.get(ritmSysId)){\n    requestedMonth \u003d reqItem.variables.month_of_the_invoice + \u0027\u0027;\n    requestedYear \u003d reqItem.variables.which_year + \u0027\u0027;\n};\n\nrequestedMonth \u003d Number(requestedMonth) +1 ;\nrequestedYear \u003d Number(requestedYear);\n\nif(requestedMonth \u003c 10){\n    requestedMonth \u003d \u00270\u0027 + requestedMonth;\n};\n\nvar dateOfReqItem \u003d \u002701.\u0027 + requestedMonth + \u0027.\u0027 + requestedYear;\n\nreturn dateOfReqItem;"}}</script>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:09:43</sys_created_on>
+        <sys_id>76f3aca5db495a100c760023f396199a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:09:43</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5084e8e5db495a100c760023f3961910</block>
+        <comment/>
+        <connected_to>beac336b-8307-4e21-9218-363e27375493</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Invoice Request Approval and Delivery">c2f0a4a1db495a100c760023f3961931</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:12:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9c84e8e5db495a100c760023f3961910</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:45:16</sys_updated_on>
+        <ui_id>71929fb3-7afb-4cf6-8c41-9f8ac15fa62b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9c84e8e5db495a100c760023f3961910"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_c2f0a4a1db495a100c760023f3961931^id=9c84e8e5db495a100c760023f3961910"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9c84e8e5db495a100c760023f3961910"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9c84e8e5db495a100c760023f3961910"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f2f3aca5db495a100c760023f39619c0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Invoice Request Approval and Delivery">c2f0a4a1db495a100c760023f3961931</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:09:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>faf3aca5db495a100c760023f39619c0</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:45:16</sys_updated_on>
+        <ui_id>beac336b-8307-4e21-9218-363e27375493</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=faf3aca5db495a100c760023f39619c0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>faf3aca5db495a100c760023f39619c0</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:09:43</sys_created_on>
+        <sys_id>bef3aca5db495a100c760023f39619c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:09:43</sys_updated_on>
+        <value>previous step 5 is fase</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_c2f0a4a1db495a100c760023f3961931^id=faf3aca5db495a100c760023f39619c0"/>
+    <sys_element_mapping action="delete_multiple" query="id=faf3aca5db495a100c760023f39619c0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>faf3aca5db495a100c760023f39619c0</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:09:43</sys_created_on>
+        <sys_id>3ef3aca5db495a100c760023f39619c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:09:43</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{255c4922-8937-4ac7-b4ef-4fdad4df399c.status}}=1</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>faf3aca5db495a100c760023f39619c0</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:09:43</sys_created_on>
+        <sys_id>7af3aca5db495a100c760023f39619c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:09:43</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=faf3aca5db495a100c760023f39619c0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=faf3aca5db495a100c760023f39619c0"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c2f0a4a1db495a100c760023f3961931"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=c2f0a4a1db495a100c760023f3961931^sys_idNOT INc813e865db495a100c760023f3961924"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date_time,uiTypeLabel=Date/Time,uiUniqueId=0bb654a6-d812-4b7c-9e76-865457db567e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variable</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date_time</internal_type>
+        <label>Requested Date</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Invoice Request Approval and Delivery">c2f0a4a1db495a100c760023f3961931</model>
+        <model_id>c2f0a4a1db495a100c760023f3961931</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_c2f0a4a1db495a100c760023f3961931</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:05:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c813e865db495a100c760023f3961924</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:05:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_c2f0a4a1db495a100c760023f3961931^sys_idNOT INa551aca1db495a100c760023f3961974,fd51a4e1db495a100c760023f39619c8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c2f0a4a1db495a100c760023f3961931</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 11:58:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a551aca1db495a100c760023f3961974</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 11:58:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c2f0a4a1db495a100c760023f3961931</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 11:58:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fd51a4e1db495a100c760023f39619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 11:58:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c2f0a4a1db495a100c760023f3961931"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_c2f0a4a1db495a100c760023f3961931"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c2f0a4a1db495a100c760023f3961931"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>In the flow, the provider should approve the request and then a PDF attachment of the invoice is returned to the user.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>invoice_request_approval</internal_name>
+        <label_cache>[{"name":"Service Catalog_1.request_item.close_notes","label":"Trigger - Service Catalog➛Requested Item Record➛Close notes","reference":"","reference_display":"Close notes","type":"string","base_type":"string","parent_table_name":"sc_req_item","column_name":"close_notes","usedInstances":{"02bc6231-f7d7-46d6-8aa3-cdc110e95d2f":["table_name"]}},{"name":"255c4922-8937-4ac7-b4ef-4fdad4df399c.status","label":"5 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"beac336b-8307-4e21-9218-363e27375493":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"Service Catalog_1.request_item.requested_for.company","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for➛Company","reference":"core_company","reference_display":"Company","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"company","usedInstances":{"255c4922-8937-4ac7-b4ef-4fdad4df399c":["conditions"]}},{"name":"flow_variable.variable","label":"Flow Variables➛Requested Date","reference":"","reference_display":"","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"255c4922-8937-4ac7-b4ef-4fdad4df399c":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"0bb654a6-d812-4b7c-9e76-865457db567e"}},{"name":"9adccc7f-0db0-44f1-ad0a-44a7ad751e1d.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"56ef1eba-71e7-4542-a95f-6a7b958de0dd":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"9adccc7f-0db0-44f1-ad0a-44a7ad751e1d":["record"],"7bb007b1-d8c0-4cc0-8206-b735d02ef614":["record"],"0eb867d9-6794-4979-a784-250c824b20e1":["record"],"a7311f3a-f192-43ed-af6d-0fd99af2006e":["target_record"],"6e7ea87b-284e-4c94-b776-a37890316032":["record"],"02bc6231-f7d7-46d6-8aa3-cdc110e95d2f":["record"]},"attributes":{"default_search_field":"number"}},{"name":"{{static.8b1e3ae81bf4d2103f86b9118b4bcbcc}}","label":"AAP Provider","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"9adccc7f-0db0-44f1-ad0a-44a7ad751e1d":["approval_conditions"]}},{"name":"255c4922-8937-4ac7-b4ef-4fdad4df399c.Record","label":"5 - Look Up Record➛Invoices Record","reference":"x_sigh_a_a_portal_invoices","reference_display":"Invoices","type":"reference","base_type":"reference","usedInstances":{"a7311f3a-f192-43ed-af6d-0fd99af2006e":["attachment_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"255c4922-8937-4ac7-b4ef-4fdad4df399c.Record.attachment","label":"5 - Look Up Record➛Invoices Record➛Attachment","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","parent_table_name":"x_sigh_a_a_portal_invoices","column_name":"attachment","usedInstances":{"a7311f3a-f192-43ed-af6d-0fd99af2006e":["attachment_record"]}}]</label_cache>
+        <master>true</master>
+        <name>Invoice Request Approval</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Invoice Request Approval and Delivery">c2f0a4a1db495a100c760023f3961931</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>581ae461db895a100c760023f39619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:18</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=581ae461db895a100c760023f39619de"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=581ae461db895a100c760023f39619de^sys_idNOT INfc1a2861db895a100c760023f39619e4"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Invoice Request Approval">581ae461db895a100c760023f39619de</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fc1a2861db895a100c760023f39619e4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:22</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fc1a2861db895a100c760023f39619e4"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=581ae461db895a100c760023f39619de"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=581ae461db895a100c760023f39619de^sys_idNOT IN1c1ae461db895a100c760023f39619df"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>581ae461db895a100c760023f39619de</id>
+        <name>Invoice Request Approval</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1c1ae461db895a100c760023f39619df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:18</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=1c1ae461db895a100c760023f39619df"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=581ae461db895a100c760023f39619de^sys_idNOT IN101ae461db895a100c760023f39619e1,981a2861db895a100c760023f396192b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Invoice Request Approval">581ae461db895a100c760023f39619de</model>
+        <model_id>581ae461db895a100c760023f39619de</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_581ae461db895a100c760023f39619de</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>101ae461db895a100c760023f39619e1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=101ae461db895a100c760023f39619e1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Invoice Request Approval">581ae461db895a100c760023f39619de</model>
+        <model_id>581ae461db895a100c760023f39619de</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_581ae461db895a100c760023f39619de</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>981a2861db895a100c760023f396192b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=981a2861db895a100c760023f396192b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=581ae461db895a100c760023f39619de"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=581ae461db895a100c760023f39619de"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=581ae461db895a100c760023f39619de^sys_idNOT IN2c1a2861db895a100c760023f3961981,381a2861db895a100c760023f39619e2,b41a2861db895a100c760023f39619a6,e01a2861db895a100c760023f3961978,f41a2861db895a100c760023f396199f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Invoice Request Approval">581ae461db895a100c760023f39619de</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>56ef1eba-71e7-4542-a95f-6a7b958de0dd</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2c1a2861db895a100c760023f3961981</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <ui_id>7bb007b1-d8c0-4cc0-8206-b735d02ef614</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2c1a2861db895a100c760023f3961981"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2c1a2861db895a100c760023f3961981</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>281a2861db895a100c760023f3961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2c1a2861db895a100c760023f3961981</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>641a2861db895a100c760023f3961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <value>state=4</value>
+        <variable display_value="Fields">e7d270ccc3c632002841b63b12d3ae8b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2c1a2861db895a100c760023f3961981"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>2c1a2861db895a100c760023f3961981</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>201a2861db895a100c760023f3961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>2c1a2861db895a100c760023f3961981</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>6c1a2861db895a100c760023f3961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>2c1a2861db895a100c760023f3961981</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>e01a2861db895a100c760023f3961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2c1a2861db895a100c760023f3961981"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2c1a2861db895a100c760023f3961981"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Copy Attachment">30fe6cdb0f973300dfd3694e68767e5a</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>Copy an attachment from an invoice record to the requested item record.</comment>
+        <display_text/>
+        <flow display_value="Invoice Request Approval">581ae461db895a100c760023f39619de</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>71929fb3-7afb-4cf6-8c41-9f8ac15fa62b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>381a2861db895a100c760023f39619e2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:20</sys_updated_on>
+        <ui_id>a7311f3a-f192-43ed-af6d-0fd99af2006e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=381a2861db895a100c760023f39619e2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>381a2861db895a100c760023f39619e2</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:20</sys_created_on>
+        <sys_id>781a2861db895a100c760023f39619e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:20</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">f4fe6cdb0f973300dfd3694e68767e67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>381a2861db895a100c760023f39619e2</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:20</sys_created_on>
+        <sys_id>b41a2861db895a100c760023f39619e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:20</sys_updated_on>
+        <value/>
+        <variable display_value="Target Record">b0fe6cdb0f973300dfd3694e68767e60</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=381a2861db895a100c760023f39619e2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_record</field>
+        <id>381a2861db895a100c760023f39619e2</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:20</sys_created_on>
+        <sys_id>341a2861db895a100c760023f39619e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_30fe6cdb0f973300dfd3694e68767e5a</table>
+        <value>{{255c4922-8937-4ac7-b4ef-4fdad4df399c.Record.attachment}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>381a2861db895a100c760023f39619e2</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:20</sys_created_on>
+        <sys_id>701a2861db895a100c760023f39619e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_30fe6cdb0f973300dfd3694e68767e5a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_record</field>
+        <id>381a2861db895a100c760023f39619e2</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:20</sys_created_on>
+        <sys_id>bc1a2861db895a100c760023f39619e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_30fe6cdb0f973300dfd3694e68767e5a</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=381a2861db895a100c760023f39619e2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=381a2861db895a100c760023f39619e2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>Add Additional comment that there no invoices for this period of time. And change the state to Closed Skipped.</comment>
+        <display_text/>
+        <flow display_value="Invoice Request Approval">581ae461db895a100c760023f39619de</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>beac336b-8307-4e21-9218-363e27375493</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b41a2861db895a100c760023f39619a6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:20</sys_updated_on>
+        <ui_id>0eb867d9-6794-4979-a784-250c824b20e1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b41a2861db895a100c760023f39619a6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b41a2861db895a100c760023f39619a6</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:20</sys_created_on>
+        <sys_id>b01a2861db895a100c760023f39619a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:20</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b41a2861db895a100c760023f39619a6</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:20</sys_created_on>
+        <sys_id>fc1a2861db895a100c760023f39619a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:20</sys_updated_on>
+        <value>comments=There are no invoices for this period of time.^state=7</value>
+        <variable display_value="Fields">e7d270ccc3c632002841b63b12d3ae8b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b41a2861db895a100c760023f39619a6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>b41a2861db895a100c760023f39619a6</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:20</sys_created_on>
+        <sys_id>b81a2861db895a100c760023f39619a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>b41a2861db895a100c760023f39619a6</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:20</sys_created_on>
+        <sys_id>f41a2861db895a100c760023f39619a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>b41a2861db895a100c760023f39619a6</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:20</sys_created_on>
+        <sys_id>7c1a2861db895a100c760023f39619a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b41a2861db895a100c760023f39619a6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b41a2861db895a100c760023f39619a6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>Ask AAP Provider for approval.</comment>
+        <display_text/>
+        <flow display_value="Invoice Request Approval">581ae461db895a100c760023f39619de</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e01a2861db895a100c760023f3961978</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <ui_id>9adccc7f-0db0-44f1-ad0a-44a7ad751e1d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e01a2861db895a100c760023f3961978"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e01a2861db895a100c760023f3961978</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>201a2861db895a100c760023f396197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">1ed2a9920b10030085c083eb37673ab7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e01a2861db895a100c760023f3961978</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>681a2861db895a100c760023f396197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">d2d2a9920b10030085c083eb37673aa0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e01a2861db895a100c760023f3961978</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>a41a2861db895a100c760023f396197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">26d2a9920b10030085c083eb37673ad9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e01a2861db895a100c760023f3961978</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>e01a2861db895a100c760023f396197b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">22d2a9920b10030085c083eb37673ac3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e01a2861db895a100c760023f3961978"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>e01a2861db895a100c760023f3961978</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>e81a2861db895a100c760023f396197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value>ApprovesRejectsAnyG[{{static.8b1e3ae81bf4d2103f86b9118b4bcbcc}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>e01a2861db895a100c760023f3961978</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>ec1a2861db895a100c760023f3961979</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>e01a2861db895a100c760023f3961978</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>281a2861db895a100c760023f396197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>e01a2861db895a100c760023f3961978</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>a01a2861db895a100c760023f396197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>e01a2861db895a100c760023f3961978</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>641a2861db895a100c760023f396197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>e01a2861db895a100c760023f3961978</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>ac1a2861db895a100c760023f396197a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <table>var__m_sys_hub_action_input_bae0a1120b10030085c083eb37673a92</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e01a2861db895a100c760023f3961978"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e01a2861db895a100c760023f3961978"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>Check if there is an invoice record for the requested date and for the requester's company.</comment>
+        <display_text/>
+        <flow display_value="Invoice Request Approval">581ae461db895a100c760023f39619de</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f41a2861db895a100c760023f396199f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:20</sys_updated_on>
+        <ui_id>255c4922-8937-4ac7-b4ef-4fdad4df399c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f41a2861db895a100c760023f396199f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f41a2861db895a100c760023f396199f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:20</sys_created_on>
+        <sys_id>bc1a2861db895a100c760023f39619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:20</sys_updated_on>
+        <value>x_sigh_a_a_portal_invoices</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f41a2861db895a100c760023f396199f</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:20</sys_created_on>
+        <sys_id>f81a2861db895a100c760023f39619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:20</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">ceab42a673110010d70877186bf6a74f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f41a2861db895a100c760023f396199f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>f41a2861db895a100c760023f396199f</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:20</sys_created_on>
+        <sys_id>b41a2861db895a100c760023f39619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>dateON{{flow_variable.variable}}^company={{Service Catalog_1.request_item.requested_for.company}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>f41a2861db895a100c760023f396199f</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:20</sys_created_on>
+        <sys_id>781a2861db895a100c760023f39619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__snc_dont_fail_on_error</field>
+        <id>f41a2861db895a100c760023f396199f</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:20</sys_created_on>
+        <sys_id>f01a2861db895a100c760023f39619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f41a2861db895a100c760023f396199f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f41a2861db895a100c760023f396199f"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=581ae461db895a100c760023f39619de"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=581ae461db895a100c760023f39619de^sys_idNOT IN241a2861db895a100c760023f3961967,281a2861db895a100c760023f3961949,281a2861db895a100c760023f396196e,2c1a2861db895a100c760023f396196a"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">72f3aca5db495a100c760023f396198c</block>
+        <comment>Converting Requested Item Variables into date.</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Invoice Request Approval">581ae461db895a100c760023f39619de</flow>
+        <flow_variable/>
+        <flow_variables_assigned>variable</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>241a2861db895a100c760023f3961967</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <ui_id>a6a870d0-f464-4c36-a810-3b24082a1149</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=241a2861db895a100c760023f3961967"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_581ae461db895a100c760023f39619de^id=241a2861db895a100c760023f3961967"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=241a2861db895a100c760023f3961967"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=241a2861db895a100c760023f3961967^sys_idNOT INa41a2861db895a100c760023f3961968"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>variable</input_name>
+        <instance>241a2861db895a100c760023f3961967</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"variable":{"scriptActive":true,"script":"var ritmSysId \u003d fd_data.trigger.request_item.sys_id;\nvar reqItem \u003d new GlideRecord(\u0027sc_req_item\u0027);\n\nvar requestedMonth \u003d \u0027\u0027;\nvar requestedYear \u003d \u0027\u0027;\n\nif(reqItem.get(ritmSysId)){\n    requestedMonth \u003d reqItem.variables.month_of_the_invoice + \u0027\u0027;\n    requestedYear \u003d reqItem.variables.which_year + \u0027\u0027;\n};\n\nrequestedMonth \u003d Number(requestedMonth) +1 ;\nrequestedYear \u003d Number(requestedYear);\n\nif(requestedMonth \u003c 10){\n    requestedMonth \u003d \u00270\u0027 + requestedMonth;\n};\n\nvar dateOfReqItem \u003d \u002701.\u0027 + requestedMonth + \u0027.\u0027 + requestedYear;\n\nreturn dateOfReqItem;"}}</script>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>a41a2861db895a100c760023f3961968</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8af12425db495a100c760023f396196f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Invoice Request Approval">581ae461db895a100c760023f39619de</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>281a2861db895a100c760023f3961949</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <ui_id>56ef1eba-71e7-4542-a95f-6a7b958de0dd</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=281a2861db895a100c760023f3961949"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>281a2861db895a100c760023f3961949</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>641a2861db895a100c760023f3961966</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <value>approval is Rejected or Cancelled</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_581ae461db895a100c760023f39619de^id=281a2861db895a100c760023f3961949"/>
+    <sys_element_mapping action="delete_multiple" query="id=281a2861db895a100c760023f3961949"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>281a2861db895a100c760023f3961949</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>e01a2861db895a100c760023f3961966</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{9adccc7f-0db0-44f1-ad0a-44a7ad751e1d.approval_state}}=rejected^NQ{{9adccc7f-0db0-44f1-ad0a-44a7ad751e1d.approval_state}}=cancelled</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>281a2861db895a100c760023f3961949</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>201a2861db895a100c760023f3961966</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=281a2861db895a100c760023f3961949"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=281a2861db895a100c760023f3961949"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5084e8e5db495a100c760023f3961910</block>
+        <comment/>
+        <connected_to>beac336b-8307-4e21-9218-363e27375493</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Invoice Request Approval">581ae461db895a100c760023f39619de</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>281a2861db895a100c760023f396196e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <ui_id>71929fb3-7afb-4cf6-8c41-9f8ac15fa62b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=281a2861db895a100c760023f396196e"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_581ae461db895a100c760023f39619de^id=281a2861db895a100c760023f396196e"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=281a2861db895a100c760023f396196e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=281a2861db895a100c760023f396196e"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f2f3aca5db495a100c760023f39619c0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Invoice Request Approval">581ae461db895a100c760023f39619de</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2c1a2861db895a100c760023f396196a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <ui_id>beac336b-8307-4e21-9218-363e27375493</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2c1a2861db895a100c760023f396196a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>2c1a2861db895a100c760023f396196a</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>e81a2861db895a100c760023f396196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <value>previous step 5 is fase</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_581ae461db895a100c760023f39619de^id=2c1a2861db895a100c760023f396196a"/>
+    <sys_element_mapping action="delete_multiple" query="id=2c1a2861db895a100c760023f396196a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>2c1a2861db895a100c760023f396196a</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>681a2861db895a100c760023f396196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{255c4922-8937-4ac7-b4ef-4fdad4df399c.status}}=1</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>2c1a2861db895a100c760023f396196a</id>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_id>a41a2861db895a100c760023f396196d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2c1a2861db895a100c760023f396196a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2c1a2861db895a100c760023f396196a"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=581ae461db895a100c760023f39619de"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=581ae461db895a100c760023f39619de^sys_idNOT INe01a2861db895a100c760023f3961944"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date_time,uiTypeLabel=Date/Time,uiUniqueId=0bb654a6-d812-4b7c-9e76-865457db567e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variable</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date_time</internal_type>
+        <label>Requested Date</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Invoice Request Approval">581ae461db895a100c760023f39619de</model>
+        <model_id>581ae461db895a100c760023f39619de</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_581ae461db895a100c760023f39619de</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e01a2861db895a100c760023f3961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_581ae461db895a100c760023f39619de^sys_idNOT IN101a2861db895a100c760023f3961928,5c1a2861db895a100c760023f396192f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_581ae461db895a100c760023f39619de</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>101a2861db895a100c760023f3961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_581ae461db895a100c760023f39619de</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:18</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5c1a2861db895a100c760023f396192f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_581ae461db895a100c760023f39619de"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_581ae461db895a100c760023f39619de"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_581ae461db895a100c760023f39619de"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>c2f0a4a1db495a100c760023f3961931</sys_id>
+        <latest_snapshot>581ae461db895a100c760023f39619de</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=c2f0a4a1db495a100c760023f3961931^sys_idNOT IN9d1a6861db895a100c760023f3961930"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>c2f0a4a1db495a100c760023f3961931</plan_id>
+        <snapshot>581ae461db895a100c760023f39619de</snapshot>
+        <sys_class_name>sys_flow_trigger_plan</sys_class_name>
+        <sys_created_by>maryna.kurman@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 12:36:22</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9d1a6861db895a100c760023f3961930</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:36:22</sys_updated_on>
+        <trigger display_value="">551a6861db895a100c760023f3961930</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=c2f0a4a1db495a100c760023f3961931"/>
+</record_update>
