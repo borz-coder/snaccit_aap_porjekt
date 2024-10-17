@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Return Some Hardware">c52ff6ef1b6c56501ef387306b4bcbba</sc_cat_item>
+        <sc_cat_item display_value="Return some Hardware">c52ff6ef1b6c56501ef387306b4bcbba</sc_cat_item>
         <sc_category display_value="Hardware orders">994f83161b6812501ef387306b4bcb4c</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>kay.cole@agineo.de</sys_created_by>

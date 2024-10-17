@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
     <sc_cat_item_catalog action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Return Some Hardware">c52ff6ef1b6c56501ef387306b4bcbba</sc_cat_item>
+        <sc_cat_item display_value="Return some Hardware">c52ff6ef1b6c56501ef387306b4bcbba</sc_cat_item>
         <sc_catalog display_value="Agency Asset Portal Services">954e0f921b6812501ef387306b4bcb28</sc_catalog>
         <sys_class_name>sc_cat_item_catalog</sys_class_name>
         <sys_created_by>kay.cole@agineo.de</sys_created_by>
