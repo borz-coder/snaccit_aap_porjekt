@@ -17,8 +17,8 @@
         <do_not_select_first>false</do_not_select_first>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <dynamic_value_dot_walk_path>description</dynamic_value_dot_walk_path>
-        <dynamic_value_field display_value="select_the_item">f1957b231ba096501ef387306b4bcba4</dynamic_value_field>
+        <dynamic_value_dot_walk_path/>
+        <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
         <field/>
@@ -41,13 +41,13 @@
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>hardware_item_description</name>
-        <order>500</order>
+        <name>formatter</name>
+        <order>400</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Hardware Item Description</question_text>
+        <question_text/>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -75,21 +75,21 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
-        <sys_created_on>2024-09-16 12:11:53</sys_created_on>
+        <sys_created_on>2024-09-16 12:09:59</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>30773f631ba096501ef387306b4bcb76</sys_id>
-        <sys_mod_count>14</sys_mod_count>
-        <sys_name>hardware_item_description</sys_name>
+        <sys_id>5f57ff631ba096501ef387306b4bcbaf</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>formatter</sys_name>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
-        <sys_update_name>item_option_new_30773f631ba096501ef387306b4bcb76</sys_update_name>
+        <sys_update_name>item_option_new_5f57ff631ba096501ef387306b4bcbaf</sys_update_name>
         <sys_updated_by>laura.hirschfeld@agineo.de</sys_updated_by>
         <sys_updated_on>2024-10-21 14:53:21</sys_updated_on>
         <table/>
         <tooltip/>
-        <type>23</type>
+        <type>12</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
@@ -105,22 +105,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=30773f631ba096501ef387306b4bcb76"/>
-    <fx_price action="delete_multiple" query="id=30773f631ba096501ef387306b4bcb76"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=5f57ff631ba096501ef387306b4bcbaf"/>
+    <fx_price action="delete_multiple" query="id=5f57ff631ba096501ef387306b4bcbaf"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="EUR">EUR</currency>
         <field>price_if_checked</field>
-        <id>30773f631ba096501ef387306b4bcb76</id>
+        <id>5f57ff631ba096501ef387306b4bcbaf</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="EUR">EUR</reference_currency>
         <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
-        <sys_created_on>2024-09-16 12:11:54</sys_created_on>
-        <sys_id>13d7f3e31ba096501ef387306b4bcbcc</sys_id>
+        <sys_created_on>2024-09-16 12:09:59</sys_created_on>
+        <sys_id>1b67fba31ba096501ef387306b4bcba6</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-09-16 12:11:54</sys_updated_on>
+        <sys_updated_on>2024-09-16 12:09:59</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -128,16 +128,16 @@
         <amount>0</amount>
         <currency display_value="EUR">EUR</currency>
         <field>rec_price_if_checked</field>
-        <id>30773f631ba096501ef387306b4bcb76</id>
+        <id>5f57ff631ba096501ef387306b4bcbaf</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="EUR">EUR</reference_currency>
         <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
-        <sys_created_on>2024-09-16 12:11:54</sys_created_on>
-        <sys_id>d7d7f3e31ba096501ef387306b4bcbcb</sys_id>
+        <sys_created_on>2024-09-16 12:09:59</sys_created_on>
+        <sys_id>1b67fba31ba096501ef387306b4bcba5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-09-16 12:11:54</sys_updated_on>
+        <sys_updated_on>2024-09-16 12:09:59</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>

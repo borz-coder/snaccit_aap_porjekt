@@ -5,7 +5,7 @@
         <availability>on_desktop</availability>
         <billable>false</billable>
         <category display_value="Hardware orders">994f83161b6812501ef387306b4bcb4c</category>
-        <checked_out/>
+        <checked_out>false</checked_out>
         <cost>0</cost>
         <custom_cart/>
         <delivery_plan/>
@@ -19,7 +19,7 @@
         <group/>
         <hide_sp>false</hide_sp>
         <icon/>
-        <ignore_price>false</ignore_price>
+        <ignore_price>true</ignore_price>
         <image/>
         <location/>
         <make_item_non_conversational>false</make_item_non_conversational>
@@ -58,31 +58,31 @@
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
-        <short_description/>
+        <short_description>Different hardware items can be ordered and will then be listed on your account.</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
-        <state/>
+        <state>published</state>
         <sys_class_name>sc_cat_item</sys_class_name>
         <sys_created_by>jason.roesgen@agineo.de</sys_created_by>
         <sys_created_on>2024-09-16 11:36:28</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>129fa7ab1ba896503f86b9118b4bcbed</sys_id>
-        <sys_mod_count>243</sys_mod_count>
+        <sys_mod_count>246</sys_mod_count>
         <sys_name>Order some Hardware</sys_name>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>sc_cat_item_129fa7ab1ba896503f86b9118b4bcbed</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-10-02 14:49:31</sys_updated_on>
+        <sys_updated_by>laura.hirschfeld@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-21 14:53:24</sys_updated_on>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>243</version>
+        <version>245</version>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>
