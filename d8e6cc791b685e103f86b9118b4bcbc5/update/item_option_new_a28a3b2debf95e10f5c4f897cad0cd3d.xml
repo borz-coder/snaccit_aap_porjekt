@@ -9,7 +9,7 @@
         <choice_table/>
         <create_roles/>
         <default_html_value/>
-        <default_value/>
+        <default_value>black</default_value>
         <delete_roles/>
         <delivery_plan/>
         <description/>
@@ -17,8 +17,8 @@
         <do_not_select_first>false</do_not_select_first>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <dynamic_value_dot_walk_path>description</dynamic_value_dot_walk_path>
-        <dynamic_value_field display_value="select_the_item">f1957b231ba096501ef387306b4bcba4</dynamic_value_field>
+        <dynamic_value_dot_walk_path/>
+        <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
         <field/>
@@ -27,7 +27,7 @@
         <help_text/>
         <hidden>false</hidden>
         <include_none>false</include_none>
-        <instructions/>
+        <instructions><![CDATA[<p>Select your favourite color!</p>]]></instructions>
         <layout>normal</layout>
         <list_table/>
         <lookup_label/>
@@ -41,13 +41,13 @@
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>hardware_item_description</name>
-        <order>600</order>
+        <name>what_color_you_prefer</name>
+        <order>400</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>Hardware Item Description</question_text>
+        <question_text>What color you prefer?</question_text>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -56,8 +56,8 @@
         <record/>
         <record_producer_table/>
         <reference/>
-        <reference_qual/>
-        <reference_qual_condition/>
+        <reference_qual>undefined</reference_qual>
+        <reference_qual_condition>undefined</reference_qual_condition>
         <rich_text/>
         <roles_to_use_also_request_for/>
         <save_script><![CDATA[/** This script is executed before the Record is generated 
@@ -69,27 +69,27 @@
  */]]></save_script>
         <scale_max>5</scale_max>
         <scale_min>0</scale_min>
-        <show_help>false</show_help>
+        <show_help>true</show_help>
         <show_help_on_load>false</show_help_on_load>
         <sp_widget/>
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
-        <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
-        <sys_created_on>2024-09-16 12:11:53</sys_created_on>
+        <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-11 10:36:18</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>30773f631ba096501ef387306b4bcb76</sys_id>
-        <sys_mod_count>15</sys_mod_count>
-        <sys_name>hardware_item_description</sys_name>
-        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_id>a28a3b2debf95e10f5c4f897cad0cd3d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>what_color_you_prefer</sys_name>
+        <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
-        <sys_update_name>item_option_new_30773f631ba096501ef387306b4bcb76</sys_update_name>
+        <sys_update_name>item_option_new_a28a3b2debf95e10f5c4f897cad0cd3d</sys_update_name>
         <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-11-11 10:38:21</sys_updated_on>
+        <sys_updated_on>2024-11-11 10:38:25</sys_updated_on>
         <table/>
         <tooltip/>
-        <type>23</type>
+        <type>5</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
@@ -105,22 +105,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=30773f631ba096501ef387306b4bcb76"/>
-    <fx_price action="delete_multiple" query="id=30773f631ba096501ef387306b4bcb76"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=a28a3b2debf95e10f5c4f897cad0cd3d"/>
+    <fx_price action="delete_multiple" query="id=a28a3b2debf95e10f5c4f897cad0cd3d"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="EUR">EUR</currency>
         <field>price_if_checked</field>
-        <id>30773f631ba096501ef387306b4bcb76</id>
+        <id>a28a3b2debf95e10f5c4f897cad0cd3d</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="EUR">EUR</reference_currency>
-        <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
-        <sys_created_on>2024-09-16 12:11:54</sys_created_on>
-        <sys_id>13d7f3e31ba096501ef387306b4bcbcc</sys_id>
+        <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-11 10:36:18</sys_created_on>
+        <sys_id>890bff2debf95e10f5c4f897cad0cdab</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-09-16 12:11:54</sys_updated_on>
+        <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-11 10:36:18</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -128,16 +128,16 @@
         <amount>0</amount>
         <currency display_value="EUR">EUR</currency>
         <field>rec_price_if_checked</field>
-        <id>30773f631ba096501ef387306b4bcb76</id>
+        <id>a28a3b2debf95e10f5c4f897cad0cd3d</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="EUR">EUR</reference_currency>
-        <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
-        <sys_created_on>2024-09-16 12:11:54</sys_created_on>
-        <sys_id>d7d7f3e31ba096501ef387306b4bcbcb</sys_id>
+        <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-11 10:36:18</sys_created_on>
+        <sys_id>450bff2debf95e10f5c4f897cad0cdaa</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-09-16 12:11:54</sys_updated_on>
+        <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-11 10:36:18</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>

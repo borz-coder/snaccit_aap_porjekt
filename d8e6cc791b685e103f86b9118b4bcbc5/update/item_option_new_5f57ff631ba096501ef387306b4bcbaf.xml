@@ -42,7 +42,7 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>formatter</name>
-        <order>400</order>
+        <order>500</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -78,15 +78,15 @@
         <sys_created_on>2024-09-16 12:09:59</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>5f57ff631ba096501ef387306b4bcbaf</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>formatter</sys_name>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>item_option_new_5f57ff631ba096501ef387306b4bcbaf</sys_update_name>
-        <sys_updated_by>laura.hirschfeld@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-10-21 14:53:21</sys_updated_on>
+        <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-11 10:38:21</sys_updated_on>
         <table/>
         <tooltip/>
         <type>12</type>
