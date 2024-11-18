@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_sigh_a_a_portal.aap_konzern_approver</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>aap_konzern_approver</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-13 13:55:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d05b3e963b791e1013b9202a85e45a06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sigh_a_a_portal.aap_konzern_approver</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_user_role_d05b3e963b791e1013b9202a85e45a06</sys_update_name>
+        <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-13 13:55:11</sys_updated_on>
+    </sys_user_role>
+</record_update>

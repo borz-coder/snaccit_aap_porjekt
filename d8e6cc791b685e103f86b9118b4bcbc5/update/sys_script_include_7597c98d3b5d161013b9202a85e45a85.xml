@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_sigh_a_a_portal.PDFGenerator</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Script to generate .pdf files using a layout script</description>
+        <name>PDFGenerator</name>
+        <script><![CDATA[/*
+                #################################### pdf-Generator-Script ##############################################
+                #                                                                                                      #
+                #   Script by:      Max Broekel, Juri Deisling, Matthias Ferstl                                        # 
+                #                   Taniya Ghaderi, Laura Hirschfeld, Tommy Vo-Weissweiler                             #
+                #   Version:        1.1                                                                                #
+                #   Last Update:    23.10.2024                                                                         #
+                #                                                                                                      #
+                #   "Always code as if the guy who ends up maintaining your code will be a violent                     #
+                #    psychopath who knows where you live." -John F. Woods                                              #
+                #                                                                                                      #
+                ########################################################################################################
+*/
+
+/*  
+        ######################################### Changelog #####################################################################
+
+        Version 1.1 (Author: Max Broekel(snacc-it), Juri Deisling)
+        -   Added a header image
+        -   Added a footer image
+        -   Modified the TopOrBottomMargin value
+
+        #########################################################################################################################
+*/
+
+
+/*  
+        ######################################### README, there is a voucher for free beer ######################################
+
+        This script is meant to make .pdf creation in ServiceNow easier. It uses a seperate layout-script, which we also provide.
+        Out main goal was to provide a solution that separates the layout from the generation and to maximise reusability.
+        Parts of this script can (and should) be changed, but be sure you know what you do. If you break things there is
+        no warranty. As usual there are parts of code that are not 100% necessary but we tried to make it readable
+        and understandable without a propper handbook.
+
+        This script should be used as "Script Include". So later you can call functions from everywhere. Be sure the
+        script include is named "PDFGenerator". We hope that you read this...
+
+        We recommend to copy the code WITH ALL comments to make it easier for the guy that is maintaining that code.
+        If not, tell him you are sorry!
+
+        If you have any suggestions feel free to contact matthias.ferstl@agineo.de in some cases he even reads his mails
+        
+        Thanks for your attention
+        No beer. Sorry
+
+        #########################################################################################################################
+*/
+
+
+
+var PDFGenerator = Class.create();
+
+    PDFGenerator.prototype = {
+        initialize: function() {},
+
+        generatePDF: function(handoverRecord) {
+            // Set to true to get debug messages
+            const DEBUG = true;
+
+
+            //Header and footer image sysIDs are stored in the sys_attachment table.
+            const FOOTER_IMAGE_ID = gs.getProperty("x_sigh_a_a_portal.footerImage");
+            const HEADER_IMAGE_ID = gs.getProperty("x_sigh_a_a_portal.headerImage");
+
+            // Check if record = null
+
+            if (!handoverRecord) {
+                throw new Error("Record has to be not null");
+            }
+            
+            /* Use PDFLayout Script Include to generate HTML coded content of the .pdf, handle changes with care, as the used layout script needs a record to be submitted
+                Try to use a record that provides as many information you need in the .pdf as possible to avoid escalating dotwalking in the layout script */
+
+           var layout = new PDFLayout();
+           var htmlContent = layout.generateHTML(handoverRecord);
+
+           
+            // definition of the record where that .pdf should be stored, change as needed.
+
+            var targetTable = handoverRecord.getTableName();
+            var sysId = handoverRecord.getValue('sys_id');
+            
+            // Name of the created .pdf, change as needed.
+
+            var filename = 'Invoice_' + handoverRecord.getValue('number');
+
+            // sys_id of the font in the sys_pdf_generation_font_family table, change as needed. You can upload new fonts to that table and use their sys_id
+
+            const ARIAL = "e3ae55813b11561013b9202a85e45a0e";
+
+             // What should the created .pdf look like. Be careful with changes, pagenumbers should be handled in layout-script as those here are... weird.
+            var pdf_configuration = {
+           
+                    PageSize: 'A4',
+                    PageOrientation: 'PORTRAIT',
+                    GeneratePageNumber: 'false',
+					FooterImageAlignment: 'TOP_CENTER',
+					FooterImageAttachmentId: FOOTER_IMAGE_ID,
+					HeaderImageAttachmentId: HEADER_IMAGE_ID,
+					HeaderImageAlignment: "center",
+					HeaderImageHeight: "72",
+					TopOrBottomMargin: "72",
+                    LeftOrRightMargin: '16'
+                    
+            };
+		
+
+            // Use API, to convert the HTML-code  into a pdf file, try to avoid not neccessary changes.
+            
+        
+            var pdfUtil = new sn_pdfgeneratorutils.PDFGenerationAPI();
+            var pdfOutput = pdfUtil.convertToPDFWithHeaderFooter(htmlContent, targetTable, sysId, filename, pdf_configuration, ARIAL);
+            
+            //Notification about the conversion outcome
+            if(pdfOutput.status == "failure"){
+                gs.error(pdfOutput.message);
+            }
+            if(DEBUG){
+                gs.info(pdfOutput.message);
+                gs.addInfoMessage(pdfOutput.message);
+            }
+
+            //This part is not necessary, but updates the attachment field of your record, change as needed.
+
+            handoverRecord.setValue('attachment', pdfOutput.attachment_id);
+            handoverRecord.update();
+
+            //also not necessary but a leftover for people that want to play around
+            return pdfOutput;
+
+        },
+
+        type: 'PDFGenerator'
+    };]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-15 11:45:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7597c98d3b5d161013b9202a85e45a85</sys_id>
+        <sys_mod_count>57</sys_mod_count>
+        <sys_name>PDFGenerator</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_script_include_7597c98d3b5d161013b9202a85e45a85</sys_update_name>
+        <sys_updated_by>maximilian.broekel@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-10-28 09:55:48</sys_updated_on>
+    </sys_script_include>
+</record_update>

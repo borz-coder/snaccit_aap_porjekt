@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <condition_script/>
+        <description/>
+        <event_name>x_sigh_a_a_portal.incident.created_by_re</event_name>
+        <name>Handle Specific Record Producer Incident</name>
+        <order>100</order>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    var softwareSupportLvl2 = 'AAP Support SW Lvl 2';
+    var hardwareSupportLvl2 = 'AAP Support HW Lvl 2';
+    var softwareSupportLvl1 = 'AAP Support SW Lvl 1';
+    var hardwareSupportLvl1 = 'AAP Support HW Lvl 1';
+    //e9595ef7eb1dd250f5c4f897cad0cdfc
+    var groupName;
+
+    var priority = parseInt(current.getValue('priority'));
+    gs.info('AAP priority: ' + priority + '  ' + typeof priority);
+    gs.addInfoMessage('priority is: ' + priority);
+    var category = current.category;
+
+    switch (priority) {
+        case 1:
+            gs.info('AAP priority: ' + priority + '  ' + typeof priority);
+            if (category == 'software') {
+                groupName = softwareSupportLvl2;
+            } else if (category == 'hardware') {
+                groupName = hardwareSupportLvl2;
+            }
+            break;
+        case 2:
+            gs.info('AAP priority: ' + priority + '  ' + typeof priority);
+            if (category == 'software') {
+                groupName = softwareSupportLvl2;
+            } else if (category == 'hardware') {
+                groupName = hardwareSupportLvl2;
+            }
+            break;
+        case 3:
+            gs.info('AAP priority: ' + priority + '  ' + typeof priority);
+            if (category == 'software') {
+                groupName = softwareSupportLvl1;
+            } else if (category == 'hardware') {
+                groupName = hardwareSupportLvl1;
+            }
+            break;
+        case 4:
+            gs.info('AAP priority: ' + priority + '  ' + typeof priority);
+            if (category == 'software') {
+                groupName = softwareSupportLvl1;
+            } else if (category == 'hardware') {
+                groupName = hardwareSupportLvl1;
+            }
+            break;
+        case 5:
+            gs.info('AAP priority: ' + priority + '  ' + typeof priority);
+            if (category == 'software') {
+                groupName = softwareSupportLvl1;
+            } else if (category == 'hardware') {
+                groupName = hardwareSupportLvl1;
+            }
+            break;
+    }
+
+    gs.info('completed');
+    gs.info('groupName is: ' + groupName);
+    //current.assignment_group = groupName;
+
+    var groupGR = new GlideRecord('sys_user_group');
+    groupGR.addQuery('name', groupName);
+    groupGR.query();
+    if (groupGR.next()) {
+        gs.info('ist in if: ' + groupGR.sys_id);
+        current.setValue('assignment_group', groupGR.sys_id);
+        current.update();
+    }
+
+})(current, previous);]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-28 11:11:46</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4eab370d3b251a5013b9202a85e45a97</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Handle Specific Record Producer Incident</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sysevent_script_action_4eab370d3b251a5013b9202a85e45a97</sys_update_name>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-28 13:40:38</sys_updated_on>
+    </sysevent_script_action>
+</record_update>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>BUSL for Tax Office</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_sigh_a_a_portal.busl_for_tax_office</name>
+        <read_roles/>
+        <suffix>busl_for_tax_office</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>juri.deisling@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:29:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6a9331a9eb251e50f5c4f897cad0cd2c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_sigh_a_a_portal.busl_for_tax_office</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_properties_6a9331a9eb251e50f5c4f897cad0cd2c</sys_update_name>
+        <sys_updated_by>juri.deisling@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-31 11:32:24</sys_updated_on>
+        <type>string</type>
+        <value>PU02</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=6a9331a9eb251e50f5c4f897cad0cd2c"/>
+</record_update>

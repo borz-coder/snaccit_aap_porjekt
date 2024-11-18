@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="PDF Properties">9f45db4debe19a50f5c4f897cad0cd13</category>
+        <order>100</order>
+        <property display_value="x_sigh_a_a_portal.invoicePrefix" name="x_sigh_a_a_portal.invoicePrefix">54e9e309eb659a50f5c4f897cad0cdf5</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>maximilian.broekel@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-10-28 09:50:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b05aabc5eb659a50f5c4f897cad0cdbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sigh_a_a_portal.invoicePrefix.PDF Properties</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_b05aabc5eb659a50f5c4f897cad0cdbb</sys_update_name>
+        <sys_updated_by>maximilian.broekel@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-10-28 09:50:44</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <can_iterate>false</can_iterate>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <name>Asset CSV-Export</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="Juri Deisling">53d2511b1b75c2503330859c7b4bcb69</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2024-11-13 11:44:28</run_start>
+        <run_time>1969-12-31 23:00:00</run_time>
+        <run_type>monthly</run_type>
+        <script><![CDATA[//Festlegen von Konstanten für die System Properties aus dem System Property Catalog CSV Properties
+BUSL_AGENCY = gs.getProperty('x_sigh_a_a_portal.busl_for_agency','default value');
+BUSL_TAXOFFICE = gs.getProperty('x_sigh_a_a_portal.busl_for_tax_office','default value');
+ADDITIONAL_INFORMATION_TYPE = gs.getProperty('x_sigh_a_a_portal.additional_information_type','default value');
+ADDITIONAL_INFORMATION_TEXT = gs.getProperty('x_sigh_a_a_portal.additional_information_text','default value');
+VAT = 19;
+
+function calculateNetPrice(priceWithVAT) {
+    return priceWithVAT / (1 + VAT / 100);
+}
+
+function calculateVAT(priceWithVAT,netPrice) {
+    return (priceWithVAT - netPrice);
+}
+
+function getAdditionalInformation(){
+	var additional_information = '';
+	var current_date = new Date();
+	switch(ADDITIONAL_INFORMATION_TYPE){
+		case 'Month':
+			var months = ["Januar", "Februar", "März", "April", "Mai", "Juni", 
+                		  "Juli", "August", "September", "Oktober", "November", "Dezember"];
+			additional_information = ADDITIONAL_INFORMATION_TEXT+ ' '+ months[current_date.getMonth()];
+			break;
+	}
+	
+	return additional_information;
+}
+
+
+//BOM \uFEFF für UTF-8 wird verwendet um bspw. Excel mitzuteilen die CSV-Datei UTF-8 codiert zu interpretieren(bspw. für das € - Symbol)
+var csvString = "\uFEFF";
+var csvHeader = ["Agency","BUSL","Zusatztext","Produkt","Preis"];
+var csvBody = "";
+var data = {};
+var grAgentComps = new GlideRecord('core_company');
+grAgentComps.addNotNullQuery('parent'); // Agencies sind Companies, bei denen der parent nicht leer ist
+grAgentComps.orderBy('name');
+grAgentComps.query();
+
+csvString += csvHeader.join(';') + '\r\n';  //Aufbau des Headers für das CSV
+
+//Agencies werden in einer Schleife durchlaufen
+while(grAgentComps.next()){
+	var buslArr = [BUSL_AGENCY,BUSL_TAXOFFICE];
+	var vatNetPriceSwitch = true;
+	
+		var companyName = grAgentComps.getValue('name');
+		var gaAsset = new GlideRecord('alm_asset');
+		gaAsset.addQuery('company',grAgentComps.getValue('sys_id'));	
+		gaAsset.query();
+		//Assets die zu den Agencies gehören, werden  in einer Schleife durchlaufen
+		while(gaAsset.next()){
+			buslArr.forEach(function(busl) {
+				var tempAssetArr = [];
+				var priceWithVAT = parseFloat(Number(gaAsset.getValue('cost')));
+				var netPrice = calculateNetPrice(priceWithVAT).toFixed(2);
+				var vat = calculateVAT(priceWithVAT,netPrice).toFixed(2);
+				var product = gaAsset.getValue('display_name');
+				var additional_information = getAdditionalInformation();
+
+				tempAssetArr.push('"'+companyName+'"');
+				tempAssetArr.push('"'+busl+'"');
+				tempAssetArr.push('"'+additional_information+'"');
+				tempAssetArr.push('"'+product+'"');
+
+				if(vatNetPriceSwitch){
+					tempAssetArr.push('"'+ netPrice.replace(".",",") +' €"');
+					vatNetPriceSwitch = false;
+				}
+				else{
+					tempAssetArr.push('"'+ vat.replace(".",",") +' €"');
+					vatNetPriceSwitch = true;
+				}
+				
+				csvBody += tempAssetArr.join(";") + "\r\n"; //Aufbau des Body für das CSV
+			});
+		}
+}
+
+//Zusammenfügen des Headers und des Body 
+csvString += csvBody;
+
+//Erzeugung eines GlideSysAttachment-Objekts
+var grAttachment = new GlideSysAttachment();
+var grRec  = new GlideRecord('sys_attachment');
+
+//Abspeichern der CSV in der sys_attachment-Tabelle
+grAttachment.write(grRec,'AssetTest01.csv','application/csv',csvString);
+gs.info('CSV-Datei wurde erfolgreich erstellt');]]></script>
+        <source_filter/>
+        <source_table/>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>juri.deisling@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-13 11:46:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8fcd5edeeb315250f5c4f897cad0cd51</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Asset CSV-Export</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sysauto_script_8fcd5edeeb315250f5c4f897cad0cd51</sys_update_name>
+        <sys_updated_by>juri.deisling@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-13 11:47:17</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

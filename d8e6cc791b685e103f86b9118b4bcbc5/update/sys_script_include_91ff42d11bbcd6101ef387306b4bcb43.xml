@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_sigh_a_a_portal.AgencyInvoice_auxiliary_functions</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>AgencyInvoice_auxiliary_functions</name>
+        <script><![CDATA[var AgencyInvoice_auxiliary_functions = Class.create();
+AgencyInvoice_auxiliary_functions.prototype = {
+    initialize: function() {
+    },
+	pfdCategoryFormatter: function(array) {
+		var res = '';
+		for(var i = 0; i<array.length; i++) {
+			res += '<p><strong>' + array[i].Modelname + '</strong></p>';
+			res += '<p>&nbsp;&nbsp;&nbsp; <strong> Stückzahl: </strong>' + array[i].Stueckzahl;
+			res += ', <strong> Kosten: </strong>' + array[i].Kosten;
+			res += ', <strong>Mwst: </strong>' + array[i].Mwst + '</p>';
+		}
+		return res;
+	},
+
+	inventarHashcreation : function(array) {
+		var res = '';
+		for(var i = 0; i<array.length; i++) {
+			res += array[i].Modelname + ', ';
+			res += array[i].Stueckzahl + ', ';
+			res += array[i].Kosten + ', ';
+			res += array[i].Mwst + ', ';
+		}
+		gs.addInfoMessage(res);
+		return res;
+	},
+    type: 'AgencyInvoice_auxiliary_functions'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>anton.goldin@agineo.de</sys_created_by>
+        <sys_created_on>2024-09-21 15:22:43</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>91ff42d11bbcd6101ef387306b4bcb43</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>AgencyInvoice_auxiliary_functions</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_script_include_91ff42d11bbcd6101ef387306b4bcb43</sys_update_name>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-21 06:54:45</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="cmdb_model" version="2" view="agency_asset_portal">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="cmdb_model" element="NULL" name="cmdb_model" parent="NULL" relationship="NULL" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">7640269e1b6412501ef387306b4bcbd2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-09-12 08:36:54</sys_created_on>
+            <sys_id>f640269e1b6412501ef387306b4bcbd3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-09-12 08:36:54</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>description</element>
+            <list_id display_value="cmdb_model" element="NULL" name="cmdb_model" parent="NULL" relationship="NULL" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">7640269e1b6412501ef387306b4bcbd2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-09-12 08:36:54</sys_created_on>
+            <sys_id>fe40269e1b6412501ef387306b4bcbd3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-09-12 08:36:54</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>picture</element>
+            <list_id display_value="cmdb_model" element="NULL" name="cmdb_model" parent="NULL" relationship="NULL" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">7640269e1b6412501ef387306b4bcbd2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-09-12 08:36:54</sys_created_on>
+            <sys_id>f240269e1b6412501ef387306b4bcbd4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-09-12 08:36:54</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cost</element>
+            <list_id display_value="cmdb_model" element="NULL" name="cmdb_model" parent="NULL" relationship="NULL" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">7640269e1b6412501ef387306b4bcbd2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-09-12 08:36:54</sys_created_on>
+            <sys_id>724062de1b6412501ef387306b4bcb8f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-09-12 08:36:54</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>status</element>
+            <list_id display_value="cmdb_model" element="NULL" name="cmdb_model" parent="NULL" relationship="NULL" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">7640269e1b6412501ef387306b4bcbd2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-09-12 08:36:54</sys_created_on>
+            <sys_id>764062de1b6412501ef387306b4bcb8f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-09-12 08:36:54</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>ref_cmdb_hardware_product_model.useful_life</element>
+            <list_id display_value="cmdb_model" element="NULL" name="cmdb_model" parent="NULL" relationship="NULL" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">7640269e1b6412501ef387306b4bcbd2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-09-12 08:36:54</sys_created_on>
+            <sys_id>7a4062de1b6412501ef387306b4bcb8f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-09-12 08:36:54</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>model_number</element>
+            <list_id display_value="cmdb_model" element="NULL" name="cmdb_model" parent="NULL" relationship="NULL" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">7640269e1b6412501ef387306b4bcbd2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-09-12 08:36:54</sys_created_on>
+            <sys_id>7e4062de1b6412501ef387306b4bcb8f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-09-12 08:36:54</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cmdb_model_category</element>
+            <list_id display_value="cmdb_model" element="NULL" name="cmdb_model" parent="NULL" relationship="NULL" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">7640269e1b6412501ef387306b4bcbd2</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-09-12 08:36:54</sys_created_on>
+            <sys_id>724062de1b6412501ef387306b4bcb90</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-09-12 08:36:54</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>cmdb_model</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-09-12 08:36:54</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7640269e1b6412501ef387306b4bcbd2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cmdb_model</sys_name>
+            <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+            <sys_update_name>sys_ui_list_cmdb_model_agency_asset_portal</sys_update_name>
+            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-09-12 08:36:54</sys_updated_on>
+            <sys_user/>
+            <view display_value="Agency Asset Portal" name="agency_asset_portal">f94dc8b51b285e101ef387306b4bcb71</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <can_iterate>false</can_iterate>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <name>Agency Asset Portal: Create Invoices for agencies</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="AAP Interface User">a5a89595eb599610f5c4f897cad0cdec</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2024-09-11 09:36:24</run_start>
+        <run_time>1969-12-31 23:00:00</run_time>
+        <run_type>monthly</run_type>
+        <script><![CDATA[/*
+	Sums up costs of all assets assigned to an agency company.
+	Agencies are determined as entries in core_company with "parent-field not empty". 
+	Calculation is done as follows: 
+	Iterate over all companies in core_company with parent-field not empty.
+	Then iterate over all users for each of these companies.
+	Afterwards sum up costs of all assets for each user.
+	Lastly sum up these costs for each user respectively their company and insert new entry in Invoices table x_sigh_a_a_portal_invoices.
+	Netto cost is stored in field netto_price, Brutto cost in brutto_price.
+	After inserting the new records, an attachment file as a pdf ist stored in the field "attachment" of the invoices table.
+	Last of all, during the iteration of the users per company, an array is populated by the email addresses of users with the role "x_sigh_a_a_portal.agency_manager" for email notification.
+*/
+var agentComps = new GlideRecord('core_company');
+
+var auxFunctions = new AgencyInvoice_auxiliary_functions();
+agentComps.addNotNullQuery('parent');
+agentComps.query();
+
+while(agentComps.next()){
+	// formattedDate einmal für Spalte 'date' in Invoice-Tabelle, und dann im Titel der neu anzulegenden pdf-Datei
+	var gdt = new GlideDateTime();
+	var formattedDate = gdt.getLocalDate();
+	var skipCompanyLoop = false;
+
+	var currInvInActualMonth = new GlideRecord('x_sigh_a_a_portal_invoices');
+	currInvInActualMonth.addQuery('company', agentComps.getValue('sys_id'));
+	currInvInActualMonth.query();
+	while(currInvInActualMonth.next()) {
+		var val = new GlideDateTime(currInvInActualMonth.getValue('date'));
+		if(formattedDate.getMonthLocalTime() === val.getMonthLocalTime()) {
+			gs.info("Skipping invoice creation for company: " + agentComps.getValue('name') + " because Inoice already exists in this month");
+			skipCompanyLoop = true;
+			break;
+		}
+	}
+
+	if(skipCompanyLoop) {
+		continue;
+	}
+	
+	
+	// Netto Kosten gesamt für Agentur-company in dieser Iteration:
+	var netto_cost = 0;
+	// Brutto Kosten gesamt für Agentur-company in dieser Iteration:
+	var brutto_cost = 0;
+	// Liste von Email-Addressender Agenturleiter für Agentur-company in dieser Iteration, relevant zum Versenden der Mails:
+	var agLeadsMails = [];
+	// Liste von ID's aller Mitarbeiter dieser Agentur, relevant zum Eingrenzen aller Assets für Mitarbeiter, die zur Agentur gehören:
+	var agMembIDs = [];
+	var groupedAssetList = [];
+	// String mit HTML Syntax, in welchem pro Asset Category und Mwst. das inventar der Assets für diese Agentur drin steht. Wird beim pdf generieren weiter unten dran gehangen: 
+	var assetCategPrice = '';
+	// String, in dem für die Agentur in der jetzigen Iteration ein Hash-String vom fertigen String assetCategPrice enthalten ist. Wichtig beim unterscheiden, ob die Rechnung sich zum Vormonat geändert hat. !!!Da ist die HTML Syntax von assetCategPrice auch drin! Wenn sich was am HTML ändert, wird sich auch am Hash was ändern!!!
+	var agInventarHash = '';
+	var agencyLeads = new GlideRecord('sys_user');
+	
+	agencyLeads.addQuery('company', agentComps.getValue('sys_id'));
+	agencyLeads.query();
+
+	// Codeabschnitt zum Sammeln der user-IDs in Liste, und Email-Addressen der Agenturleiter in anderer Liste
+	while(agencyLeads.next()){
+		agMembIDs.push(agencyLeads.getValue('sys_id'));
+
+		var userRole = new GlideRecord('sys_user_has_role');
+		userRole.addQuery('user', agencyLeads.sys_id);
+		// Rolle des Agenturleiters ist hier: "x_sigh_a_a_portal.agency_manager"
+		userRole.addQuery('role.name', 'x_sigh_a_a_portal.agency_manager');
+		userRole.query();
+		if(userRole.next()){
+			agLeadsMails.push(agencyLeads.getValue('email'));
+		}
+	}
+	
+	// Codeabschnitt zum Erstellen eines Hashes. Notwendig um später beurteilen zu könnnen ob sich der Bestand verändert hat.
+	var agentAssets = new GlideAggregate('alm_asset');
+	agentAssets.addQuery('owned_by', 'IN', agMembIDs);
+	agentAssets.addAggregate('COUNT');
+	agentAssets.addAggregate('SUM', 'cost');
+	agentAssets.groupBy('model.display_name');
+	agentAssets.groupBy('x_sigh_a_a_portal_vat');
+	agentAssets.orderBy('model.display_name');
+	agentAssets.orderBy('x_sigh_a_a_portal_vat');
+
+	agentAssets.query();
+	while(agentAssets.next()){
+		var eurocost = parseFloat(Number(agentAssets.getAggregate('SUM', 'cost'))).toFixed(2).replace('.', ',') + ' €';
+		var groupedAssetInfo = {
+			Modelname: agentAssets.getValue('model.display_name'),
+			Stueckzahl: agentAssets.getAggregate('COUNT'),
+			Kosten: eurocost,
+			Mwst: agentAssets.getValue('x_sigh_a_a_portal_vat')
+		};
+		groupedAssetList.push(groupedAssetInfo);		
+		var temp_cost = parseFloat(agentAssets.getAggregate('SUM', 'cost'));
+		netto_cost += temp_cost;
+		brutto_cost += Number(temp_cost * (1 + parseFloat(agentAssets.getValue('x_sigh_a_a_portal_vat'))/100));
+	}
+	assetCategPrice = auxFunctions.pfdCategoryFormatter(groupedAssetList);
+
+	var digest = new GlideDigest();
+	agInventarHash = digest.getSHA1Base64(auxFunctions.inventarHashcreation(groupedAssetList));
+	
+	// Codeabschnitt zum Erstellen eines neuen Invoice-Eintrages:
+	var invEntry = new GlideRecord('x_sigh_a_a_portal_invoices');
+	invEntry.initialize();
+	invEntry.setValue('netto_price', netto_cost);
+	invEntry.setValue('brutto_price', brutto_cost);
+	invEntry.setValue('company', agentComps.sys_id);
+	invEntry.setValue('date', formattedDate);
+	invEntry.setValue('inventar_hash', agInventarHash);
+
+	// 'newInvEntry' ist vom Typ her ein Gliderecord:
+	var newInvEntry = invEntry.insert();
+	gs.info("New Entry in x_sigh_a_a_portal_invoices table created: " + newInvEntry);
+
+	// Codeabschnitt zum Erstellen des pdf-Attachment in Tabelle 'sys_attachment' und anhängen an Feld 'attachment' in Invoice-tabelle:
+	var pdfGenerator = new PDFGenerator();
+
+	//workaround to get record with populated refence fields
+	var newEntry = new GlideRecord("x_sigh_a_a_portal_invoices");
+	if(newEntry.get(newInvEntry)){
+		//Create PDF	
+		pdfGenerator.generatePDF(newEntry);
+
+	}
+
+
+	// Codeabschnitt zum Versenden der Emails an die Agenturleiter
+	var agPrevCompInvoice = new GlideRecord('x_sigh_a_a_portal_invoices');
+	agPrevCompInvoice.addQuery('company', agentComps.getValue('sys_id'));
+	agPrevCompInvoice.orderByDesc('date');
+	agPrevCompInvoice.query();
+
+	if(agPrevCompInvoice.next()){
+		// Wenn es einen Eintrag zum Vormonat für diese Company in der invoice tabelle existiert:
+		if(agPrevCompInvoice.next() ){
+			// Wenn sich was am Bestand zum Vormonat geändert hat:
+			if(!(agInventarHash === agPrevCompInvoice.getValue('inventar_hash'))){
+					for(var i = 0; i<agLeadsMails.length; i++){
+						gs.info("Email soll versendet werden für Company " + agentComps.getValue('name') + ": " + agLeadsMails[i]);
+						gs.eventQueue("x_sigh_a_a_portal.agency.agency_pdf.em",invEntry, agLeadsMails[i], agentComps.getValue('name'));
+					}
+			}
+		// Wenn es keinen Eintrag zum Vormonat für diese Company in der invoice tabelle existiert:
+		} else {
+			for(var j = 0; j < agLeadsMails.length; j++){
+				gs.info("Email soll versendet werden für Company " + agentComps.getValue('name') + ": " + agLeadsMails[j]);
+				gs.eventQueue("x_sigh_a_a_portal.agency.agency_pdf.em",invEntry, agLeadsMails[j], agentComps.getValue('name'));
+			}
+		}
+	}
+}]]></script>
+        <source_filter/>
+        <source_table/>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>anton.goldin@agineo.de</sys_created_by>
+        <sys_created_on>2024-09-11 09:37:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b454a18e1be0de103f86b9118b4bcbce</sys_id>
+        <sys_mod_count>63</sys_mod_count>
+        <sys_name>Agency Asset Portal: Create Invoices for agencies</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sysauto_script_b454a18e1be0de103f86b9118b4bcbce</sys_update_name>
+        <sys_updated_by>maximilian.broekel@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-10-16 09:11:56</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

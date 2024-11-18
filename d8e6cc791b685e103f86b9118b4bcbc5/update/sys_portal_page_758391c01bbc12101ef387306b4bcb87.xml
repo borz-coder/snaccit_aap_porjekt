@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2024-11-18 12:03:37">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout display_value="layout_2_across">f6defafa0a0a0b12000d5016bd12ff06</layout>
+        <order/>
+        <read_roles>snc_internal</read_roles>
+        <roles/>
+        <selectable>false</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-09-17 13:30:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>758391c01bbc12101ef387306b4bcb87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>catalog_default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_portal_page_758391c01bbc12101ef387306b4bcb87</sys_update_name>
+        <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-09-17 13:30:51</sys_updated_on>
+        <title>catalog_default</title>
+        <user/>
+        <view>catalog_default</view>
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone999</dropzone>
+                <offset>1</offset>
+                <page display_value="catalog_default">758391c01bbc12101ef387306b4bcb87</page>
+                <summary/>
+                <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                <sys_id>368bfe2e3bfd5e1013b9202a85e45abc</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">368bfe2e3bfd5e1013b9202a85e45abc</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>328bfe2e3bfd5e1013b9202a85e45abd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>com.glideapp.servicecatalog.RenderCategory</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_link_class</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">368bfe2e3bfd5e1013b9202a85e45abc</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>328bfe2e3bfd5e1013b9202a85e45abe</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>category_title_link</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>render_title</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">368bfe2e3bfd5e1013b9202a85e45abc</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>368bfe2e3bfd5e1013b9202a85e45abd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_link</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">368bfe2e3bfd5e1013b9202a85e45abc</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>368bfe2e3bfd5e1013b9202a85e45abe</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>com.glideapp.servicecatalog_category_view.do?v=1&amp;amp;amp;amp;sysparm_parent=d8609ddfebd91250f5c4f897cad0cd69&amp;amp;amp;amp;sysparm_catalog=954e0f921b6812501ef387306b4bcb28&amp;amp;amp;amp;sysparm_catalog_view=catalog_default</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>fromHome</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">368bfe2e3bfd5e1013b9202a85e45abc</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>3a8bfe2e3bfd5e1013b9202a85e45abd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">368bfe2e3bfd5e1013b9202a85e45abc</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>3a8bfe2e3bfd5e1013b9202a85e45abe</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>&amp;lt;a onmousedown='Event.stop(event); return false;' class='category_title_link' href='com.glideapp.servicecatalog_category_view.do?v=1&amp;amp;sysparm_parent=d8609ddfebd91250f5c4f897cad0cd69&amp;amp;sysparm_catalog=954e0f921b6812501ef387306b4bcb28&amp;amp;sysparm_catalog_view=catalog_default&amp;amp;sysparm_view=catalog_default'&amp;gt;Serviceportal&amp;lt;/a&amp;gt;</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>catalog</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">368bfe2e3bfd5e1013b9202a85e45abc</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>3e8bfe2e3bfd5e1013b9202a85e45abd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>954e0f921b6812501ef387306b4bcb28</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">368bfe2e3bfd5e1013b9202a85e45abc</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>b28bfe2e3bfd5e1013b9202a85e45abf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>category</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>macro</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">368bfe2e3bfd5e1013b9202a85e45abc</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>b68bfe2e3bfd5e1013b9202a85e45abc</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>sc_catalog_homepage_category_item</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">368bfe2e3bfd5e1013b9202a85e45abc</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>b68bfe2e3bfd5e1013b9202a85e45abf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>758391c01bbc12101ef387306b4bcb87</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">368bfe2e3bfd5e1013b9202a85e45abc</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>ba8bfe2e3bfd5e1013b9202a85e45abc</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>d8609ddfebd91250f5c4f897cad0cd69</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>catalog_view</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">368bfe2e3bfd5e1013b9202a85e45abc</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>be8bfe2e3bfd5e1013b9202a85e45abe</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>catalog_default</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone999</dropzone>
+                <offset>0</offset>
+                <page display_value="catalog_default">758391c01bbc12101ef387306b4bcb87</page>
+                <summary/>
+                <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                <sys_id>7e8bfe2e3bfd5e1013b9202a85e45ab8</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">7e8bfe2e3bfd5e1013b9202a85e45ab8</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>728bfe2e3bfd5e1013b9202a85e45abb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>category</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">7e8bfe2e3bfd5e1013b9202a85e45ab8</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>768bfe2e3bfd5e1013b9202a85e45abb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>d2752d02eb39de10f5c4f897cad0cd87</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">7e8bfe2e3bfd5e1013b9202a85e45ab8</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>f28bfe2e3bfd5e1013b9202a85e45ab9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>com.glideapp.servicecatalog.RenderCategory</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_link_class</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">7e8bfe2e3bfd5e1013b9202a85e45ab8</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>f28bfe2e3bfd5e1013b9202a85e45aba</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>category_title_link</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>render_title</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">7e8bfe2e3bfd5e1013b9202a85e45ab8</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>f68bfe2e3bfd5e1013b9202a85e45ab9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_link</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">7e8bfe2e3bfd5e1013b9202a85e45ab8</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>f68bfe2e3bfd5e1013b9202a85e45aba</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>com.glideapp.servicecatalog_category_view.do?v=1&amp;amp;sysparm_parent=d2752d02eb39de10f5c4f897cad0cd87&amp;amp;sysparm_catalog=954e0f921b6812501ef387306b4bcb28&amp;amp;sysparm_catalog_view=catalog_default</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>fromHome</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">7e8bfe2e3bfd5e1013b9202a85e45ab8</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>fa8bfe2e3bfd5e1013b9202a85e45ab9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">7e8bfe2e3bfd5e1013b9202a85e45ab8</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>fa8bfe2e3bfd5e1013b9202a85e45aba</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>Hardware Management</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>catalog_view</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">7e8bfe2e3bfd5e1013b9202a85e45ab8</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>fa8bfe2e3bfd5e1013b9202a85e45abb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>catalog_default</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>macro</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">7e8bfe2e3bfd5e1013b9202a85e45ab8</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>fe8bfe2e3bfd5e1013b9202a85e45ab8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>sc_catalog_homepage_category_item</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>catalog</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">7e8bfe2e3bfd5e1013b9202a85e45ab8</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>fe8bfe2e3bfd5e1013b9202a85e45ab9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>954e0f921b6812501ef387306b4bcb28</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">7e8bfe2e3bfd5e1013b9202a85e45ab8</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>fe8bfe2e3bfd5e1013b9202a85e45abb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>758391c01bbc12101ef387306b4bcb87</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone0</dropzone>
+                <offset>0</offset>
+                <page display_value="catalog_default">758391c01bbc12101ef387306b4bcb87</page>
+                <summary/>
+                <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                <sys_id>aa8bfe2e3bfd5e1013b9202a85e45ab4</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>render_title</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">aa8bfe2e3bfd5e1013b9202a85e45ab4</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>228bfe2e3bfd5e1013b9202a85e45ab6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_link</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">aa8bfe2e3bfd5e1013b9202a85e45ab4</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>228bfe2e3bfd5e1013b9202a85e45ab7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>com.glideapp.servicecatalog_category_view.do?v=1&amp;amp;amp;amp;amp;amp;sysparm_parent=f7de0f161b6812501ef387306b4bcb22&amp;amp;amp;amp;amp;amp;sysparm_catalog=954e0f921b6812501ef387306b4bcb28&amp;amp;amp;amp;amp;amp;sysparm_catalog_view=catalog_default</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>fromHome</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">aa8bfe2e3bfd5e1013b9202a85e45ab4</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>268bfe2e3bfd5e1013b9202a85e45ab6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>catalog_view</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">aa8bfe2e3bfd5e1013b9202a85e45ab4</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>268bfe2e3bfd5e1013b9202a85e45ab7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>catalog_default</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>macro</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">aa8bfe2e3bfd5e1013b9202a85e45ab4</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>2a8bfe2e3bfd5e1013b9202a85e45ab5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>sc_catalog_homepage_category_item</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>catalog</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">aa8bfe2e3bfd5e1013b9202a85e45ab4</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>2a8bfe2e3bfd5e1013b9202a85e45ab6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>954e0f921b6812501ef387306b4bcb28</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">aa8bfe2e3bfd5e1013b9202a85e45ab4</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>2a8bfe2e3bfd5e1013b9202a85e45ab7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>category</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">aa8bfe2e3bfd5e1013b9202a85e45ab4</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>2e8bfe2e3bfd5e1013b9202a85e45ab4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>f7de0f161b6812501ef387306b4bcb22</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">aa8bfe2e3bfd5e1013b9202a85e45ab4</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>2e8bfe2e3bfd5e1013b9202a85e45ab5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>com.glideapp.servicecatalog.RenderCategory</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_link_class</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">aa8bfe2e3bfd5e1013b9202a85e45ab4</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>2e8bfe2e3bfd5e1013b9202a85e45ab6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>category_title_link</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">aa8bfe2e3bfd5e1013b9202a85e45ab4</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>2e8bfe2e3bfd5e1013b9202a85e45ab7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value>&amp;lt;a onmousedown='Event.stop(event); return false;' class='category_title_link' href='com.glideapp.servicecatalog_category_view.do?v=1&amp;amp;sysparm_parent=f7de0f161b6812501ef387306b4bcb22&amp;amp;sysparm_catalog=954e0f921b6812501ef387306b4bcb28&amp;amp;sysparm_catalog_view=catalog_default&amp;amp;sysparm_view=catalog_default'&amp;gt;Lease Documents&amp;lt;/a&amp;gt;</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 14.11.2024 09:32:54">aa8bfe2e3bfd5e1013b9202a85e45ab4</portal_section>
+                        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+                        <sys_created_on>2024-11-14 08:32:54</sys_created_on>
+                        <sys_id>b28bfe2e3bfd5e1013b9202a85e45ab8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+                        <sys_updated_on>2024-11-14 08:32:54</sys_updated_on>
+                        <value/>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal_page>
+</record_update>

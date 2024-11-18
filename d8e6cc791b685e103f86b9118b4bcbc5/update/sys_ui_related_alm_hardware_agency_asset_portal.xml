@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="alm_hardware" version="2" view="agency_asset_portal">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Hardware - Agency Asset Portal" name="alm_hardware" related_list="NULL" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">e6acddc21be0de103f86b9118b4bcbd9</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>alm_asset.parent</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>selahattin.yesiloez@agineo.de</sys_created_by>
+            <sys_created_on>2024-09-11 09:02:56</sys_created_on>
+            <sys_id>aaacddc21be0de103f86b9118b4bcbda</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>selahattin.yesiloez@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-09-11 09:02:56</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Hardware - Agency Asset Portal" name="alm_hardware" related_list="NULL" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">e6acddc21be0de103f86b9118b4bcbd9</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>fm_expense_line.asset</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>selahattin.yesiloez@agineo.de</sys_created_by>
+            <sys_created_on>2024-09-11 09:02:56</sys_created_on>
+            <sys_id>a2acddc21be0de103f86b9118b4bcbdb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>selahattin.yesiloez@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-09-11 09:02:56</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Hardware - Agency Asset Portal" name="alm_hardware" related_list="NULL" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">e6acddc21be0de103f86b9118b4bcbd9</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>x_sigh_a_a_portal_m2m_alm_asset_x_sigh_a_a_p.alm_asset</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>selahattin.yesiloez@agineo.de</sys_created_by>
+            <sys_created_on>2024-09-11 09:02:56</sys_created_on>
+            <sys_id>a6acddc21be0de103f86b9118b4bcbdb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>selahattin.yesiloez@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-09-11 09:02:56</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Hardware - Agency Asset Portal</calculated_name>
+            <filter/>
+            <name>alm_hardware</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>selahattin.yesiloez@agineo.de</sys_created_by>
+            <sys_created_on>2024-09-11 09:02:56</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e6acddc21be0de103f86b9118b4bcbd9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Hardware - Agency Asset Portal</sys_name>
+            <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+            <sys_update_name>sys_ui_related_alm_hardware_agency_asset_portal</sys_update_name>
+            <sys_updated_by>selahattin.yesiloez@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-09-11 09:02:56</sys_updated_on>
+            <sys_user/>
+            <view display_value="Agency Asset Portal" name="agency_asset_portal">f94dc8b51b285e101ef387306b4bcb71</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

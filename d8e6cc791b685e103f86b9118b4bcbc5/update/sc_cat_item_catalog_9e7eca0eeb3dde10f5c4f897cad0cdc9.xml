@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Test_Printer_2">ab0e4ecaeb3dde10f5c4f897cad0cd1d</sc_cat_item>
+        <sc_catalog display_value="Agency Asset Portal Services">954e0f921b6812501ef387306b4bcb28</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>milan.schulze@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-12 15:59:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9e7eca0eeb3dde10f5c4f897cad0cdc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Agency Asset Portal Services.Test_Printer_2</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_9e7eca0eeb3dde10f5c4f897cad0cdc9</sys_update_name>
+        <sys_updated_by>milan.schulze@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-12 15:59:01</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>

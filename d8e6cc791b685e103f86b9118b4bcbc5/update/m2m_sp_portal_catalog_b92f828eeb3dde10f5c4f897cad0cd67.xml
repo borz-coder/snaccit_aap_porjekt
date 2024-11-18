@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_catalog">
+    <m2m_sp_portal_catalog action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <order>100</order>
+        <sc_catalog display_value="Agency Asset Portal Services">954e0f921b6812501ef387306b4bcb28</sc_catalog>
+        <sp_portal display_value="Agency Asset Portal">4dba640eeb71de10f5c4f897cad0cd70</sp_portal>
+        <sys_class_name>m2m_sp_portal_catalog</sys_class_name>
+        <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-12 16:02:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b92f828eeb3dde10f5c4f897cad0cd67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Agency Asset Portal Services.Agency Asset Portal</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>m2m_sp_portal_catalog_b92f828eeb3dde10f5c4f897cad0cd67</sys_update_name>
+        <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-12 16:02:00</sys_updated_on>
+    </m2m_sp_portal_catalog>
+</record_update>

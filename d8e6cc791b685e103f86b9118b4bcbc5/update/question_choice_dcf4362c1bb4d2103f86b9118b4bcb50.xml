@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
     <question_choice action="INSERT_OR_UPDATE">
         <inactive>false</inactive>
-        <misc>0</misc>
         <order>106</order>
         <published_ref/>
-        <question display_value="Please select the month of the invoice you need">f994b62c1bb4d2103f86b9118b4bcbb7</question>
-        <rec_misc>0</rec_misc>
+        <question display_value="month_of_the_invoice">f994b62c1bb4d2103f86b9118b4bcbb7</question>
         <sys_class_name>question_choice</sys_class_name>
         <sys_created_by>bogdan.konovalov@agineo.de</sys_created_by>
         <sys_created_on>2024-09-19 09:55:12</sys_created_on>

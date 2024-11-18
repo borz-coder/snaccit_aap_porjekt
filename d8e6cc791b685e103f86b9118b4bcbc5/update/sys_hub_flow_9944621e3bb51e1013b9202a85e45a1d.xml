@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>A flow process engine to process orders of items that dont require installation and are sent by postal services (as an instance)</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>aap_fpe_no_installation</internal_name>
+        <label_cache>[{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"389bb565-ccab-47b5-bf04-d2068f8be47d":["requested_item"]},"attributes":{"default_search_field":"number"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>AAP_FPE_no_installation</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-13 12:12:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9944621e3bb51e1013b9202a85e45a1d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>AAP_FPE_no_installation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_hub_flow_9944621e3bb51e1013b9202a85e45a1d</sys_update_name>
+        <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-13 13:23:35</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=9944621e3bb51e1013b9202a85e45a1d"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=9944621e3bb51e1013b9202a85e45a1d"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9944621e3bb51e1013b9202a85e45a1d^sys_idNOT IN9303803aebf99250f5c4f897cad0cd8f,d936a2123bf51e1013b9202a85e45aa4,e4956ade3bb51e1013b9202a85e45a4e"/>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="AAP_FPE_no_installation">9944621e3bb51e1013b9202a85e45a1d</flow>
+        <label>Ordered</label>
+        <order>0</order>
+        <stage_id>464f5363-217a-4eaf-bf51-f3532cc4cb9b</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-14 13:45:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9303803aebf99250f5c4f897cad0cd8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-14 13:45:20</sys_updated_on>
+        <type>standard</type>
+        <value>new_stage_2</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="AAP_FPE_no_installation">9944621e3bb51e1013b9202a85e45a1d</flow>
+        <label>Approved</label>
+        <order>2</order>
+        <stage_id>4eb8d7b5-7118-488c-8d55-a299bfd3c1f8</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-13 12:21:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d936a2123bf51e1013b9202a85e45aa4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-14 13:45:20</sys_updated_on>
+        <type>standard</type>
+        <value>new_stage_1</value>
+    </sys_hub_flow_stage>
+    <sys_hub_flow_stage action="INSERT_OR_UPDATE">
+        <always_show>true</always_show>
+        <ancestor_array_position>0</ancestor_array_position>
+        <ancestor_component_id/>
+        <ancestor_stage_id/>
+        <ancestral_if_else_logic/>
+        <component_indexes/>
+        <duration>1970-01-01 00:00:00</duration>
+        <flow display_value="AAP_FPE_no_installation">9944621e3bb51e1013b9202a85e45a1d</flow>
+        <label>Recieved</label>
+        <order>1</order>
+        <stage_id>e1aca90d-d8b8-4882-80a8-f47412d128f2</stage_id>
+        <states>{"pending":"Pending - has not started","in_progress":"In progress","skipped":"Skipped","complete":"Completed","error":"Error"}</states>
+        <sys_class_name>sys_hub_flow_stage</sys_class_name>
+        <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-13 12:18:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e4956ade3bb51e1013b9202a85e45a4e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-14 13:45:20</sys_updated_on>
+        <type>standard</type>
+        <value>new_stage_0</value>
+    </sys_hub_flow_stage>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9944621e3bb51e1013b9202a85e45a1d^sys_idNOT INd944621e3bb51e1013b9202a85e45a1e"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9944621e3bb51e1013b9202a85e45a1d</id>
+        <name>AAP_FPE_no_installation</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-13 12:12:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d944621e3bb51e1013b9202a85e45a1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-13 12:12:45</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d944621e3bb51e1013b9202a85e45a1e"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9944621e3bb51e1013b9202a85e45a1d"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=9944621e3bb51e1013b9202a85e45a1d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9944621e3bb51e1013b9202a85e45a1d"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=9944621e3bb51e1013b9202a85e45a1d"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=9944621e3bb51e1013b9202a85e45a1d"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=9944621e3bb51e1013b9202a85e45a1d"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9944621e3bb51e1013b9202a85e45a1d"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9944621e3bb51e1013b9202a85e45a1d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9944621e3bb51e1013b9202a85e45a1d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9944621e3bb51e1013b9202a85e45a1d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_9944621e3bb51e1013b9202a85e45a1d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9944621e3bb51e1013b9202a85e45a1d"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=9944621e3bb51e1013b9202a85e45a1d"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=9944621e3bb51e1013b9202a85e45a1d"/>
+</record_update>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="4accd0b91b685e101ef387306b4bcbfe" sys_domain="global" table="sys_user" version="3" view="agency_asset_portal">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>first_name</element>
+            <position>0</position>
+            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-09-10 09:46:26</sys_created_on>
+            <sys_id>860ddcb91b685e101ef387306b4bcb87</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_user" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">4accd0b91b685e101ef387306b4bcbfe</sys_ui_section>
+            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-09-10 09:46:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_name</element>
+            <position>1</position>
+            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-09-10 09:46:26</sys_created_on>
+            <sys_id>460ddcb91b685e101ef387306b4bcb94</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_user" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">4accd0b91b685e101ef387306b4bcbfe</sys_ui_section>
+            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-09-10 09:46:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email</element>
+            <position>2</position>
+            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-09-10 09:46:26</sys_created_on>
+            <sys_id>4e0ddcb91b685e101ef387306b4bcb94</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_user" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">4accd0b91b685e101ef387306b4bcbfe</sys_ui_section>
+            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-09-10 09:46:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>phone</element>
+            <position>3</position>
+            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-09-10 09:46:26</sys_created_on>
+            <sys_id>460ddcb91b685e101ef387306b4bcb95</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_user" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">4accd0b91b685e101ef387306b4bcbfe</sys_ui_section>
+            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-09-10 09:46:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-09-10 09:46:26</sys_created_on>
+            <sys_id>4e0ddcb91b685e101ef387306b4bcb95</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_user" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">4accd0b91b685e101ef387306b4bcbfe</sys_ui_section>
+            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-09-10 09:46:26</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>company</element>
+            <position>5</position>
+            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-09-10 09:46:26</sys_created_on>
+            <sys_id>460ddcb91b685e101ef387306b4bcb96</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_user" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">4accd0b91b685e101ef387306b4bcbfe</sys_ui_section>
+            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-09-10 09:46:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>manager</element>
+            <position>6</position>
+            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-09-10 09:46:26</sys_created_on>
+            <sys_id>4e0ddcb91b685e101ef387306b4bcb96</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_user" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">4accd0b91b685e101ef387306b4bcbfe</sys_ui_section>
+            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-09-10 09:46:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>sys_user</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-09-10 09:45:20</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4accd0b91b685e101ef387306b4bcbfe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_user</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+            <sys_update_name>sys_ui_section_4accd0b91b685e101ef387306b4bcbfe</sys_update_name>
+            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-09-10 09:45:20</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Agency Asset Portal" name="agency_asset_portal">f94dc8b51b285e101ef387306b4bcb71</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

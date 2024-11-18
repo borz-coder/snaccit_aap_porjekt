@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <can_iterate>false</can_iterate>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <name>Agency Asset Portal: Create CSV</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="AAP Interface User">a5a89595eb599610f5c4f897cad0cdec</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2024-09-12 08:55:11</run_start>
+        <run_time>1969-12-31 23:00:00</run_time>
+        <run_type>on_demand</run_type>
+        <script><![CDATA[var grInvoice = new GlideRecord("x_sigh_a_a_portal_invoices");
+// Holen des aktuellen Datums
+var now = new GlideDateTime();
+
+// Erster Tag des aktuellen Monats
+var startDate = new GlideDateTime();
+startDate.setValue(now.getYearUTC() + '-' + (now.getMonthLocalTime() + 0) + '-01 00:00:00'); // Erster Tag des Monats
+//gs.info(startDate);
+// Letzter Tag des aktuellen Monats
+var endDate = new GlideDateTime();
+endDate.setValue(now.getYearUTC() + '-' + (now.getMonthLocalTime() + 0) + '-' + startDate.getDaysInMonthLocalTime() + ' 23:59:59'); // Letzter Tag des Monats
+//gs.info(endDate);
+// Abfragen der Einträge für den aktuellen Monat
+grInvoice.addQuery('date', '>=', startDate); // Ab dem ersten Tag des Monats
+grInvoice.addQuery('date', '<=', endDate); // Bis zum letzten Tag des Monats
+grInvoice.query();
+
+var monthNames = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+];
+
+var Headers = ["Vermittler", "Buchungsart", "Zusatztext", "Betrag in €", "Fälligkeit"];
+var fileName = 'Test.csv';
+var csvData = '';
+for (var i = 0; i < Headers.length; i++) {
+    csvData = csvData + '"' + Headers[i] + '"' + ',';
+}
+csvData = csvData + "\r\n";
+
+while (grInvoice.next()) {
+
+    var vermittlerSysId = grInvoice.getValue('company'); //Geht auch leichter mit Dotwalking s.u.
+    var userGR = new GlideRecord('core_company'); // Habs mal drinn gelassen um beide Wege zu zeigen
+    if (userGR.get(vermittlerSysId)) {
+        var vermittler = userGR.getValue('name');
+    }
+    var buchungsart = 'Belastung';
+    //---------------------------------------------------
+    ////Zusatztext als Beispiel hier der Monat der Invoices
+    var date = grInvoice.getValue('date');
+    var month = new GlideDateTime(date).getMonthLocalTime();
+    var zusatztext = monthNames[month-1];
+    //-------------------------------------------------------
+    var kosten = grInvoice.getValue('netto_price');
+    var faelligkeit = grInvoice.getValue('date');
+    csvData = csvData + '"' + vermittler + '",' + '"' + buchungsart + '",' + '"' + zusatztext + '",' + '"' + kosten + '",' + '"' + faelligkeit + '"';
+    csvData = csvData + "\r\n";
+}
+
+gs.info(csvData);
+
+//attach the file to a record.
+var recordSysId = '955fd65a1ba812503f86b9118b4bcb8c'; // Die sys_id des Ziel-Datensatzes
+var grRec = new GlideRecord("sys_attachment"); // Ersetze mit dem tatsächlichen Tabellennamen
+
+if (grRec.get(recordSysId)) { // Prüfen, ob der Datensatz existiert
+    var grAttachment = new GlideSysAttachment();
+    
+    // Alle Attachments für den Datensatz abrufen und löschen
+    var attachments = grAttachment.getAttachments(grRec);
+    while (attachments.next()) {
+        grAttachment.deleteAttachment(attachments.sys_id); // Jedes Attachment entfernen
+    }
+
+    // Neues Attachment hinzufügen
+    var sysId = grAttachment.write(grRec, fileName, 'application/csv', csvData);
+
+    gs.info('CSV-Datei erstellt und Event ausgelöst mit Attachment sys_id: ' + sysId);
+    gs.eventQueue("x_sigh_a_a_portal.agency.asset_portal.em", grRec, "eins", sysId);
+} else {
+    gs.info('Datensatz mit sys_id ' + recordSysId + ' wurde nicht gefunden.');
+}
+//gs.eventQueue("x_sigh_a_a_portal.agency.asset_portal.em",null, "eins", 'sysId');]]></script>
+        <source_filter/>
+        <source_table/>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>patrick.hartleif@agineo.de</sys_created_by>
+        <sys_created_on>2024-09-12 08:56:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>be742ed21ba412501ef387306b4bcb17</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Agency Asset Portal: Create CSV</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sysauto_script_be742ed21ba412501ef387306b4bcb17</sys_update_name>
+        <sys_updated_by>maximilian.broekel@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-10-16 07:40:52</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

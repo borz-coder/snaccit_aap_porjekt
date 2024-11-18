@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>false</active>
+        <assignment_operator/>
+        <condition_script/>
+        <description/>
+        <event_name>email.read</event_name>
+        <filter_condition table="sys_email">body_textLIKEReopen^EQ<item endquery="false" field="body_text" goto="false" newquery="false" operator="LIKE" or="false" value="Reopen"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <from/>
+        <name>Incident Reopen</name>
+        <order>100</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[(function runAction(email, email_action, event) {
+    var incidentSysId = email.body.match(/sys_id=(\w+)/)[1];
+    var incident = new GlideRecord('incident');
+    if (incident.get(incidentSysId)) {
+        incident.state = 2; // In Arbeit
+        incident.update();
+    }
+})(email, email_action, event);]]></script>
+        <stop_processing>false</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-30 13:26:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e48eea31eb6d1210f5c4f897cad0cdea</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Incident Reopen</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sysevent_in_email_action_e48eea31eb6d1210f5c4f897cad0cdea</sys_update_name>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-05 08:50:57</sys_updated_on>
+        <table>incident</table>
+        <template/>
+        <type>reply</type>
+    </sysevent_in_email_action>
+</record_update>

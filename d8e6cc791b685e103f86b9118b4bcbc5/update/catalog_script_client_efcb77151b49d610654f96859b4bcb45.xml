@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="3e5e94d93744220053b4d3e853990e66" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_catalog>false</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Request an invoice for selected time period">52433ea81bb4d2103f86b9118b4bcbf9</cat_item>
+        <cat_variable>IO:e464b22c1bb4d2103f86b9118b4bcbda</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Filter Years and Months</name>
+        <order/>
+        <published_ref/>
+        <script><![CDATA[function onLoad() {
+    alert('onLoad function called'); // Pop-up-Nachricht
+
+    var ga = new GlideAjax('InvoiceDateHelfer');
+    ga.addParam('sysparm_name', 'getAvailableYearsAndMonths');
+    ga.addParam('userName', g_user.userName); // Hier setzen wir den Benutzernamen des eingeloggten Users
+
+    alert('Making GlideAjax call'); // Pop-up-Nachricht
+
+    ga.getXMLAnswer(function(response) {
+        alert('Received response: ' + response); // Pop-up-Nachricht
+
+        try {
+            var result = JSON.parse(response);
+            alert('Parsed result: ' + JSON.stringify(result)); // Pop-up-Nachricht
+
+            // Jahr Dropdown aktualisieren
+            var yearDropdown = g_form.getControl('which_year');
+            if (yearDropdown) {
+                alert('Year dropdown found'); // Pop-up-Nachricht
+                yearDropdown.options.length = 0; // Clear existing options
+                result.years.forEach(function(year) {
+                    alert('Adding year option: ' + year); // Debugging-Ausgabe
+                    var option = new Option(year, year);
+                    yearDropdown.add(option);
+                });
+                alert('Year dropdown updated with options: ' + JSON.stringify(result.years)); // Pop-up-Nachricht
+            } else {
+                alert('Year dropdown not found'); // Pop-up-Nachricht
+            }
+
+            // Monat Dropdown aktualisieren
+            var monthDropdown = g_form.getControl('month_of_the_invoice');
+            if (monthDropdown) {
+                alert('Month dropdown found'); // Pop-up-Nachricht
+                monthDropdown.options.length = 0; // Clear existing options
+                result.months.forEach(function(month) {
+                    alert('Adding month option: ' + month); // Debugging-Ausgabe
+                    var option = new Option(month, month);
+                    monthDropdown.add(option);
+                });
+                alert('Month dropdown updated with options: ' + JSON.stringify(result.months)); // Pop-up-Nachricht
+            } else {
+                alert('Month dropdown not found'); // Pop-up-Nachricht
+            }
+        } catch (e) {
+            alert('Error parsing JSON response: ' + e.message); // Pop-up-Nachricht
+        }
+    });
+
+    alert('GlideAjax call made'); // Pop-up-Nachricht
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>sandeep.singh@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-04 09:14:11</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>3e5e94d93744220053b4d3e853990e66</sys_domain>
+        <sys_domain_path>!!!/!!!/!!!/!!&amp;/!!!/!!)/</sys_domain_path>
+        <sys_id>efcb77151b49d610654f96859b4bcb45</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Filter Years and Months</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>catalog_script_client_efcb77151b49d610654f96859b4bcb45</sys_update_name>
+        <sys_updated_by>sandeep.singh@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-04 12:13:45</sys_updated_on>
+        <table/>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <va_supported>true</va_supported>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+</record_update>

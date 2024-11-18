@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new">
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
-        <attributes/>
+        <attributes>ref_ac_columns=asset_tag;display_name</attributes>
         <cat_item display_value="Return some Hardware">c52ff6ef1b6c56501ef387306b4bcbba</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
@@ -57,9 +57,7 @@
         <record_producer_table/>
         <reference>alm_asset</reference>
         <reference_qual>javascript:'model_category=' + current.variables.choose_a_product_category+ '^owned_by=' + gs.getUserID()+'^install_status=1' </reference_qual>
-        <reference_qual_condition table="alm_asset">model_categorySAMEASmodel_category^EQ<item endquery="false" field="model_category" goto="false" newquery="false" operator="SAMEAS" or="false" value="model_category"/>
-            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
-        </reference_qual_condition>
+        <reference_qual_condition/>
         <rich_text/>
         <roles_to_use_also_request_for/>
         <save_script><![CDATA[/** This script is executed before the Record is generated 
@@ -80,15 +78,15 @@
         <sys_created_on>2024-09-16 08:11:54</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>235003631bac56501ef387306b4bcb83</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>Select the item you want to return</sys_name>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>select_the_item_you_want_to_return</sys_name>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>item_option_new_235003631bac56501ef387306b4bcb83</sys_update_name>
-        <sys_updated_by>kay.cole@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-09-17 09:13:44</sys_updated_on>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-17 13:03:44</sys_updated_on>
         <table/>
         <tooltip/>
         <type>8</type>

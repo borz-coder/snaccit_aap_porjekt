@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="iphone_25_color">70ce5d8b3b39125013b9202a85e45a8f</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-15 15:06:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fdfe51cb3b39125013b9202a85e45a3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Red</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>question_choice_fdfe51cb3b39125013b9202a85e45a3d</sys_update_name>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-15 15:06:01</sys_updated_on>
+        <text>Red</text>
+        <value>red</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=fdfe51cb3b39125013b9202a85e45a3d"/>
+</record_update>

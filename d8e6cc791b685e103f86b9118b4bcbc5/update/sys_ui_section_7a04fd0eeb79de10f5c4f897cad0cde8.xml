@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Activities" section_id="7a04fd0eeb79de10f5c4f897cad0cde8" sys_domain="global" table="alm_hardware" version="3" view="AAP_View">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_notes</element>
+            <position>0</position>
+            <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+            <sys_created_on>2024-11-12 14:03:35</sys_created_on>
+            <sys_id>1304314eeb79de10f5c4f897cad0cda0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Activities" display_value="Activities" name="alm_hardware" sys_domain="global" view="225b36e41bf4d2103f86b9118b4bcbae">7a04fd0eeb79de10f5c4f897cad0cde8</sys_ui_section>
+            <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-11-12 14:03:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>1</position>
+            <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+            <sys_created_on>2024-11-12 14:03:35</sys_created_on>
+            <sys_id>1b04314eeb79de10f5c4f897cad0cda0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
+            <sys_ui_section caption="Activities" display_value="Activities" name="alm_hardware" sys_domain="global" view="225b36e41bf4d2103f86b9118b4bcbae">7a04fd0eeb79de10f5c4f897cad0cde8</sys_ui_section>
+            <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-11-12 14:03:35</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Activities</caption>
+            <header>false</header>
+            <name>alm_hardware</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+            <sys_created_on>2024-11-12 14:03:33</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7a04fd0eeb79de10f5c4f897cad0cde8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>alm_hardware</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+            <sys_update_name>sys_ui_section_7a04fd0eeb79de10f5c4f897cad0cde8</sys_update_name>
+            <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-11-12 14:03:33</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="AAP View" name="AAP_View">225b36e41bf4d2103f86b9118b4bcbae</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

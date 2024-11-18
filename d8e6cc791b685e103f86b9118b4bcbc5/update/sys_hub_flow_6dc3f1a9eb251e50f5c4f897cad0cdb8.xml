@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>notify_service_desk_of_an_incident</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","usedInstances":{"4b33bb65-0f71-482e-9608-9f8721b56887":["record"],"7da2908f-7723-4131-9484-df348e79eeb6":["record"],"f776a5b6-fcfd-46fb-a5d1-944493601817":["record"]},"attributes":{}},{"name":"Updated_1.current.assignment_group.name","label":"Trigger - Record Updated➛Incident Record➛Assignment group➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user_group","column_name":"name","usedInstances":{}},{"name":"Updated_1.current.assignment_group","label":"Trigger - Record Updated➛Incident Record➛Assignment group","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","parent_table_name":"incident","column_name":"assignment_group","usedInstances":{"4b33bb65-0f71-482e-9608-9f8721b56887":["record"]}},{"name":"Updated_1.run_start_date_time","label":"Trigger - Record Updated➛Run Start Date/Time","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"8db63af7-d8a3-4b97-b9e6-576d72cc3ee0":["condition"]},"attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Notify Service Desk of an Incident</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:29:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6dc3f1a9eb251e50f5c4f897cad0cdb8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Notify Service Desk of an Incident</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_hub_flow_6dc3f1a9eb251e50f5c4f897cad0cdb8</sys_update_name>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-30 10:10:19</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=6dc3f1a9eb251e50f5c4f897cad0cdb8"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=6dc3f1a9eb251e50f5c4f897cad0cdb8^sys_idNOT INe4a979e1eb651e50f5c4f897cad0cd4a"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Service Desk of an Incident">6dc3f1a9eb251e50f5c4f897cad0cdb8</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:55:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e4a979e1eb651e50f5c4f897cad0cd4a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-30 10:10:18</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e4a979e1eb651e50f5c4f897cad0cd4a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>e4a979e1eb651e50f5c4f897cad0cd4a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:55:20</sys_created_on>
+        <sys_id>28a979e1eb651e50f5c4f897cad0cd4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-29 14:55:20</sys_updated_on>
+        <value>assignment_group=1e2b59693b219a5013b9202a85e45a94</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>e4a979e1eb651e50f5c4f897cad0cd4a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:55:20</sys_created_on>
+        <sys_id>60a979e1eb651e50f5c4f897cad0cd4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-29 14:55:20</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=e4a979e1eb651e50f5c4f897cad0cd4a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=6dc3f1a9eb251e50f5c4f897cad0cdb8"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=6dc3f1a9eb251e50f5c4f897cad0cdb8^sys_idNOT IN61c3f1a9eb251e50f5c4f897cad0cdba"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>6dc3f1a9eb251e50f5c4f897cad0cdb8</id>
+        <name>Notify Service Desk of an Incident</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:29:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>61c3f1a9eb251e50f5c4f897cad0cdba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-29 14:29:44</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=61c3f1a9eb251e50f5c4f897cad0cdba"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=6dc3f1a9eb251e50f5c4f897cad0cdb8^sys_idNOT IN50a9b9a1eb651e50f5c4f897cad0cd7c,68a979e1eb651e50f5c4f897cad0cd44,9ca9b9a1eb651e50f5c4f897cad0cd77"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">d3b03b39db202300edbf298a4896193c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Notify Service Desk of an Incident">6dc3f1a9eb251e50f5c4f897cad0cdb8</model>
+        <model_id>6dc3f1a9eb251e50f5c4f897cad0cdb8</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6dc3f1a9eb251e50f5c4f897cad0cdb8</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:55:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>50a9b9a1eb651e50f5c4f897cad0cd7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-29 14:55:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=50a9b9a1eb651e50f5c4f897cad0cd7c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Service Desk of an Incident">6dc3f1a9eb251e50f5c4f897cad0cdb8</model>
+        <model_id>6dc3f1a9eb251e50f5c4f897cad0cdb8</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6dc3f1a9eb251e50f5c4f897cad0cdb8</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:55:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>68a979e1eb651e50f5c4f897cad0cd44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-29 14:55:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=68a979e1eb651e50f5c4f897cad0cd44"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Service Desk of an Incident">6dc3f1a9eb251e50f5c4f897cad0cdb8</model>
+        <model_id>6dc3f1a9eb251e50f5c4f897cad0cdb8</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_6dc3f1a9eb251e50f5c4f897cad0cdb8</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:55:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9ca9b9a1eb651e50f5c4f897cad0cd77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-29 14:55:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9ca9b9a1eb651e50f5c4f897cad0cd77"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=6dc3f1a9eb251e50f5c4f897cad0cdb8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6dc3f1a9eb251e50f5c4f897cad0cdb8"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=6dc3f1a9eb251e50f5c4f897cad0cdb8^sys_idNOT IN64a979e1eb651e50f5c4f897cad0cd8c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Notify Service Desk of an Incident">6dc3f1a9eb251e50f5c4f897cad0cdb8</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:55:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>64a979e1eb651e50f5c4f897cad0cd8c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-30 10:10:18</sys_updated_on>
+        <ui_id>f776a5b6-fcfd-46fb-a5d1-944493601817</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=64a979e1eb651e50f5c4f897cad0cd8c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>64a979e1eb651e50f5c4f897cad0cd8c</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:55:20</sys_created_on>
+        <sys_id>60a979e1eb651e50f5c4f897cad0cd8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-29 14:55:20</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>64a979e1eb651e50f5c4f897cad0cd8c</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:55:20</sys_created_on>
+        <sys_id>aca979e1eb651e50f5c4f897cad0cd8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-29 14:55:20</sys_updated_on>
+        <value>2497b121eb651e50f5c4f897cad0cdb1</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=64a979e1eb651e50f5c4f897cad0cd8c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>notification</field>
+        <id>64a979e1eb651e50f5c4f897cad0cd8c</id>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:55:20</sys_created_on>
+        <sys_id>a4a979e1eb651e50f5c4f897cad0cd8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-29 14:55:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>64a979e1eb651e50f5c4f897cad0cd8c</id>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:55:20</sys_created_on>
+        <sys_id>2ca979e1eb651e50f5c4f897cad0cd8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-29 14:55:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>64a979e1eb651e50f5c4f897cad0cd8c</id>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:55:20</sys_created_on>
+        <sys_id>68a979e1eb651e50f5c4f897cad0cd8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-29 14:55:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=64a979e1eb651e50f5c4f897cad0cd8c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=64a979e1eb651e50f5c4f897cad0cd8c"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=6dc3f1a9eb251e50f5c4f897cad0cdb8"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=6dc3f1a9eb251e50f5c4f897cad0cdb8^sys_idNOT INeca979e1eb651e50f5c4f897cad0cd80"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a4a979e1eb651e50f5c4f897cad0cd4e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Notify Service Desk of an Incident">6dc3f1a9eb251e50f5c4f897cad0cdb8</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:55:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>eca979e1eb651e50f5c4f897cad0cd80</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-30 10:10:18</sys_updated_on>
+        <ui_id>fe29d953-d261-4ddf-b17a-a61acd4237ab</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=eca979e1eb651e50f5c4f897cad0cd80"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>eca979e1eb651e50f5c4f897cad0cd80</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:55:20</sys_created_on>
+        <sys_id>28a979e1eb651e50f5c4f897cad0cd86</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-30 10:10:18</sys_updated_on>
+        <value>1970-01-08 00:00:00</value>
+        <variable display_value="Duration">ef145c1473031300b61e66476bf6a7be</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>eca979e1eb651e50f5c4f897cad0cd80</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:55:20</sys_created_on>
+        <sys_id>64a979e1eb651e50f5c4f897cad0cd86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-29 14:55:20</sys_updated_on>
+        <value/>
+        <variable display_value="Timer relative duration operator">dca4105473031300b61e66476bf6a726</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_fdb2541473031300b61e66476bf6a70e^id=eca979e1eb651e50f5c4f897cad0cd80"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=eca979e1eb651e50f5c4f897cad0cd80"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=eca979e1eb651e50f5c4f897cad0cd80"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=6dc3f1a9eb251e50f5c4f897cad0cdb8^sys_idNOT IN6ca979e1eb651e50f5c4f897cad0cd91,a4a979e1eb651e50f5c4f897cad0cd91"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6dc3f1a9eb251e50f5c4f897cad0cdb8</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>76166367-59fe-4974-b5f1-6630a08bb821</source_ui_id>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:55:20</sys_created_on>
+        <sys_id>6ca979e1eb651e50f5c4f897cad0cd91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-29 14:55:20</sys_updated_on>
+        <transform_compositions>[{"id":"9f9109050f2130106d1a3a3485767e51","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="day">04118dc10f2130106d1a3a3485767e4e</transform_definition_id>
+        <ui_id>79146695-ef75-4015-aae0-9571c13c7a78</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>6dc3f1a9eb251e50f5c4f897cad0cdb8</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.run_start_date_time}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:55:20</sys_created_on>
+        <sys_id>a4a979e1eb651e50f5c4f897cad0cd91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-29 14:55:20</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>76166367-59fe-4974-b5f1-6630a08bb821</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=6dc3f1a9eb251e50f5c4f897cad0cdb8"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_6dc3f1a9eb251e50f5c4f897cad0cdb8^sys_idNOT IN2ca979e1eb651e50f5c4f897cad0cd46,50a9b9a1eb651e50f5c4f897cad0cd7b,68a979e1eb651e50f5c4f897cad0cd43"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6dc3f1a9eb251e50f5c4f897cad0cdb8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:55:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2ca979e1eb651e50f5c4f897cad0cd46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-29 14:55:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6dc3f1a9eb251e50f5c4f897cad0cdb8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:55:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>50a9b9a1eb651e50f5c4f897cad0cd7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-29 14:55:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_6dc3f1a9eb251e50f5c4f897cad0cdb8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:55:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>68a979e1eb651e50f5c4f897cad0cd43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-29 14:55:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_6dc3f1a9eb251e50f5c4f897cad0cdb8"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_6dc3f1a9eb251e50f5c4f897cad0cdb8"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_6dc3f1a9eb251e50f5c4f897cad0cdb8"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=6dc3f1a9eb251e50f5c4f897cad0cdb8"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=6dc3f1a9eb251e50f5c4f897cad0cdb8"/>
+</record_update>

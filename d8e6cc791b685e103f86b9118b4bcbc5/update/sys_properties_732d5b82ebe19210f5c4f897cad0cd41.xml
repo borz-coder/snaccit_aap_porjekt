@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Additional Information Text</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_sigh_a_a_portal.additional_information_text</name>
+        <read_roles/>
+        <suffix>additional_information_text</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>juri.deisling@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-31 11:28:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>732d5b82ebe19210f5c4f897cad0cd41</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_sigh_a_a_portal.additional_information_text</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_properties_732d5b82ebe19210f5c4f897cad0cd41</sys_update_name>
+        <sys_updated_by>juri.deisling@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-31 11:41:00</sys_updated_on>
+        <type>string</type>
+        <value>Hier ist ein Beispiel für den Platzhalter</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=732d5b82ebe19210f5c4f897cad0cd41"/>
+</record_update>

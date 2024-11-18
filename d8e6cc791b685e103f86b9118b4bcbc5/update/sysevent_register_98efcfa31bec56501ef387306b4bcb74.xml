@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <derived_priority>100</derived_priority>
+        <description/>
+        <event_name>x_sigh_a_a_portal.agency.agency_pdf.em</event_name>
+        <fired_by>Scheduled Job: Agency Asset Portal: Create Invoices for agencies</fired_by>
+        <priority>100</priority>
+        <queue/>
+        <suffix>agency.agency_pdf.em</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>anton.goldin@agineo.de</sys_created_by>
+        <sys_created_on>2024-09-16 09:18:29</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>98efcfa31bec56501ef387306b4bcb74</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sigh_a_a_portal.agency.agency_pdf.em</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sysevent_register_98efcfa31bec56501ef387306b4bcb74</sys_update_name>
+        <sys_updated_by>anton.goldin@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-09-16 09:18:29</sys_updated_on>
+        <table>x_sigh_a_a_portal_invoices</table>
+    </sysevent_register>
+</record_update>

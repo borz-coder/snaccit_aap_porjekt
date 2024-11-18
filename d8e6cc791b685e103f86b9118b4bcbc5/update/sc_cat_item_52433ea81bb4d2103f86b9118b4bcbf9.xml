@@ -4,8 +4,8 @@
         <active>true</active>
         <availability>on_desktop</availability>
         <billable>false</billable>
-        <category display_value="Agency Invoices">f7de0f161b6812501ef387306b4bcb22</category>
-        <checked_out>false</checked_out>
+        <category display_value="Lease Documents">f7de0f161b6812501ef387306b4bcb22</category>
+        <checked_out>true</checked_out>
         <cost>0</cost>
         <custom_cart/>
         <delivery_plan/>
@@ -14,7 +14,7 @@
         <description><![CDATA[<p>Here you could order the invoice for the selected month</p>]]></description>
         <display_price_property>non_zero</display_price_property>
         <entitlement_script/>
-        <flow_designer_flow display_value="Invoice Request Approval">c2f0a4a1db495a100c760023f3961931</flow_designer_flow>
+        <flow_designer_flow display_value="Invoice Request Approval and Delivery">c2f0a4a1db495a100c760023f3961931</flow_designer_flow>
         <fulfillment_automation_level>unspecified</fulfillment_automation_level>
         <group/>
         <hide_sp>false</hide_sp>
@@ -58,7 +58,7 @@
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
-        <short_description/>
+        <short_description>An invoice for a specific time period can be requested, which will then be generated and attached to the request.</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
         <state>published</state>
@@ -67,22 +67,22 @@
         <sys_created_on>2024-09-19 09:46:55</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>52433ea81bb4d2103f86b9118b4bcbf9</sys_id>
-        <sys_mod_count>77</sys_mod_count>
+        <sys_mod_count>129</sys_mod_count>
         <sys_name>Request an invoice for selected time period</sys_name>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>sc_cat_item_52433ea81bb4d2103f86b9118b4bcbf9</sys_update_name>
-        <sys_updated_by>maryna.kurman@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-10-04 12:36:59</sys_updated_on>
+        <sys_updated_by>laura.hirschfeld@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-16 06:02:32</sys_updated_on>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
         <type>task</type>
         <use_sc_layout>false</use_sc_layout>
         <vendor/>
-        <version>76</version>
+        <version>128</version>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>

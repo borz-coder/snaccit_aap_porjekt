@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_catalog_view_mtom">
+    <sc_catalog_view_mtom action="INSERT_OR_UPDATE">
+        <default>true</default>
+        <sc_catalog display_value="Agency Asset Portal Services">954e0f921b6812501ef387306b4bcb28</sc_catalog>
+        <sys_class_name>sc_catalog_view_mtom</sys_class_name>
+        <sys_created_by>sandeep.singh@agineo.de</sys_created_by>
+        <sys_created_on>2024-09-12 11:58:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4e5e03161b6812501ef387306b4bcbfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Agency Asset Portal Services.catalog_agency_asset_portal_services</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_portal_page display_value="catalog_agency_asset_portal_services">0e5e03161b6812501ef387306b4bcbfa</sys_portal_page>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sc_catalog_view_mtom_4e5e03161b6812501ef387306b4bcbfc</sys_update_name>
+        <sys_updated_by>sandeep.singh@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-09-12 11:58:05</sys_updated_on>
+    </sc_catalog_view_mtom>
+</record_update>

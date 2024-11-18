@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_sigh_a_a_portal.InvoiceDateHelfer</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>InvoiceDateHelfer</name>
+        <script><![CDATA[var InvoiceDateHelfer = Class.create();
+InvoiceDateHelfer.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getAvailableYearsAndMonths: function() {
+        var userName = this.getParameter('sysparm_userName');
+
+        var result = {
+            years: [],
+            dates: {}
+        };
+
+        gs.info('Received username: ' + userName);
+
+        // Query to get the user record
+        var userGR = new GlideRecord('sys_user');
+        userGR.addQuery('user_name', userName);
+        userGR.query();
+
+        if (!userGR.next()) {
+            gs.info('No user found with username: ' + userName);
+            return JSON.stringify(result);
+        }
+
+        var companySysId = userGR.getValue('company');
+        gs.info('Retrieved company sys_id: ' + companySysId);
+
+        if (!companySysId) {
+            gs.info('No company sys_id found for user: ' + userName);
+            return JSON.stringify(result);
+        }
+
+        // Query to get invoices for the user's company
+        var gr = new GlideRecord('x_sigh_a_a_portal_invoices');
+        gr.addQuery('company', companySysId);
+        gr.query();
+
+        if (!gr.hasNext()) {
+            gs.info('No records found for company sys_id: ' + companySysId);
+            return JSON.stringify(result);
+        }
+
+        var years = {};
+        var dates = {};
+
+        gs.info('Start processing invoices for company sys_id: ' + companySysId);
+
+        while (gr.next()) {
+            var date = new GlideDateTime(gr.getValue('date'));
+            var year = date.getYearLocalTime();
+            var month = date.getMonthLocalTime(); // Monat direkt verwenden
+            var day = date.getDayOfMonthLocalTime();
+
+			/*switch(month){
+				case 1:
+					month = 'Januar';
+					break;
+				case 2:
+					month = 'Februar';
+					break;	
+				case 3:
+					month = 'Maerz';
+					break;
+				case 4:
+					month = 'April';
+					break;	
+				case 5:
+					month = 'Mai';
+					break;	
+				case 6:
+					month = 'Juni';
+					break;	
+				case 7:
+					month = 'Juli';
+					break;
+				case 8:
+					month = 'August';
+					break;
+				case 9:
+					month = 'September';
+					break;
+				case 10:
+					month = 'Oktober';
+					break;	
+				case 11:
+					month = 'November';
+					break;
+				case 12:
+					month = 'Dezember';
+					break;				
+			
+			}*/
+            const MONTH_NAMES = [
+                "Januar", "Februar", "März", "April", "Mai", "Juni",
+                "Juli", "August", "September", "Oktober", "November", "Dezember"
+            ];
+            month = MONTH_NAMES[month-1]
+
+            years[year] = true;
+            if (!dates[year]) {
+                dates[year] = [];
+            }
+            dates[year].push(month + ' ' + year); // Datum im Format 'Monat Jahr' speichern
+        }
+
+        result.years = Object.keys(years).sort();
+        for (var y in dates) {
+            result.dates[y] = Array.from(new Set(dates[y])).sort(function(a, b) {
+                // Sortiere nach Datum im Format 'Tag.Monat.Jahr'
+                var aParts = a.split('.').map(Number);
+                var bParts = b.split('.').map(Number);
+                return new Date(aParts[2], aParts[1] - 1, aParts[0]) - new Date(bParts[2], bParts[1] - 1, bParts[0]);
+            });
+        }
+
+        gs.info('Final years: ' + JSON.stringify(result.years));
+        gs.info('Final dates: ' + JSON.stringify(result.dates));
+
+        return JSON.stringify(result);
+    },
+
+    type: 'InvoiceDateHelfer'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>sandeep.singh@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-01 15:46:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>87f6b1601b0dd210654f96859b4bcbee</sys_id>
+        <sys_mod_count>63</sys_mod_count>
+        <sys_name>InvoiceDateHelfer</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_script_include_87f6b1601b0dd210654f96859b4bcbee</sys_update_name>
+        <sys_updated_by>maximilian.broekel@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-10-30 10:42:31</sys_updated_on>
+    </sys_script_include>
+</record_update>

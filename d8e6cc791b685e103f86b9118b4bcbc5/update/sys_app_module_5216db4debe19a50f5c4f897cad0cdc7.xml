@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="a10c90993744220053b4d3e853990e65" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Agency Asset Portal">de5476901b3c92101ef387306b4bcb22</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>SEPARATOR</link_type>
+        <map_page/>
+        <mobile_title>Settings</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>900</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>maximilian.broekel@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-10-28 08:23:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>a10c90993744220053b4d3e853990e65</sys_domain>
+        <sys_domain_path>!!!/!!!/!!!/!!&amp;/!!!/!!(/</sys_domain_path>
+        <sys_id>5216db4debe19a50f5c4f897cad0cdc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Settings</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_app_module_5216db4debe19a50f5c4f897cad0cdc7</sys_update_name>
+        <sys_updated_by>maximilian.broekel@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-10-28 08:23:02</sys_updated_on>
+        <timeline_page/>
+        <title>Settings</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

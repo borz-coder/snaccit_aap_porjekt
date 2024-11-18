@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope, $http) {
+    // Initialisieren der Variablen
+    $scope.selectedRitm = null; // Für die Auswahl des Requested Items
+    $scope.deliveryDates = [];  // Array zur Speicherung mehrerer Liefertermine
+    $scope.data.successMessage = ''; // Für Erfolgsmeldungen
+		debugger;
+		$scope.data.requestedItems = function() {
+        alert($scope.requestedItems());
+    };
+    // Überprüfen, ob die Requested Items korrekt geladen wurden
+    console.log("Loaded Requested Items:", $scope.data.requestedItems);
+
+    // Funktion, um Liefertermine hinzuzufügen
+    $scope.addDate = function() {
+        $scope.deliveryDates.push({ date: '' });
+    };
+
+    // Funktion, um einen Liefertermin zu entfernen
+    $scope.removeDate = function(index) {
+        if (index >= 0 && index < $scope.deliveryDates.length) {
+            $scope.deliveryDates.splice(index, 1);
+        }
+    };
+
+    // Überwachung der Dropdown-Auswahl (optional)
+    $scope.$watch('selectedRitm', function(newValue) {
+        if (newValue) {
+            console.log("Ausgewähltes Requested Item:", newValue);
+        }
+    });
+
+    // Funktion zum Speichern der Liefertermine
+    $scope.saveDeliveryDates = function() {
+        if (!$scope.selectedRitm || $scope.deliveryDates.length === 0) {
+            alert("Bitte ein Requested Item auswählen und mindestens einen Liefertermin hinzufügen.");
+            return;
+        }
+
+        // Payload für das Server Script vorbereiten
+        const payload = {
+            ritmSysId: $scope.selectedRitm.sys_id,
+            dates: $scope.deliveryDates.map(date => date.date)
+        };
+				debugger;
+        // HTTP POST-Anfrage an das Server Script senden
+        $http.post('/api/now/ui/widget/' + $scope.data.widgetInstance, payload).then(function(response) {
+            if (response.data.result.success) {
+                $scope.data.successMessage = "Liefertermine wurden erfolgreich gespeichert!";
+                $scope.deliveryDates = [];
+                $scope.selectedRitm = null;
+            } else {
+                alert("Fehler beim Speichern der Liefertermine");
+            }
+        }, function(error) {
+            console.error("Fehler bei der HTTP-Anfrage:", error);
+            alert("Fehler beim Speichern der Liefertermine");
+        });
+    };
+};
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.widget-title {
+    color: #0072C6;
+    margin-bottom: 20px;
+}
+.delivery-section {
+    margin-top: 20px;
+}
+.form-control {
+    margin-bottom: 10px;
+    width: 100%;
+}
+.btn {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.alert {
+    margin-top: 20px;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>delivery_scheduling</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Delivery Scheduling</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	 requestedItems = function() {
+			var requestedItems = [];
+      var gr = new GlideRecord('sc_req_item');
+      gr.addQuery('state', '=', 1);
+      gr.orderByDesc('sys_created_on');
+      gr.query();
+
+       while (gr.next()) {
+					requestedItems.push({
+						sys_id: gr.getValue('sys_id'),
+						number: gr.getValue('number'),
+						short_description: gr.getValue('short_description')
+					});
+        }
+				return requestedItems;
+    };
+
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>juri.deisling@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-15 10:37:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8691a4433bb1125013b9202a85e45a52</sys_id>
+        <sys_mod_count>39</sys_mod_count>
+        <sys_name>Delivery Scheduling</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sp_widget_8691a4433bb1125013b9202a85e45a52</sys_update_name>
+        <sys_updated_by>juri.deisling@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 10:46:24</sys_updated_on>
+        <template><![CDATA[<div>{"label":"Delivery Scheduling","type":"widget","sp_widget":"8691a4433bb1125013b9202a85e45a52","data_table":"sp_instance"}
+    <!-- Überschrift -->
+    <h3 class="widget-title">Lieferteminvorschläge erstellen</h3>
+
+    <!-- Dropdown zur Auswahl des Requested Items -->
+    <label for="ritm-select">Requested Item auswählen:</label>
+    <select id="ritm-select" class="form-control" ng-model="selectedRitm" ng-options="ritm.number + ' - ' + ritm.short_description for ritm in data.requestedItems track by ritm.sys_id" ng-change="clearDeliveryDates()">
+        <option value="">-- Bitte auswählen --</option>
+    </select>
+
+    <!-- Bereich zur Eingabe von Lieferterminen -->
+    <div class="delivery-section" ng-if="selectedRitm">
+        <h4>Liefertermine hinzufügen</h4>
+        <div ng-repeat="date in deliveryDates">
+            <label>Liefertermin {{$index + 1}}:</label>
+            <input type="datetime-local" ng-model="date.date" class="form-control" required>
+            <button type="button" class="btn btn-danger" ng-click="removeDate($index)">Entfernen</button>
+        </div>
+        <button type="button" class="btn btn-primary" ng-click="addDate()">Neuen Liefertermin hinzufügen</button>
+    </div>
+
+    <!-- Schaltfläche zum Speichern -->
+    <div ng-if="selectedRitm && deliveryDates.length > 0">
+        <button type="button" class="btn btn-success" ng-click="saveDeliveryDates()">Liefertermine speichern</button>
+    </div>
+
+    <!-- Bestätigungsmeldung -->
+    <div class="alert alert-success" ng-if="data.successMessage">
+        {{data.successMessage}}
+    </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

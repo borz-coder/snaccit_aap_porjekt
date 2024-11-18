@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_sigh_a_a_portal.PDFLayout</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>PDFLayout</name>
+        <script><![CDATA[/*			looks in SN better in fullscreen
+            ###################################### pdf-Layout-Script ###############################################
+            #                                                                                                      #
+            #   Script by:      Max Broekel(snacc-it), Juri Deisling, Matthias Ferstl                              # 
+            #                   Taniya Ghaderi, Laura Hirschfeld, Tommy Vo-Weissweiler                             #
+            #   Version:        1.0                                                                                #
+            #   Last Update:    15.10.2024                                                                         #
+            #                                                                                                      #
+            #   "Always code as if the guy who ends up maintaining your code will be a violent                     #
+            #    psychopath who knows where you live." -John F. Woods                                              #
+            #                                                                                                      #
+            ########################################################################################################
+*/
+
+
+/*  
+######################################### README, there is a voucher for free beer ######################################
+
+This script is meant to make .pdf creation in ServiceNow easier. It is usually called by a generator-script,
+which we also provide.
+Out main goal was to provide a solution that separates the layout from the generation and to maximise reusability.
+
+We are aware, that layout and content are different things, but without content there is no layout, so we consider
+the name of the script still as descriptive.
+
+If you break things there is no warranty.
+As usual there are parts of code that are not 100% necessary but we tried to make it readable
+and understandable without a propper handbook (a documentation may be provided soon).
+
+Here are some basics:
+
+    1.) Always keep in mind, that the output will be HTML-Code, always make sure that you insert content inside of <...> here </...>
+
+    2.) If you need to use js-code to get things like records, always make sure that you insert js-code ouside of <...> </...> here
+
+    3.) Usage of `` makes it possible to write multiline-strings, and html-code needs to be a string, so there are a few,
+        but we will remind you from time to time, or line to line.
+
+
+This script should be used as "Script Include". So its function can be called from everywhere. Be sure the
+script include is named "PDFLayout". We hope that you read this...
+
+We recommend to copy the code WITH ALL comments to make it easier for the guy that is maintaining that code.
+If not, tell him you are sorry!
+
+If you have any suggestions feel free to contact matthias.ferstl@agineo.de in some cases he even reads his mails
+
+Thanks for your attention
+No beer. Sorry
+
+#########################################################################################################################
+*/
+
+
+var PDFLayout = Class.create();
+PDFLayout.prototype = {
+    
+    initialize: function() {},
+
+    generateHTML: function(invoiceRecord) {
+
+        /*
+        ######################################################STYLE###############################################################
+        to separate the part with the css codes from the part with the content, we decided to... well... separate them.
+        You should know some html and css to make some nice pdf. Ask Juri Deisling. He knows a trick... or five.
+        */
+
+
+        var html = `<html><head><style> 
+            header img {display:none; width: 100%; max-height: 150px; }
+            .header {text-align: center; font-size: 24px; margin-bottom: 20px;} 
+            body {font-family: Arial;}    
+
+            .address-block {
+                line-height: 0.5 !important ;
+                font-size: 12px;
+                position: absolute; /* fixed position, don't change if you want to keep ISO-5008 */
+                top: 55px; /* 40 mm */
+                left: 36px; /* 20 mm */
+                width: 321.3px; /* 85 mm */
+                height: 151.2px; /* 40 mm */
+                padding: 10px; /* Optional */ 
+             }
+            .return-info {
+                text-decoration: underline;
+                font-size: 11px;
+            }
+            .address-block .address { padding: 5px; margin-bottom: 10px; }
+			.address-block .address p { margin-bottom: 5px; }
+            .info-block {
+                line-height: 0.3 !important ; 
+                font-size: 12px; 
+                position: absolute; /* fixed position, don't change if you want to keep ISO-5008 */
+                top: 55px; 
+                right: 45.6px; 
+                width: 150.3px; 
+                height: 170.1px; 
+                padding: 10px; /* Optional */
+            }
+            .info-block .date { width: 100%; position: absolute; bottom: 5px; text-align: right;}
+            .subject-line {
+                position: absolute; /* fixed position, don't change if you want to keep ISO-5008 */
+                top: 244px; /* 90 mm */
+                left: 75.6px; /* 20 mm */
+                width: 642.6px; /* 170 mm */
+                font-weight: bold;
+                font-size: 16px;
+            }
+            .salutation {
+                position: absolute; /* fixed position, don't change if you want to keep ISO-5008 */
+                font-size: 12px; 
+                top: 300px; /* 105 mm */
+                left: 75.6px; /* 20 mm */
+                width: 642.6px; /* 170 mm */
+                margin-bottom: 20px; 
+            }
+            .main-content {
+                 font-size: 12px; 
+                /* 105 mm + height of salutation, do make multiline salutation possible without crashing the layout */
+                margin-left: 75.6px; /* 20 mm */
+                margin-bottom: 20px;
+                width: 642.6px; /* 170 mm */
+            }
+
+
+            /*
+                The footer mightnot always be neccessary but most companies have one.
+                You can change it as you want, but be carefull with the .footer class, since it fixes the position.
+                Changes in the footer itself are made in the footer-table classes
+            */
+            .footer {
+                display:none;
+                position: absolute; /* fixed position, don't change if you want to keep it in place */
+                line-height: 0.3 !important ;
+                bottom: 0;
+                
+                width: 100%;
+                padding: 10px;
+                margin: 0 auto;}
+
+            table {font-size: 12px; width: 100%; margin: 0 auto; break-inside:avoid;   table-layout: fixed;} /*border-collapse: collapse; 
+			border: 1px solid black;*/
+			
+            .table-header th {text-align: left; padding: 5px; }
+            .footer-table {font-size: 9px; width: 100%;border-collapse: collapse; border: none;}
+			.footer-table td {padding: 5px; border: none;}
+			.footer-table td + td { border-left: 1px solid black; }
+            table td {width: 150px; padding: 5px; } /*border-collapse: collapse; border: 1px solid black;*/
+            .smallCol {
+                width: 5% !important;
+            }
+            .mediumCol {
+                width: 15% !important;
+            }
+            .noBorder td {border: none;}
+
+	
+         </style></head><header>`;
+
+        //##################################################CONTENT################################################################
+
+        /*  
+            Use above style definitions to convert the data of the records into proper HTML content.
+            What you actually see here is a real use case that we had in our project. We provided that scipt like this,
+            because we think that it coveres a lot of different things like a loop to insert multiple records in a table,
+            a header with picture, a DIN-5008 (or close) layout and a few more things, that might show you how to use this script.
+            And dont be confused by the comments, since it is HTML Code we had sometimes to use the HTML-Comment-Style. 
+        */
+
+
+        //############################################# Contentvariables ###########################################################
+
+        /*
+                In this codeblock we declare all the variables that represent the content of the HTML file. Those can and should
+                be changed. The variables will later be inserted in the right HTML container
+
+        */
+               // ### Address-Block ###
+        var addressLine1 = invoiceRecord.company.parent.name + " &bull; " + invoiceRecord.company.parent.street + ", " + invoiceRecord.company.parent.zip  + " " + invoiceRecord.company.parent.city ;//"Rücksendeadresse";
+        var addressLine2 = "<br>";//"Vermerkzone";
+        var addressLine3 = "";//"Kommunikationszone";
+        var addressLine4 = invoiceRecord.company.name;
+        var addressLine5 = "";
+        var addressLine6 = "";
+        var addressLine7 = invoiceRecord.company.street;
+        var addressLine8 = invoiceRecord.company.zip + " " + invoiceRecord.company.city;
+        var addressLine9 = "";//"Land";
+        
+
+
+        // ### Information-Block ###
+
+        var infoLine1 = gs.getProperty("x_sigh_a_a_portal.infoLine1");
+        var infoLine2 = gs.getProperty("x_sigh_a_a_portal.infoLine2");
+        var infoLine3 = gs.getProperty("x_sigh_a_a_portal.infoLine3");
+        var infoLine4 = gs.getProperty("x_sigh_a_a_portal.infoLine4");
+        var infoLine5 = gs.getProperty("x_sigh_a_a_portal.infoLine5");
+        var infoLine6 = gs.getProperty("x_sigh_a_a_portal.infoLine6");
+
+
+        // ### Date ###
+        //Split a YYYY-MM-DD formatted date and put it together in a DD.MM.YYYY
+
+        var dateUnformatted = invoiceRecord.getValue('date');
+        var dateParts = dateUnformatted.split('-');
+        var year = dateParts[0];
+        var month = dateParts[1];
+        var day = dateParts[2];
+        var formattedDate = day + '.' + month + '.' + year;
+ 
+        // ### Salutation ###
+
+        var salutation = gs.getProperty("x_sigh_a_a_portal.salutation");
+
+        // ### Content ###
+
+        var content = gs.getProperty("x_sigh_a_a_portal.content");
+		var afterTableContent = gs.getProperty("x_sigh_a_a_portal.afterTableContent");
+
+        // ### Footer Table ###
+    
+
+        var column1row1 = "Companyname";
+        var column1row2 = "Companyaddress";
+        var column1row3 = "Contact, Homepage, etc";
+
+        var column2row1 = "CEO";
+        var column2row2 = "Company Board";
+        var column2row3 = "Tax or registry information";
+
+        var column3row1 = "Bank";
+        var column3row2 = "IBAN, BIC";
+        var column3row3 = "Additional Information";
+      
+
+        
+        var footer = `
+         <!--Inhaltskörper-->
+		<div class= "footer">
+            <table class="footer-table">
+                <tr>
+                    <td>${column1row1}</td>
+                    <td>${column2row1}</td>
+                    <td>${column3row1}</td>
+                </tr>
+                <tr>
+                    <td>${column1row2}</td>
+                    <td>${column2row2}</td>
+                    <td>${column3row2}</td>
+                </tr>
+                <tr>
+                    <td>${column1row3}</td>
+                    <td>${column2row3}</td>
+                    <td>${column3row3}</td>
+                </tr>
+            </table>
+        </div>
+        `;
+
+        //############################################# HTML Part ###########################################################
+
+        /*
+            This is where the magic happens. From here on all the Style and Content will be converted in to HTML code.
+            Be careful with changes, as this is fragile and sensitive. 
+        */
+
+
+
+        // We start with concatenation of the stlye part from above with the upcoming content. Usage of ` makes multiline strings possible
+        html += `
+
+            <div class="header">
+            <img src="https://img.freepik.com/vektoren-premium/einhorn-logo-symbol-vektor-illustration_1948-11622.jpg" alt="Logo">
+            </div>
+        </header>
+
+        <body>
+            <div class="address-block" id="test">
+                <div class="address">
+                        <!--We found out that there is a problem with "getValue()" in usage together with reference-fields,
+                        so we use the fieldname to directly address the value-->
+                        <p class = "return-info"> ${addressLine1} </p>
+                        <p> ${addressLine2} </p>
+                        <p> ${addressLine3} </p>
+                        <p> ${addressLine4} </p>
+                        <p> ${addressLine5} </p>
+                        <p> ${addressLine6} </p>
+                        <p> ${addressLine7} </p>
+                        <p> ${addressLine8} </p>				
+                        <p> ${addressLine9} </p>
+                    </div>
+            </div>
+        
+            <div class= "info-block">
+                <p> ${infoLine1}</p>
+                <p> ${infoLine2}</p>
+                <p> ${infoLine3}</p>
+                <p> ${infoLine4}</p>
+                <p> ${infoLine5}</p>
+                <p> ${infoLine6}</p>
+                <div class="date">
+                    <p> ${formattedDate} </p>
+                </div>
+            </div>
+
+            <div class="subject-line"> ${ gs.getProperty("x_sigh_a_a_portal.invoicePrefix")} ${invoiceRecord.getValue('number')}-${invoiceRecord.getValue('date')} </div>
+            <div class="salutation">${salutation}</div>
+        `;
+         for(var i = 0; i < 17; i++){
+            html += "<br>";
+        }
+        html += `
+            <div class="main-content" id="content">${content}
+            <br>            
+        `; // again: `` those two accent grave surround the html since we need a string, but also A LOT OF lines...
+
+
+
+        // Get assets
+        var assetList = new GlideAggregate('alm_asset');
+
+        assetList.addAggregate('COUNT', 'display_name');
+        assetList.addQuery('company', invoiceRecord.company);
+        assetList.groupBy('cost');
+        assetList.groupBy('display_name');
+
+
+        assetList.query();  
+
+
+        var tableStart = `
+            <table>
+                <thead class = "table-header">
+                    <tr> <!--Rows-->
+                        <th class="smallCol">Pos.</th>
+                        <th>Bezeichnung</th>
+                        <th class="mediumCol" style="text-align: right;">Einzelpreis ohne Ust.</th>    
+                        <th class="mediumCol" style="text-align: right;">Anzahl</th>                
+                        <th class="mediumCol" style="text-align: right;">Gesamtpreis ohne Ust.</th>
+                    </tr>
+                </thead>
+                <tbody>
+        `;
+        html += tableStart;
+        /* 
+            The body of the table is now "opened" and we leave the HTML part (see that ` ?) to start a loop
+            that for each entry adds a few lines of HTML code to that body
+        */
+
+        var posCounter = 1;
+        while (assetList.next()) {
+            
+            var amount = assetList.getAggregate('COUNT', 'display_name')
+            html +=
+                ` <tr>
+                        <td class="smallCol">${posCounter}</td>
+                        <td>${assetList.display_name}</td>
+                        <td class="mediumCol" style="text-align: right;">${Number.parseFloat(assetList.cost).toFixed(2).toString().replace(".", ",")} €</td>
+                        <td class="mediumCol" style="text-align: right;">${amount}</td>
+                        <td class="mediumCol" style="text-align: right;">${Number.parseFloat(amount * assetList.cost).toFixed(2).toString().replace(".", ",")} €</td>
+                    </tr>
+                    `;
+                 
+            posCounter++;
+        }
+             
+            //It's a bit tricky to get into "where to open and close html", but you will sure get the hang of it
+
+        html += `
+            <tr >
+                <td colspan="5" style="border-collapse: collapse; border-bottom: 1px solid black;"></td>
+            </tr>
+            <tr style="border-top: 1px solid black;">
+                <td colspan="4" >Netto Gesamt</td>
+                <td style="text-align: right;">${Number.parseFloat(invoiceRecord.netto_price).toFixed(2).toString().replace(".", ",")} €</td>
+            </tr>
+            <tr>
+                <td colspan="4">zzgl. Ust. 19%</b></td>
+                <td style="text-align: right;">${Number.parseFloat(invoiceRecord.brutto_price - invoiceRecord.netto_price).toFixed(2).toString().replace(".", ",")} €</td>
+            </tr>
+            <tr>
+                <td colspan="4"><b>Brutto Gesamt</b></td>
+                <td style="text-align: right; font-weight: bold;">${Number.parseFloat(invoiceRecord.brutto_price).toFixed(2).toString().replace(".", ",")} €</td>
+            </tr>
+            </tbody>
+        </table>
+        <br>
+		${afterTableContent}
+
+        </div>
+    
+        `;
+     
+
+
+        html += `     
+        </body></html>`;
+
+        return html; 
+    },
+
+    type: 'PDFLayout'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-15 09:53:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cc0ea4c93bd9161013b9202a85e45a7c</sys_id>
+        <sys_mod_count>307</sys_mod_count>
+        <sys_name>PDFLayout</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_script_include_cc0ea4c93bd9161013b9202a85e45a7c</sys_update_name>
+        <sys_updated_by>maximilian.broekel@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-10-30 09:58:24</sys_updated_on>
+    </sys_script_include>
+</record_update>

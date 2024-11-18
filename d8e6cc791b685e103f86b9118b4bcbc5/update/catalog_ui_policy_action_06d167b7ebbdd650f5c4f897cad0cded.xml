@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Create New Asset">c62f43663bb19e1013b9202a85e45a05</catalog_item>
+        <catalog_variable>IO:90b1d76a3bb19e1013b9202a85e45ae3</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 08:32:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>06d167b7ebbdd650f5c4f897cad0cded</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>model</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_06d167b7ebbdd650f5c4f897cad0cded</sys_update_name>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 08:33:08</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Display Model">a39f5bf3ebbdd650f5c4f897cad0cd96</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>model</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+</record_update>

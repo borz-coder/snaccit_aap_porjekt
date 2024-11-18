@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Asset Management" source="com.snc.asset_management">c408527e4f38ae00d6c750528110c7ca</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-12 14:02:59</sys_created_on>
+        <sys_id>16e3f90eeb79de10f5c4f897cad0cdfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-12 14:02:59</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sc_request</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="sc_request">short_descriptionISEMPTY^EQ<item endquery="false" field="short_description" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>FillOutRequestShortDescriptionAndName</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+    gs.addInfoMessage("current: " + JSON.stringify(current));
+    gs.addInfoMessage("current sys id = " + current.getUniqueValue());
+
+    if (!current.getValue('short_description')) {
+        gs.addInfoMessage("Short description is empty");
+
+        var gr = new GlideRecord('sc_req_item');
+        gr.addQuery('request', current.sys_id);
+		gr.addEncodedQuery('request.number=' + current.number);
+        // gr.query();
+
+        if (gr.next()) {
+			gs.info('Found matching sc_req_item record');
+			// gs.addInfoMessage('goes into if gr.next()');
+			// gs.addInfoMessage('gr = ' + gr.getDisplayValue('cat_item'));
+			gs.info('cat_item = ' + gr.getDisplayValue('cat_item'));
+
+            // update short_description 
+			current.setValue('short_description', "Request for " + gr.getDisplayValue('cat_item'));
+        }
+    }
+
+    if (!current.getValue(catalog_name)) {
+		var catItemGR = new GlideRecord('sc_cat_item');
+		if (catItemGR.get(gr.cat_item)) {
+			current.setValue('catalog_name', catItemGR.category.name);
+		}
+    }
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>jason.roesgen@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-01 13:33:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cfc8d9681b49d210654f96859b4bcbbe</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>FillOutRequestShortDescriptionAndName</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_script_cfc8d9681b49d210654f96859b4bcbbe</sys_update_name>
+        <sys_updated_by>jason.roesgen@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-02 11:56:38</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=cfc8d9681b49d210654f96859b4bcbbe"/>
+</record_update>

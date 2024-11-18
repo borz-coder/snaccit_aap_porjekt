@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_sigh_a_a_portal.UpdateVariableQuestion</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>UpdateVariableQuestion</name>
+        <script><![CDATA[var UpdateVariableQuestion = Class.create();
+UpdateVariableQuestion.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+   updateQuestionText: function() {
+      var sysId = this.getParameter('sysparm_sys_id');
+      var variableName = this.getParameter('sysparm_variable_name');
+      var newQuestionText = this.getParameter('sysparm_new_question_text');
+
+      var rp = new GlideRecord('sc_cat_item_producer');
+      if (rp.get('sys_id', sysId)) {
+         var variable = new GlideRecord('item_option_new');
+         variable.addQuery('cat_item', rp.sys_id);
+         variable.addQuery('name', variableName);
+         variable.query();
+
+         if (variable.next()) {
+            variable.question_text = newQuestionText;
+            variable.update();
+            return 'success';
+         }
+      }
+      return 'failure';
+   },
+   type: 'UpdateVariableQuestion'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-14 15:24:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>077614323bb99e1013b9202a85e45a25</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>UpdateVariableQuestion</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_script_include_077614323bb99e1013b9202a85e45a25</sys_update_name>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-15 09:08:10</sys_updated_on>
+    </sys_script_include>
+</record_update>

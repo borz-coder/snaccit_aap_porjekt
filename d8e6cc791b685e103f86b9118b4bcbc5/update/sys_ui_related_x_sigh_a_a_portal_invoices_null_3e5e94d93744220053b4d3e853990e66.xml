@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="3e5e94d93744220053b4d3e853990e66" table="x_sigh_a_a_portal_invoices" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Invoices - Default view" name="x_sigh_a_a_portal_invoices" related_list="NULL" sys_domain="3e5e94d93744220053b4d3e853990e66" view="Default view">59ee96541b7492103f86b9118b4bcb76</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_sigh_a_a_portal_m2m_alm_asset_x_sigh_a_a_p.x_sigh_a_a_portal_invoices</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>patrick.hartleif@agineo.de</sys_created_by>
+            <sys_created_on>2024-09-18 13:38:37</sys_created_on>
+            <sys_id>19ee96541b7492103f86b9118b4bcb77</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>patrick.hartleif@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-09-18 13:38:37</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Invoices - Default view</calculated_name>
+            <filter/>
+            <name>x_sigh_a_a_portal_invoices</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>patrick.hartleif@agineo.de</sys_created_by>
+            <sys_created_on>2024-09-18 13:38:37</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>3e5e94d93744220053b4d3e853990e66</sys_domain>
+            <sys_domain_path>!!!/!!!/!!!/!!&amp;/!!!/!!)/</sys_domain_path>
+            <sys_id>59ee96541b7492103f86b9118b4bcb76</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Invoices - Default view</sys_name>
+            <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+            <sys_update_name>sys_ui_related_x_sigh_a_a_portal_invoices_null_3e5e94d93744220053b4d3e853990e66</sys_update_name>
+            <sys_updated_by>patrick.hartleif@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-09-18 13:38:37</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

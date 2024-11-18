@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <css_variables/>
+        <dark_theme/>
+        <default>false</default>
+        <enable_ais>false</enable_ais>
+        <enable_certificate_based_authentication>false</enable_certificate_based_authentication>
+        <enable_favorites>false</enable_favorites>
+        <hide_portal_name>false</hide_portal_name>
+        <homepage display_value="aap_test">c18ba04eeb71de10f5c4f897cad0cd9c</homepage>
+        <icon/>
+        <kb_knowledge_base/>
+        <kb_knowledge_page/>
+        <login_page/>
+        <logo/>
+        <notfound_page display_value="404">3c2c9063cb11020000f8d856634c9c1f</notfound_page>
+        <quick_start_config/>
+        <rtl_enabled>false</rtl_enabled>
+        <sc_catalog/>
+        <sc_catalog_page display_value="aap_test">c18ba04eeb71de10f5c4f897cad0cd9c</sc_catalog_page>
+        <sc_category_page/>
+        <search_application/>
+        <search_results_configuration/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu/>
+        <sqanda_knowledge_base/>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-12 08:43:54</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4dba640eeb71de10f5c4f897cad0cd70</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Agency Asset Portal</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sp_portal_4dba640eeb71de10f5c4f897cad0cd70</sys_update_name>
+        <sys_updated_by>a.bibanaev@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-13 09:21:59</sys_updated_on>
+        <theme/>
+        <title>Agency Asset Portal</title>
+        <ts_index_group/>
+        <url_suffix>aap</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=4dba640eeb71de10f5c4f897cad0cd70"/>
+</record_update>

@@ -4,8 +4,8 @@
         <active>true</active>
         <availability>on_desktop</availability>
         <billable>false</billable>
-        <category display_value="Hardware orders">994f83161b6812501ef387306b4bcb4c</category>
-        <checked_out>false</checked_out>
+        <category/>
+        <checked_out>true</checked_out>
         <cost>0</cost>
         <custom_cart/>
         <delivery_plan/>
@@ -67,22 +67,22 @@
         <sys_created_on>2024-09-16 11:36:28</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>129fa7ab1ba896503f86b9118b4bcbed</sys_id>
-        <sys_mod_count>258</sys_mod_count>
+        <sys_mod_count>262</sys_mod_count>
         <sys_name>Order some Hardware</sys_name>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>sc_cat_item_129fa7ab1ba896503f86b9118b4bcbed</sys_update_name>
-        <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-11-11 10:38:25</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-11-11 10:42:10</sys_updated_on>
         <taxonomy_topic display_value="🖥 My equipment">74f1c9c91b90d110654f96859b4bcb3f</taxonomy_topic>
         <template/>
         <template_manager_roles/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>253</version>
+        <version>257</version>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>

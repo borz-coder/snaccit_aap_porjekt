@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="3e5e94d93744220053b4d3e853990e66" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name/>
+        <order>100</order>
+        <roles/>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>juri.deisling@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-29 14:51:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>3e5e94d93744220053b4d3e853990e66</sys_domain>
+        <sys_domain_path>!!!/!!!/!!!/!!&amp;/!!!/!!)/</sys_domain_path>
+        <sys_id>2cc8f1a1eb651e50f5c4f897cad0cd1c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>CSV</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_app_application_2cc8f1a1eb651e50f5c4f897cad0cd1c</sys_update_name>
+        <sys_updated_by>juri.deisling@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-29 14:52:21</sys_updated_on>
+        <title>CSV</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>

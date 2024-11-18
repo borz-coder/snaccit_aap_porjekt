@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="Copy of Topic Header">4966ff3deb5d5a10f5c4f897cad0cd47</child>
+        <cloned>2024-10-18 08:23:12</cloned>
+        <last_validated>2024-10-18 08:23:12</last_validated>
+        <parent display_value="Topic Header">10e99777c38830105a09f0ad9840ddbd</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller = function($rootScope, $timeout, cabrillo) {
+	var c = this;
+	var MESP_POP_UP_CLOSE_EVENT_NAME = 'mesp.popup.close';
+	//Set title of tab
+	document.title= c.data.windowTitle;
+	init();
+
+	// Set Title in Mobile
+	if (c.data.isMobileApp){
+		setMobileTitle();
+		setBannerHeight();
+		//Event from MESP pop up close.
+		var mespClosePopupUnregister = $rootScope.$on(MESP_POP_UP_CLOSE_EVENT_NAME, function() {
+			setMobileTitle();
+		});
+		$timeout(function(){
+			/* Cant get around with out important as mesp has container style with important */
+			$('.container').attr('style', 'padding: 0px !important');
+		});
+	}
+
+	function setBannerHeight(){
+		if(c.data.displayMode !== "banner")
+			return;
+		$timeout(function(){
+		var topicHeaderBannerImage = $('.topic-container').find('.topic-header-banner__image')[0];
+		var topicHeaderBannerGradient = $('.topic-container').find('.topic-header-banner__gradient')[0];
+		var topicHeaderBannerText = $('.topic-container').find('.topic-header-banner__text')[0];
+		
+		if(topicHeaderBannerText.offsetHeight &gt; topicHeaderBannerImage.offsetHeight){
+			topicHeaderBannerImage.style.height = topicHeaderBannerText.offsetHeight + 'px';
+			topicHeaderBannerGradient.style.height = topicHeaderBannerText.offsetHeight + 'px';
+		}
+		}, 0);
+	}
+
+	function setMobileTitle(){
+		// Timeout is to give a better user experience otherwise when this popup closes/opens as it has transistion effects
+		$timeout(function(){
+				cabrillo.viewLayout.setTitle(c.data.topic.name);
+			});
+	}
+
+
+	function init() {
+		$timeout(function() {
+			$rootScope.$broadcast('sp.update.breadcrumbs', c.data.breadcrumbs);
+		});
+	}
+
+	c.getIconColorClass = function() {
+		if(c.options.icon_background_color &amp;&amp;
+			c.options.icon_background_color.length &gt; 0 &amp;&amp;
+				c.options.icon_background_color !== 'custom') {
+			return c.options.icon_background_color;
+		}
+		return '';
+	};
+
+	c.getIconBackgroundColor = function() {
+		if(c.options.icon_background_color &amp;&amp; c.options.icon_background_color.length &gt; 0 &amp;&amp; c.options.icon_background_color === 'custom' &amp;&amp; c.options.icon_background_hexcode &amp;&amp; c.options.icon_background_hexcode.length &gt; 0) {
+			return {'background-color' : c.options.icon_background_hexcode};
+		}
+		return '';
+	};
+
+	c.getBannerColorClass = function() {
+		if(c.options.banner_background_color &amp;&amp;
+			c.options.banner_background_color.length &gt; 0 &amp;&amp;
+				c.options.banner_background_color !== 'custom') {
+			return c.options.banner_background_color;
+		}
+		return '';
+	};
+
+	c.getTopicHeaderWithBannerClass = function() {
+		var topicHeaderClass = 'topic-header-banner';
+		if(c.data.isMobileApp) {
+			topicHeaderClass = topicHeaderClass.concat(' ','topic-header-banner-mobile');
+		}
+		topicHeaderClass = topicHeaderClass.concat(' ', c.options.banner_text_overlay_color);
+		return topicHeaderClass;
+	};
+
+	c.getBannerStyle = function() {
+		var bannerStyle = {};
+		if(c.options.banner_image_position &amp;&amp; c.options.banner_image_position.includes(' ')) {
+			var backgroundPosition = c.options.banner_image_position.split(" ");
+			bannerStyle['background-position-x'] = backgroundPosition[0];
+			bannerStyle['background-position-y'] = backgroundPosition[1];
+		}
+		bannerStyle['background-size'] = c.options.banner_image_display;
+		bannerStyle['background-image'] = 'url('+c.data.topic.banner+')';
+		if(c.options.banner_background_color === 'custom' &amp;&amp;
+			c.options.banner_background_hexcode &amp;&amp;
+				c.options.banner_background_hexcode.length &gt; 0) {
+			bannerStyle['background-color'] = c.options.banner_background_hexcode;
+		}
+		return bannerStyle;
+	};
+
+	c.getTransparency = function() {
+		return {'opacity' : c.options.banner_text_overlay_transparency};
+	};
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;$sp-space--xl: 24px !default;
+$sp-space--lg: 16px !default;
+$sp-space--md: 12px !default;
+$sp-space--xxl: 32px !default;
+$sp-space--sm: 8px !default;
+
+$font-size-base: 16px !default;
+$headings-font-weight: 600 !default;
+
+$brand-primary:#4f52bd !default;
+$brand-primary-darker: #333579 !default;
+$brand-primary-lightest: #D1D2EE !default;
+
+$background-primary: #ffffff !default;
+$background-secondary: #f6f6f8 !default;
+$background-tertiary: #F0F1F5 !default;
+
+$color-darkest: #07080B;
+$color-lightest: #FFFFFF !default;
+
+$banner-height-mobile: 200px;
+$banner-height-desktop: 300px;
+
+.background-primary {
+  background-color: $background-primary;
+}
+
+.background-secondary {
+  background-color: $background-secondary;
+}
+
+.background-tertiary {
+  background-color: $background-tertiary;
+}
+
+.brand-primary {
+  background-color: $brand-primary;
+}
+
+.brand-primary-darker {
+  background-color: $brand-primary-darker;
+}
+
+.brand-primary-lightest {
+  background-color: $brand-primary-lightest;
+}
+
+.topic-header-icon__image-div {
+  min-width: 90px;
+  height: 90px;
+  margin-right: $sp-space--xl;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.topic-header-icon__text {
+  word-break: break-word;
+  .topic-header-title {
+    font-size: ceil(($font-size-base * 2));
+    margin: 0;
+  }
+  .topic-header-description {
+    padding-top: $sp-space--sm;
+    font-size: $font-size-base;
+    margin: 0;
+  }
+}
+
+.topic-header {
+  display: flex;
+  align-items: center;
+  margin: $sp-space--lg;
+}
+
+.topic-header-mobile {
+  display: flex;
+  align-items: center;
+  margin: 20px $sp-space--lg;
+  .topic-header-icon__image-div {
+    margin-right: $sp-space--lg;
+  }
+  .topic-header-title {
+    font-size: 28px !important;
+    font-weight: $headings-font-weight;
+    margin: 0;
+  }
+}
+
+.mobile-border {
+  border-bottom: 12px solid #F6F7F7;
+}
+
+.topic-header-banner__text {
+  position: absolute;
+  bottom: 0;
+  padding: $sp-space--xl;
+  word-break: break-word;
+  .topic-header-title {
+    margin: 0;
+    font-size: ceil(($font-size-base * 2));
+  }
+  .topic-header-description {
+    padding-top: $sp-space--sm;
+    font-size: $font-size-base;
+    margin: 0;
+  }
+}
+
+.topic-header-banner {
+  margin: $sp-space--md $sp-space--lg $sp-space--xl $sp-space--lg;
+  position: relative;
+  .topic-header-banner__image {
+    width: 100%;
+    border-radius: $border-radius-large;
+    height: $banner-height-desktop;
+    background-repeat: no-repeat;
+    .topic-header-banner__gradient {
+      border-radius: 5px;
+      height: $banner-height-desktop;
+    }
+  }
+}
+
+.topic-header-banner-mobile {
+  padding: 0;
+  margin: 0;
+  .topic-header-banner__image {
+    border-radius: 0;
+    height: $banner-height-mobile;
+    .topic-header-banner__gradient {
+      border-radius: 0;
+      height: $banner-height-mobile;
+    }
+  }
+  .topic-header-banner__text {
+    padding: $sp-space--lg;
+  }
+}
+
+.topic-header-gradient-dark {
+  .topic-header-banner__gradient {
+    background-image: linear-gradient(to right, $color-darkest, transparent);
+  }
+  text-shadow: 0 0 10px $color-darkest;
+  color: $color-lightest;
+  .topic-header-title {
+    color: $color-lightest !important;
+  }
+}
+
+.topic-header-gradient-light {
+  .topic-header-banner__gradient {
+    background-image: linear-gradient(to right, $color-lightest, transparent);
+  }
+  text-shadow: 0 0 10px $color-lightest;
+  color: $color-darkest;
+  .topic-header-title {
+    color: $color-darkest !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .topic-header-title {
+    font-size: 28px !important;
+  }
+  .topic-header-banner {
+    margin: 0;
+    padding-top: 0;
+    margin-bottom: $sp-space--lg;
+    .topic-header-banner__image {
+      border-radius: 0;
+      height: $banner-height-mobile;
+      .topic-header-banner__gradient {
+        border-radius: 0;
+        height: $banner-height-mobile;
+      }
+    }
+    .topic-header-banner__text {
+      bottom: 0;
+      padding: $sp-space--lg;
+    }
+  }
+  .topic-header-gradient-dark {
+    .topic-header-banner__gradient {
+      background-image: linear-gradient(to top, $color-darkest, transparent);
+    }
+  }
+  .topic-header-gradient-light {
+    .topic-header-banner__gradient {
+      background-image: linear-gradient(to top, $color-lightest, transparent);
+    }
+  }
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;content_taxonomy_topic_header&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;Topic Header&lt;/name&gt;&lt;option_schema&gt;[{"name":"include_description","section":"Presentation","default_value":"false","label":"Include Description","type":"boolean"},{"name":"primary_display","section":"Presentation","default_value":"banner","label":"Primary Display (This will show up for all topics, unless specified below)","type":"choice","choices":[{"label":"Text Only","value":"text_only"},{"label":"Icon","value":"icon"},{"label":"Banner","value":"banner"}]},{"name":"secondary_display","section":"Presentation","default_value":"text_only","label":"Secondary Display (This will show up for the selected topics below)","type":"choice","choices":[{"label":"Text Only","value":"text_only"},{"label":"Icon","value":"icon"},{"label":"Banner","value":"banner"}]},{"displayValue":"Topic","name":"select_topics","display_value_list":[],"section":"Presentation","label":"Select list of topics (For these topics, secondary display will be applied)","type":"glide_list","value":"topic","ed":{"reference":"topic"}},{"name":"banner_background_color","section":"Presentation","default_value":"brand-primary","label":"Banner Background Color","type":"choice","choices":[{"label":"Brand Primary","value":"brand-primary"},{"label":"Brand Primary Darker","value":"brand-primary-darker"},{"label":"Brand Primary Lightest","value":"brand-primary-lightest"},{"label":"Custom, Enter a hex code","value":"custom"}]},{"hint":"Applies when custom banner background color selected.","name":"banner_background_hexcode","section":"Presentation","label":"Banner Background Color Hexcode","type":"string"},{"name":"banner_image_position","section":"Presentation","default_value":"center center","label":"Banner Image Position","type":"choice","choices":[{"label":"Left Top","value":"left top"},{"label":"Left Center","value":"left center"},{"label":"Left Bottom","value":"left bottom"},{"label":"Right Top","value":"right top"},{"label":"Right Center","value":"right center"},{"label":"Right Bottom","value":"right bottom"},{"label":"Center Top","value":"center top"},{"label":"Center Center","value":"center center"},{"label":"Center Bottom","value":"center bottom"}]},{"name":"banner_image_display","section":"Presentation","default_value":"cover","label":"Banner Image Display","type":"choice","choices":[{"label":"Scale to fit","value":"cover"},{"label":"Original size","value":"contain"}]},{"name":"banner_text_overlay_color","section":"Presentation","default_value":"topic-header-gradient-dark","label":"Banner Text Overlay Color","type":"choice","choices":[{"label":"Overlay Dark","value":"topic-header-gradient-dark"},{"label":"Overlay Light","value":"topic-header-gradient-light"}]},{"name":"banner_text_overlay_transparency","section":"Presentation","default_value":"0.5","label":"Banner Text Overlay Opacity (0 is full transparency and 1 is no transparency) ","type":"choice","choices":[{"label":"0","value":"0"},{"label":"0.1","value":"0.1"},{"label":"0.2","value":"0.2"},{"label":"0.3","value":"0.3"},{"label":"0.4","value":"0.4"},{"label":"0.5","value":"0.5"},{"label":"0.6","value":"0.6"},{"label":"0.7","value":"0.7"},{"label":"0.8","value":"0.8"},{"label":"0.9","value":"0.9"},{"label":"1","value":"1"}]},{"name":"icon_background_color","section":"Presentation","default_value":"background-primary","label":"Icon Background Color","type":"choice","choices":[{"label":"Background Primary","value":"background-primary"},{"label":"Background Secondary","value":"background-secondary"},{"label":"Background Tertiary","value":"background-tertiary"},{"label":"Custom, Enter a hex code","value":"custom"}]},{"hint":"Applies when custom icon background color selected.","name":"icon_background_hexcode","section":"Presentation","label":"Icon Background Color Hexcode","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	data.breadcrumbs = [];
+	data.displayMode = "text_only";
+
+	var BANNER = "banner";
+	var ICON = "icon";
+	var TEXT_ONLY = "text_only";
+	var topicId = (input &amp;&amp; input.topic_id) || options.topic_id || $sp.getParameter("topic_id");
+	var urlEnabled = gs.getProperty("sn_ex_sp.enable.image.url.support");
+	data.isMobileApp = $sp.getParameter('view') === 'mobile';
+	fetchTopicHeaderData();
+	var portalName = $sp.getPortalRecord().getDisplayValue("title");
+	data.windowTitle = gs.getMessage("{0} - {1}",[data.topic.name, portalName]);
+
+	if (data.topic &amp;&amp; data.topic.parentTopicId) {
+		try {
+			var breadcrumbs = new sn_ex_sp.TopicPageUtil().fetchBreadCrumbsForTopic(data.topic.parentTopicId);
+			breadcrumbs.push(data.breadcrumbs.pop());
+			data.breadcrumbs = breadcrumbs;
+		} catch (e) {
+			gs.error(e.getMessage());
+			gs.addErrorMessage(gs.getMessage("Error occurred, please refer logs for information"));
+		}
+	}
+
+	function fetchTopicHeaderData() {
+		var gr = new GlideRecord("topic");
+		gr.addActiveQuery();
+		gr.addQuery("sys_id", topicId);
+		gr.query();
+		if (gr.next()) {
+			var topicName = gr.getDisplayValue("name");
+			data.topic = {
+				"id": topicId,
+				"name": topicName,
+				"desc": gr.getDisplayValue("description"),
+				"icon": "",
+				"banner": "",
+				"parentTopicId": gr.getValue("parent_topic")
+			};
+			data.breadcrumbs.unshift({
+				"label": topicName,
+				"url": "#"
+			});
+
+			fetchIconOrBanner();
+		}
+	}
+
+
+	function fetchIconOrBanner() {
+		var TOPIC_CONTENT_EXPERIENCE_SC = '';
+		var TOPIC_CONTENT_EXPERIENCE_CC = '';
+		var CEW = '26b2b8cfff02201014c6a36cf43bf1a0';
+		var widget_ce_schedule_content =[];
+		var widget_ce_campaign_content = [];
+
+		if(new GlidePluginManager().isActive('com.sn_content_delivery')){
+			var gr = new GlideRecord('sn_cd_content_visibility');
+			gr.addQuery('topic','CONTAINS', topicId);
+			gr.addActiveQuery();
+			gr.query();
+			while (gr.next()) {
+				if(gr.sp_instance.sp_widget == CEW) {
+					TOPIC_CONTENT_EXPERIENCE_SC = gr.sp_instance;
+					break;
+				}
+			}
+			widget_ce_schedule_content = sn_cd.cd_ContentDelivery.getContentForWidgetInstance(TOPIC_CONTENT_EXPERIENCE_SC, topicId);
+		}
+
+		if(new GlidePluginManager().isActive('com.sn_content_automation')){
+			var gr2 = new GlideRecord('sn_ca_campaign_item');
+			gr2.addQuery('topic','CONTAINS', topicId);
+			gr2.query();
+			while (gr2.next()) {
+				if(gr2.sp_instance.sp_widget == CEW) {
+					TOPIC_CONTENT_EXPERIENCE_CC = gr2.sp_instance;
+					break;
+				}
+			}
+			if(new GlidePluginManager().isActive('com.sn_content_delivery'))
+				widget_ce_campaign_content = sn_cd.cd_ContentDelivery.getContentForWidgetInstance(TOPIC_CONTENT_EXPERIENCE_CC, topicId);
+		}
+
+		if (widget_ce_schedule_content.length === 0 &amp;&amp; widget_ce_campaign_content.length===0) {
+			if(options.select_topics &amp;&amp; options.select_topics.includes(topicId)) {
+				fetchIconOrBannerForSelectedTopics();
+			} else {
+				fetchIconOrBannerForAllTopics();
+			}
+		}
+		else {
+			if(options.select_topics &amp;&amp; options.select_topics.includes(topicId)) {
+				if(options.secondary_display === ICON){
+					setIconDisplay();
+					return;
+				}
+			}
+			else{
+				if(options.primary_display === ICON){
+					setIconDisplay();
+					return;
+				}
+			}
+			setTextOnlyDisplay();
+		}
+	}
+
+	function fetchIconOrBannerForSelectedTopics() {
+		if (options.secondary_display === BANNER) {
+			var banner = fetchTopicBanner();
+			data.topic.banner = banner;
+			data.displayMode = BANNER;
+		} else if (options.secondary_display === ICON) {
+			setIconDisplay();
+		}
+	}
+
+	function fetchIconOrBannerForAllTopics() {
+		if (options.primary_display === BANNER) {
+			var banner = fetchTopicBanner();
+			data.topic.banner = banner;
+			data.displayMode = BANNER;
+		} else if (options.primary_display === ICON) {
+			setIconDisplay();
+		}
+	}
+
+	function setIconDisplay() {
+		var icon = fetchTopicIcon();
+		if(icon &amp;&amp; icon.trim().length &gt; 0) {
+			data.topic.icon = icon;
+			data.displayMode = ICON;
+		}
+		else {
+			setTextOnlyDisplay(); //fallback
+		}
+	}
+	
+	function setTextOnlyDisplay() {
+		data.displayMode = TEXT_ONLY;
+	}
+
+	function fetchTopicBanner() {
+		var image;
+		if(urlEnabled &amp;&amp; urlEnabled === "true")
+			image = new sn_ex_sp.TopicPageUtil().getBannerImage(topicId);
+		else
+			image = sn_taxonomy.Topic.getBannerImage(topicId);
+		return image;
+	}
+
+	function fetchTopicIcon() {
+		var icon;
+		if(urlEnabled &amp;&amp; urlEnabled === "true")
+			icon = new sn_ex_sp.TopicPageUtil().getIcon(topicId);
+		else
+			icon = sn_taxonomy.Topic.getIcon(topicId);
+
+		if(icon &amp;&amp; icon.trim()) {
+			return icon;
+		}
+		return new sn_ex_sp.TopicPageUtil().fetchDefaultIconImage();
+	}
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-05-18 07:01:04&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;10e99777c38830105a09f0ad9840ddbd&lt;/sys_id&gt;&lt;sys_mod_count&gt;1016&lt;/sys_mod_count&gt;&lt;sys_name&gt;Topic Header&lt;/sys_name&gt;&lt;sys_package display_value="Employee Center" source="sn_ex_sp"&gt;4249e63a28d54d61bb6fbf61fd86cccb&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Employee Center"&gt;4249e63a28d54d61bb6fbf61fd86cccb&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_10e99777c38830105a09f0ad9840ddbd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-07-21 10:07:50&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="topic-container"
+     ng-class="{'mobile-border': c.data.isMobileApp }"&gt;
+
+  &lt;div ng-class="data.isMobileApp ? 'topic-header-mobile':'topic-header'"
+       ng-if="data.displayMode === 'text_only' || data.displayMode === 'icon'"&gt;
+    &lt;div class="topic-header-icon__image-div"
+         ng-if="data.displayMode === 'icon'"
+         ng-class="c.getIconColorClass()"
+         ng-style="c.getIconBackgroundColor()"&gt;
+      &lt;img ng-src="{{data.topic.icon}}"
+           ng-if="data.topic.icon"
+           aria-hidden="true" /&gt;
+    &lt;/div&gt;
+
+    &lt;div class="topic-header-icon__text"&gt;
+      &lt;h2 class="topic-header-title"&gt;{{::data.topic.name}}&lt;/h2&gt;
+      &lt;div class="topic-header-description"
+          ng-if="::(options.include_description == 'true' &amp;&amp; data.topic.desc)"&gt;{{::data.topic.desc}}&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+
+  &lt;div ng-class="c.getTopicHeaderWithBannerClass()"
+       ng-if="data.displayMode === 'banner'"&gt;
+    &lt;div class="topic-header-banner__image"
+         ng-class="c.getBannerColorClass()"
+         ng-style="c.getBannerStyle()"&gt;
+      &lt;div class="topic-header-banner__gradient"
+           ng-style="c.getTransparency()"/&gt;
+    &lt;/div&gt;
+    &lt;div class="topic-header-banner__text col-xs-11 col-sm-6 col-md-4"&gt;
+      &lt;h2 class="topic-header-title"&gt;{{::data.topic.name}}&lt;/h2&gt;
+      &lt;div class="topic-header-description"
+          ng-if="::(options.include_description == 'true')"&gt;{{::data.topic.desc}}&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-10-18 08:23:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4d66fb7deb5d5a10f5c4f897cad0cdfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>4966ff3deb5d5a10f5c4f897cad0cd47</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_4d66fb7deb5d5a10f5c4f897cad0cdfb</sys_update_name>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-10-18 08:23:12</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

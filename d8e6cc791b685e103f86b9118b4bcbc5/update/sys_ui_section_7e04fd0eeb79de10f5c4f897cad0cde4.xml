@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Financial" section_id="7e04fd0eeb79de10f5c4f897cad0cde4" sys_domain="global" table="alm_hardware" version="3" view="AAP_View">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_line</element>
+            <position>0</position>
+            <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+            <sys_created_on>2024-11-12 14:03:34</sys_created_on>
+            <sys_id>0b04314eeb79de10f5c4f897cad0cd62</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial" display_value="Financial" name="alm_hardware" sys_domain="global" view="225b36e41bf4d2103f86b9118b4bcbae">7e04fd0eeb79de10f5c4f897cad0cde4</sys_ui_section>
+            <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-11-12 14:03:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>invoice_number</element>
+            <position>1</position>
+            <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+            <sys_created_on>2024-11-12 14:03:34</sys_created_on>
+            <sys_id>0304314eeb79de10f5c4f897cad0cd63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial" display_value="Financial" name="alm_hardware" sys_domain="global" view="225b36e41bf4d2103f86b9118b4bcbae">7e04fd0eeb79de10f5c4f897cad0cde4</sys_ui_section>
+            <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-11-12 14:03:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cost</element>
+            <position>2</position>
+            <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+            <sys_created_on>2024-11-12 14:03:34</sys_created_on>
+            <sys_id>0b04314eeb79de10f5c4f897cad0cd63</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial" display_value="Financial" name="alm_hardware" sys_domain="global" view="225b36e41bf4d2103f86b9118b4bcbae">7e04fd0eeb79de10f5c4f897cad0cde4</sys_ui_section>
+            <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-11-12 14:03:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vendor</element>
+            <position>3</position>
+            <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+            <sys_created_on>2024-11-12 14:03:34</sys_created_on>
+            <sys_id>0304314eeb79de10f5c4f897cad0cd64</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial" display_value="Financial" name="alm_hardware" sys_domain="global" view="225b36e41bf4d2103f86b9118b4bcbae">7e04fd0eeb79de10f5c4f897cad0cde4</sys_ui_section>
+            <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-11-12 14:03:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>eligible_for_refresh</element>
+            <position>4</position>
+            <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+            <sys_created_on>2024-11-12 14:03:34</sys_created_on>
+            <sys_id>0b04314eeb79de10f5c4f897cad0cd64</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial" display_value="Financial" name="alm_hardware" sys_domain="global" view="225b36e41bf4d2103f86b9118b4bcbae">7e04fd0eeb79de10f5c4f897cad0cde4</sys_ui_section>
+            <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-11-12 14:03:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+            <sys_created_on>2024-11-12 14:03:34</sys_created_on>
+            <sys_id>0304314eeb79de10f5c4f897cad0cd65</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial" display_value="Financial" name="alm_hardware" sys_domain="global" view="225b36e41bf4d2103f86b9118b4bcbae">7e04fd0eeb79de10f5c4f897cad0cde4</sys_ui_section>
+            <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-11-12 14:03:34</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_line.opened_at</element>
+            <position>6</position>
+            <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+            <sys_created_on>2024-11-12 14:03:34</sys_created_on>
+            <sys_id>0b04314eeb79de10f5c4f897cad0cd65</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial" display_value="Financial" name="alm_hardware" sys_domain="global" view="225b36e41bf4d2103f86b9118b4bcbae">7e04fd0eeb79de10f5c4f897cad0cde4</sys_ui_section>
+            <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-11-12 14:03:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>gl_account</element>
+            <position>7</position>
+            <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+            <sys_created_on>2024-11-12 14:03:34</sys_created_on>
+            <sys_id>0304314eeb79de10f5c4f897cad0cd66</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial" display_value="Financial" name="alm_hardware" sys_domain="global" view="225b36e41bf4d2103f86b9118b4bcbae">7e04fd0eeb79de10f5c4f897cad0cde4</sys_ui_section>
+            <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-11-12 14:03:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cost_center</element>
+            <position>8</position>
+            <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+            <sys_created_on>2024-11-12 14:03:34</sys_created_on>
+            <sys_id>0b04314eeb79de10f5c4f897cad0cd66</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial" display_value="Financial" name="alm_hardware" sys_domain="global" view="225b36e41bf4d2103f86b9118b4bcbae">7e04fd0eeb79de10f5c4f897cad0cde4</sys_ui_section>
+            <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-11-12 14:03:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>acquisition_method</element>
+            <position>9</position>
+            <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+            <sys_created_on>2024-11-12 14:03:34</sys_created_on>
+            <sys_id>0304314eeb79de10f5c4f897cad0cd67</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial" display_value="Financial" name="alm_hardware" sys_domain="global" view="225b36e41bf4d2103f86b9118b4bcbae">7e04fd0eeb79de10f5c4f897cad0cde4</sys_ui_section>
+            <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-11-12 14:03:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>expenditure_type</element>
+            <position>10</position>
+            <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+            <sys_created_on>2024-11-12 14:03:34</sys_created_on>
+            <sys_id>0b04314eeb79de10f5c4f897cad0cd67</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Financial" display_value="Financial" name="alm_hardware" sys_domain="global" view="225b36e41bf4d2103f86b9118b4bcbae">7e04fd0eeb79de10f5c4f897cad0cde4</sys_ui_section>
+            <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-11-12 14:03:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Financial</caption>
+            <header>false</header>
+            <name>alm_hardware</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+            <sys_created_on>2024-11-12 14:03:33</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7e04fd0eeb79de10f5c4f897cad0cde4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>alm_hardware</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+            <sys_update_name>sys_ui_section_7e04fd0eeb79de10f5c4f897cad0cde4</sys_update_name>
+            <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+            <sys_updated_on>2024-11-12 14:03:33</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="AAP View" name="AAP_View">225b36e41bf4d2103f86b9118b4bcbae</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

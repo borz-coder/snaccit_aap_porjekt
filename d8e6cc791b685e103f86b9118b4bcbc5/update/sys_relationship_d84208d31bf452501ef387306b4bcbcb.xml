@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>x_sigh_a_a_portal_invoices</basic_apply_to>
+        <basic_query_from>alm_asset</basic_query_from>
+        <insert_callback/>
+        <name>Assets for this Invoice</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+
+	// Add your code here, such as current.addQuery(field, value);
+	current.addQuery('company', parent.company);
+
+})(current, parent);]]></query_with>
+        <reference_field/>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>steven.mueller@agineo.de</sys_created_by>
+        <sys_created_on>2024-09-27 09:56:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d84208d31bf452501ef387306b4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Assets for this Invoice</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_relationship_d84208d31bf452501ef387306b4bcbcb</sys_update_name>
+        <sys_updated_by>steven.mueller@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-09-27 09:56:44</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=d84208d31bf452501ef387306b4bcbcb"/>
+</record_update>
