@@ -67,7 +67,7 @@
         <sys_created_on>2024-11-12 15:20:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>09d4cec6ebf9de10f5c4f897cad0cdac</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Universe 11</sys_name>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
         <sys_policy/>
@@ -75,14 +75,14 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>sc_cat_item_09d4cec6ebf9de10f5c4f897cad0cdac</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2024-11-15 14:56:08</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:17:34</sys_updated_on>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>11</version>
+        <version>12</version>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>

@@ -2,21 +2,6 @@
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_sigh_a_a_portal_invoices" version="2" view="sys_ref_list">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>sys_id</element>
-            <list_id display_value="x_sigh_a_a_portal_invoices" element="NULL" name="x_sigh_a_a_portal_invoices" parent="NULL" relationship="NULL" sys_domain="global" view="8d55927a4f38ae00d6c750528110c757">89ca33871bb452501ef387306b4bcbc0</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>0</position>
-            <sum>false</sum>
-            <sys_created_by>steven.mueller@agineo.de</sys_created_by>
-            <sys_created_on>2024-09-27 09:23:18</sys_created_on>
-            <sys_id>0dca33871bb452501ef387306b4bcbc1</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>steven.mueller@agineo.de</sys_updated_by>
-            <sys_updated_on>2024-09-27 09:23:18</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
             <element>company</element>
             <list_id display_value="x_sigh_a_a_portal_invoices" element="NULL" name="x_sigh_a_a_portal_invoices" parent="NULL" relationship="NULL" sys_domain="global" view="8d55927a4f38ae00d6c750528110c757">89ca33871bb452501ef387306b4bcbc0</list_id>
             <max_value>false</max_value>

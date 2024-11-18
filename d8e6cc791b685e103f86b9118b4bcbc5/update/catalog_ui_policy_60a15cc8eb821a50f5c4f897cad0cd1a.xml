@@ -7,7 +7,7 @@
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
         <catalog_conditions/>
-        <catalog_item display_value="Universe 11">09d4cec6ebf9de10f5c4f897cad0cdac</catalog_item>
+        <catalog_item display_value="Test_Printer_2">ab0e4ecaeb3dde10f5c4f897cad0cd1d</catalog_item>
         <conditions/>
         <description/>
         <global>true</global>
@@ -54,34 +54,34 @@
 
 	g_form.setDisplay('hp_printer_type', false);
 
-	g_form.setDisplay('xerox_printer_type', false);
+	g_form.setDisplay('xerox_printer_type', true);
 
-    g_form.setDisplay('universe_11_phone_memory_size', true);
-    g_form.setDisplay('universe_11_phone_color', true);
+    g_form.setDisplay('universe_11_phone_memory_size', false);
+    g_form.setDisplay('universe_11_phone_color', false);
 
 	g_form.setDisplay('universe_12_phone_memory_size', false);
     g_form.setDisplay('universe_12_phone_color', false);
 	
 }]]></script_true>
         <set_values/>
-        <short_description>Choose variables for your Universe 11</short_description>
+        <short_description>Choose your Xerox-printer</short_description>
         <sys_class_name>catalog_ui_policy</sys_class_name>
         <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
-        <sys_created_on>2024-11-15 14:55:14</sys_created_on>
+        <sys_created_on>2024-11-18 12:07:54</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>517c15473b39125013b9202a85e45a19</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Choose variables for your Universe 11</sys_name>
+        <sys_id>60a15cc8eb821a50f5c4f897cad0cd1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Choose your Xerox-printer</sys_name>
         <sys_overrides/>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
-        <sys_update_name>catalog_ui_policy_517c15473b39125013b9202a85e45a19</sys_update_name>
+        <sys_update_name>catalog_ui_policy_60a15cc8eb821a50f5c4f897cad0cd1a</sys_update_name>
         <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 12:17:34</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:07:54</sys_updated_on>
         <table/>
         <ui_type>10</ui_type>
         <va_supported>true</va_supported>

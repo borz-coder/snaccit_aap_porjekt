@@ -16,7 +16,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>order_with_approval</internal_name>
-        <label_cache>[{"name":"1928a9b6-23ce-4dd4-9446-31b22391a0d2.requested_item","label":"1 - Submit Catalog Item Request➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"document_id","base_type":"document_id","usedInstances":{"bc62eefa-05c8-4eeb-90c7-15fe5da6e93d":["record"]},"attributes":{"uiType":"document_id","uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"aad3452b-309c-469c-9797-4df9ef6f86be"}},{"name":"8ba36813-db9d-42ce-bd6f-836482a5b713.select_the_item","label":"1 - Get Catalog Variables➛select_the_item","reference":"cmdb_consumable_product_model","reference_display":"Consumable Model","type":"reference","base_type":"reference","usedInstances":{"bc62eefa-05c8-4eeb-90c7-15fe5da6e93d":["record"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"8ba36813-db9d-42ce-bd6f-836482a5b713":["requested_item"],"9c1929c5-b277-444e-965f-37089d2645e9":["requested_item"],"1928a9b6-23ce-4dd4-9446-31b22391a0d2":["choose_a_product_category","select_the_item"],"09ac574f-2e58-4221-89be-e3a57cbf8489":["requested_item"]},"attributes":{"default_search_field":"number"}},{"name":"8ba36813-db9d-42ce-bd6f-836482a5b713.choose_a_product_category","label":"1 - Get Catalog Variables➛choose_a_product_category","reference":"cmdb_model_category","reference_display":"Model Category","type":"reference","base_type":"reference","usedInstances":{"bc62eefa-05c8-4eeb-90c7-15fe5da6e93d":["record"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"{{static.9db39fe81b78d2103f86b9118b4bcb4c}}","label":"AAP_test_provider AAP","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"bc62eefa-05c8-4eeb-90c7-15fe5da6e93d":["approval_conditions"]}}]</label_cache>
+        <label_cache>[{"name":"{{static.9db39fe81b78d2103f86b9118b4bcb4c}}","label":"AAP_test_provider AAP","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"bc62eefa-05c8-4eeb-90c7-15fe5da6e93d":["approval_conditions"]}},{"name":"8ba36813-db9d-42ce-bd6f-836482a5b713.choose_a_product_category","label":"1 - Get Catalog Variables➛choose_a_product_category","reference":"cmdb_model_category","reference_display":"Model Category","type":"reference","base_type":"reference","usedInstances":{"bc62eefa-05c8-4eeb-90c7-15fe5da6e93d":["record"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"8ba36813-db9d-42ce-bd6f-836482a5b713":["requested_item"],"9c1929c5-b277-444e-965f-37089d2645e9":["requested_item"],"1928a9b6-23ce-4dd4-9446-31b22391a0d2":["choose_a_product_category","select_the_item"],"09ac574f-2e58-4221-89be-e3a57cbf8489":["requested_item"],"bc62eefa-05c8-4eeb-90c7-15fe5da6e93d":["record"],"95efbd03-3c1e-4692-a12a-f602159ec414":["requested_item"],"87cbc342-b6b3-4b8e-a2c1-8e0ca7099bb3":["record"],"ee291ea7-d3c2-41cb-a122-62826bdd5eee":["record"]},"attributes":{"default_search_field":"number"}},{"name":"8ba36813-db9d-42ce-bd6f-836482a5b713.select_the_item","label":"1 - Get Catalog Variables➛select_the_item","reference":"cmdb_consumable_product_model","reference_display":"Consumable Model","type":"reference","base_type":"reference","usedInstances":{"bc62eefa-05c8-4eeb-90c7-15fe5da6e93d":["record"]},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"1928a9b6-23ce-4dd4-9446-31b22391a0d2.requested_item","label":"1 - Submit Catalog Item Request➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"document_id","base_type":"document_id","usedInstances":{"bc62eefa-05c8-4eeb-90c7-15fe5da6e93d":["record"]},"attributes":{"uiType":"document_id","uiTypeLabel":"Document ID","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"aad3452b-309c-469c-9797-4df9ef6f86be"}},{"name":"{{static.2a2cfa1a3b791e1013b9202a85e45a77}}","label":"Test Konzern","reference":"sys_user","type":"reference","base_type":"reference","usedInstances":{"bc62eefa-05c8-4eeb-90c7-15fe5da6e93d":["approval_conditions"]}},{"name":"bc62eefa-05c8-4eeb-90c7-15fe5da6e93d.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"4cbc9673-2ff7-488b-9a7e-0e625098fdd1":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <latest_snapshot/>
         <master_snapshot/>
         <name>Order with Approval</name>
@@ -38,7 +38,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c922cf6a3b319e1013b9202a85e45abc</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Order with Approval</sys_name>
         <sys_overrides/>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
@@ -47,7 +47,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>sys_hub_flow_c922cf6a3b319e1013b9202a85e45abc</sys_update_name>
         <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-11-15 10:38:48</sys_updated_on>
+        <sys_updated_on>2024-11-18 13:52:50</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_variable_value action="delete_multiple" query="document_key=c922cf6a3b319e1013b9202a85e45abc"/>
@@ -63,7 +63,7 @@
         <sys_created_on>2024-11-14 09:54:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>862e8fa23bb19e1013b9202a85e45ae5</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -71,7 +71,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-11-15 10:38:47</sys_updated_on>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
         <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -250,7 +250,7 @@
         <sys_created_on>2024-11-14 09:24:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cd77cfe23b719e1013b9202a85e45acb</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -258,7 +258,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-11-15 10:38:47</sys_updated_on>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -274,7 +274,104 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cd77cfe23b719e1013b9202a85e45acb"/>
     <sys_hub_flow_output action="delete_multiple" query="model=c922cf6a3b319e1013b9202a85e45abc"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=c922cf6a3b319e1013b9202a85e45abc"/>
-    <sys_hub_action_instance action="delete_multiple" query="flow=c922cf6a3b319e1013b9202a85e45abc^sys_idNOT INacf1a0c33bb1125013b9202a85e45a4a,dd7703263b719e1013b9202a85e45a22"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=c922cf6a3b319e1013b9202a85e45abc^sys_idNOT IN082be80ceb061a50f5c4f897cad0cd84,802be80ceb061a50f5c4f897cad0cd97,dd7703263b719e1013b9202a85e45a22"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Notification">0d8dd9f10f11101051218e8ebc767e27</action_type>
+        <action_type_parent display_value="Send Notification">7eda5d710f11101051218e8ebc767ec1</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Order with Approval">c922cf6a3b319e1013b9202a85e45abc</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-18 13:52:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>082be80ceb061a50f5c4f897cad0cd84</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
+        <ui_id>ee291ea7-d3c2-41cb-a122-62826bdd5eee</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=082be80ceb061a50f5c4f897cad0cd84"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>082be80ceb061a50f5c4f897cad0cd84</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-18 13:52:49</sys_created_on>
+        <sys_id>842be80ceb061a50f5c4f897cad0cd87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
+        <value>3fc5e484eb061a50f5c4f897cad0cdc6</value>
+        <variable display_value="Notification">418dd9f10f11101051218e8ebc767e38</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>082be80ceb061a50f5c4f897cad0cd84</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-18 13:52:49</sys_created_on>
+        <sys_id>cc2be80ceb061a50f5c4f897cad0cd87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">818dd9f10f11101051218e8ebc767e32</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=082be80ceb061a50f5c4f897cad0cd84"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>notification</field>
+        <id>082be80ceb061a50f5c4f897cad0cd84</id>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-18 13:52:49</sys_created_on>
+        <sys_id>882be80ceb061a50f5c4f897cad0cd86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>082be80ceb061a50f5c4f897cad0cd84</id>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-18 13:52:49</sys_created_on>
+        <sys_id>042be80ceb061a50f5c4f897cad0cd87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>082be80ceb061a50f5c4f897cad0cd84</id>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-18 13:52:49</sys_created_on>
+        <sys_id>402be80ceb061a50f5c4f897cad0cd87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0d8dd9f10f11101051218e8ebc767e27</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=082be80ceb061a50f5c4f897cad0cd84"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=082be80ceb061a50f5c4f897cad0cd84"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -286,13 +383,13 @@
         <display_text/>
         <flow display_value="Order with Approval">c922cf6a3b319e1013b9202a85e45abc</flow>
         <generation_source/>
-        <order>1</order>
-        <parent_ui_id/>
+        <order>4</order>
+        <parent_ui_id>4cbc9673-2ff7-488b-9a7e-0e625098fdd1</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
-        <sys_created_on>2024-11-15 10:38:48</sys_created_on>
+        <sys_created_on>2024-11-18 13:52:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>acf1a0c33bb1125013b9202a85e45a4a</sys_id>
+        <sys_id>802be80ceb061a50f5c4f897cad0cd97</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -301,51 +398,77 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-11-15 10:38:48</sys_updated_on>
-        <ui_id>09ac574f-2e58-4221-89be-e3a57cbf8489</ui_id>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
+        <ui_id>95efbd03-3c1e-4692-a12a-f602159ec414</ui_id>
     </sys_hub_action_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=acf1a0c33bb1125013b9202a85e45a4a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=802be80ceb061a50f5c4f897cad0cd97"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_action_instance</document>
-        <document_key>acf1a0c33bb1125013b9202a85e45a4a</document_key>
+        <document_key>802be80ceb061a50f5c4f897cad0cd97</document_key>
         <order>1</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
-        <sys_created_on>2024-11-15 10:38:48</sys_created_on>
-        <sys_id>e8f1a0c33bb1125013b9202a85e45a4d</sys_id>
+        <sys_created_on>2024-11-18 13:52:49</sys_created_on>
+        <sys_id>042be80ceb061a50f5c4f897cad0cd99</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-11-15 10:38:48</sys_updated_on>
-        <value>d9edb361eb3d5e10f5c4f897cad0cd8e</value>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
+        <value>9abc418b3bb5125013b9202a85e45a5a</value>
         <variable display_value="Template Catalog Items and Variable Sets">bb0ba3abc31013002841b63b12d3aef1</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=acf1a0c33bb1125013b9202a85e45a4a"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>requested_item</field>
-        <id>acf1a0c33bb1125013b9202a85e45a4a</id>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>802be80ceb061a50f5c4f897cad0cd97</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
-        <sys_created_on>2024-11-15 10:38:48</sys_created_on>
-        <sys_id>68f1a0c33bb1125013b9202a85e45a4d</sys_id>
+        <sys_created_on>2024-11-18 13:52:49</sys_created_on>
+        <sys_id>402be80ceb061a50f5c4f897cad0cd99</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-11-15 10:38:48</sys_updated_on>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
+        <value>07e0054b3b75125013b9202a85e45a1f:item_option_new,1535200b3bb1125013b9202a85e45a7c:item_option_new,1561418b3b75125013b9202a85e45a06:item_option_new,2229e0033bf1125013b9202a85e45ac3:item_option_new,267468c73bb1125013b9202a85e45ab1:item_option_new,5f4f3c873b75125013b9202a85e45af0:item_option_new,5f93a8473bb1125013b9202a85e45ad2:item_option_new,70ce5d8b3b39125013b9202a85e45a8f:item_option_new,7980050b3b75125013b9202a85e45a21:item_option_new,8be5684b3bb1125013b9202a85e45a30:item_option_new,98e9ac033bf1125013b9202a85e45ae6:item_option_new,9acf7cc73b75125013b9202a85e45a16:item_option_new,9df0658f3b39125013b9202a85e45a4f:item_option_new,a23ce0473bf1125013b9202a85e45a71:item_option_new,a430890b3b75125013b9202a85e45acf:item_option_new,ad76a48b3bb1125013b9202a85e45a8c:item_option_new,b0ff950f3b39125013b9202a85e45a2f:item_option_new,bd5aec033bf1125013b9202a85e45a45:item_option_new,c480e94f3b39125013b9202a85e45aaf:item_option_new,f331e98f3b39125013b9202a85e45a71:item_option_new,f74ebc473b75125013b9202a85e45af9:item_option_new,fa3fd1cb3b39125013b9202a85e45a52:item_option_new,fab8248f3bb1125013b9202a85e45a1f:item_option_new</value>
+        <variable display_value="Catalog Variables">7b0ba3abc31013002841b63b12d3aef7</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=802be80ceb061a50f5c4f897cad0cd97"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>catalog_variables</field>
+        <id>802be80ceb061a50f5c4f897cad0cd97</id>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-18 13:52:49</sys_created_on>
+        <sys_id>482be80ceb061a50f5c4f897cad0cd98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requested_item</field>
+        <id>802be80ceb061a50f5c4f897cad0cd97</id>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-18 13:52:49</sys_created_on>
+        <sys_id>cc2be80ceb061a50f5c4f897cad0cd98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
         <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
         <value>{{Service Catalog_1.request_item}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>template_catalog_item</field>
-        <id>acf1a0c33bb1125013b9202a85e45a4a</id>
+        <id>802be80ceb061a50f5c4f897cad0cd97</id>
         <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
-        <sys_created_on>2024-11-15 10:38:48</sys_created_on>
-        <sys_id>60f1a0c33bb1125013b9202a85e45a4d</sys_id>
+        <sys_created_on>2024-11-18 13:52:49</sys_created_on>
+        <sys_id>0c2be80ceb061a50f5c4f897cad0cd98</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-11-15 10:38:48</sys_updated_on>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
         <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
         <value/>
     </sys_element_mapping>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=acf1a0c33bb1125013b9202a85e45a4a"/>
-    <sys_hub_alias_mapping action="delete_multiple" query="source_id=acf1a0c33bb1125013b9202a85e45a4a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=802be80ceb061a50f5c4f897cad0cd97"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=802be80ceb061a50f5c4f897cad0cd97"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -364,7 +487,7 @@
         <sys_created_on>2024-11-14 09:24:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>dd7703263b719e1013b9202a85e45a22</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -372,7 +495,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-11-15 10:38:48</sys_updated_on>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
         <ui_id>bc62eefa-05c8-4eeb-90c7-15fe5da6e93d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=dd7703263b719e1013b9202a85e45a22"/>
@@ -398,10 +521,10 @@
         <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
         <sys_created_on>2024-11-14 09:54:14</sys_created_on>
         <sys_id>8a2e8fa23bb19e1013b9202a85e45af8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-11-15 10:38:48</sys_updated_on>
-        <value/>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
+        <value>approval_history</value>
         <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -412,10 +535,10 @@
         <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
         <sys_created_on>2024-11-14 09:54:14</sys_created_on>
         <sys_id>c62e8fa23bb19e1013b9202a85e45af8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-11-15 10:38:48</sys_updated_on>
-        <value/>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
+        <value>approval</value>
         <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -426,10 +549,10 @@
         <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
         <sys_created_on>2024-11-14 09:24:58</sys_created_on>
         <sys_id>dd7703263b719e1013b9202a85e45a4a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-11-15 10:38:48</sys_updated_on>
-        <value/>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
+        <value>sc_req_item</value>
         <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=dd7703263b719e1013b9202a85e45a22"/>
@@ -439,11 +562,11 @@
         <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
         <sys_created_on>2024-11-14 09:24:58</sys_created_on>
         <sys_id>d57703263b719e1013b9202a85e45a4a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-11-14 09:24:58</sys_updated_on>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
         <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
-        <value>ApprovesRejectsAnyU[{{static.9db39fe81b78d2103f86b9118b4bcb4c}}]</value>
+        <value>ApprovesRejectsAnyU[{{static.2a2cfa1a3b791e1013b9202a85e45a77}}]</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>approval_field</field>
@@ -487,11 +610,11 @@
         <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
         <sys_created_on>2024-11-14 09:24:58</sys_created_on>
         <sys_id>517703263b719e1013b9202a85e45a4a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-11-15 10:38:48</sys_updated_on>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
         <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
-        <value/>
+        <value>{{Service Catalog_1.request_item}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>table</field>
@@ -508,7 +631,87 @@
     <sys_hub_input_scripts action="delete_multiple" query="instance=dd7703263b719e1013b9202a85e45a22"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=dd7703263b719e1013b9202a85e45a22"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=c922cf6a3b319e1013b9202a85e45abc"/>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=c922cf6a3b319e1013b9202a85e45abc"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=c922cf6a3b319e1013b9202a85e45abc^sys_idNOT INc82be80ceb061a50f5c4f897cad0cd8d"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">8c2be80ceb061a50f5c4f897cad0cd8c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Order with Approval">c922cf6a3b319e1013b9202a85e45abc</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-18 13:52:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c82be80ceb061a50f5c4f897cad0cd8d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
+        <ui_id>4cbc9673-2ff7-488b-9a7e-0e625098fdd1</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c82be80ceb061a50f5c4f897cad0cd8d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c82be80ceb061a50f5c4f897cad0cd8d</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-18 13:52:49</sys_created_on>
+        <sys_id>082be80ceb061a50f5c4f897cad0cd91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
+        <value>Approved</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c82be80ceb061a50f5c4f897cad0cd8d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>c82be80ceb061a50f5c4f897cad0cd8d</id>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-18 13:52:49</sys_created_on>
+        <sys_id>842be80ceb061a50f5c4f897cad0cd91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{bc62eefa-05c8-4eeb-90c7-15fe5da6e93d.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>c82be80ceb061a50f5c4f897cad0cd8d</id>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-18 13:52:49</sys_created_on>
+        <sys_id>c02be80ceb061a50f5c4f897cad0cd91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 13:52:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c82be80ceb061a50f5c4f897cad0cd8d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c82be80ceb061a50f5c4f897cad0cd8d"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=c922cf6a3b319e1013b9202a85e45abc"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=c922cf6a3b319e1013b9202a85e45abc"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_c922cf6a3b319e1013b9202a85e45abc^sys_idNOT IN1d77cfe23b719e1013b9202a85e45ad0,c577cfe23b719e1013b9202a85e45abe"/>

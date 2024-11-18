@@ -4,11 +4,10 @@
         <acls/>
         <active>false</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=9953000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>25000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build/>
         <copied_from/>
         <copied_from_name/>
         <description/>
@@ -16,20 +15,19 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>create_ci_for_asset</internal_name>
-        <label_cache>[{"name":"624e7580-c76d-4ef6-aa66-1ab339047daf.record","label":"11 - Create Record➛Printer Record","reference":"cmdb_ci_printer","reference_display":"Printer Record","type":"reference","base_type":"reference","usedInstances":{"41ff63b6-0d9a-47d5-a2b8-21f362f5f276":["ci"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"db6e3275-3959-420d-bc4c-ee1e26082efd.record","label":"8 - Create Record➛Server Record","reference":"cmdb_ci_server","reference_display":"Server Record","type":"reference","base_type":"reference","usedInstances":{"62060d27-161b-4bc4-a7c8-cd9cd1c5dce0":["ci"],"41ff63b6-0d9a-47d5-a2b8-21f362f5f276":["values"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.x_sigh_a_a_portal_attribute_2","label":"Trigger - Record Created➛Hardware Record➛Attribute 2","reference":"","reference_display":"Attribute 2","type":"string","base_type":"string","parent_table_name":"alm_hardware","column_name":"x_sigh_a_a_portal_attribute_2","usedInstances":{"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["ram"]}},{"name":"Created_1.current.asset_tag","label":"Trigger - Record Created➛Hardware Record➛Asset tag","reference":"","reference_display":"Asset tag","type":"string","base_type":"string","parent_table_name":"alm_hardware","column_name":"asset_tag","usedInstances":{"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["asset_tag"],"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["asset_tag"],"db6e3275-3959-420d-bc4c-ee1e26082efd":["asset_tag"],"624e7580-c76d-4ef6-aa66-1ab339047daf":["asset_tag"],"48e7ca6f-bd72-4df3-83f1-406c66a1be2c":["asset_tag"]}},{"name":"Created_1.current.company","label":"Trigger - Record Created➛Hardware Record➛Company","reference":"core_company","reference_display":"Company","type":"reference","base_type":"reference","parent_table_name":"alm_hardware","column_name":"company","usedInstances":{"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["company"]}},{"name":"Created_1.current.serial_number","label":"Trigger - Record Created➛Hardware Record➛Serial number","reference":"","reference_display":"Serial number","type":"string","base_type":"string","parent_table_name":"alm_hardware","column_name":"serial_number","usedInstances":{"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["serial_number"],"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["serial_number"],"db6e3275-3959-420d-bc4c-ee1e26082efd":["serial_number"],"624e7580-c76d-4ef6-aa66-1ab339047daf":["serial_number"],"48e7ca6f-bd72-4df3-83f1-406c66a1be2c":["serial_number"]}},{"name":"Created_1.current.model","label":"Trigger - Record Created➛Hardware Record➛Model","reference":"cmdb_model","reference_display":"Model","type":"reference","base_type":"reference","parent_table_name":"alm_hardware","column_name":"model","usedInstances":{"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["model_id"],"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["model_id"],"db6e3275-3959-420d-bc4c-ee1e26082efd":["model_id"],"624e7580-c76d-4ef6-aa66-1ab339047daf":["model_id"],"48e7ca6f-bd72-4df3-83f1-406c66a1be2c":["model_id"]}},{"name":"Created_1.current.display_name","label":"Trigger - Record Created➛Hardware Record➛Display name","reference":"","reference_display":"Display name","type":"string","base_type":"string","parent_table_name":"alm_hardware","column_name":"display_name","usedInstances":{"a2366282-ea70-459d-bbef-b45572a563f0":["name"]}},{"name":"Created_1.current.model.manufacturer","label":"Trigger - Record Created➛Hardware Record➛Model➛Manufacturer","reference":"core_company","reference_display":"Company","type":"reference","base_type":"reference","parent_table_name":"cmdb_model","column_name":"manufacturer","usedInstances":{"a2366282-ea70-459d-bbef-b45572a563f0":["manufacturer"],"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["manufacturer"],"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["manufacturer"],"db6e3275-3959-420d-bc4c-ee1e26082efd":["manufacturer"],"624e7580-c76d-4ef6-aa66-1ab339047daf":["manufacturer"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Hardware Record","reference":"alm_hardware","reference_display":"Hardware","type":"reference","base_type":"reference","usedInstances":{"a2366282-ea70-459d-bbef-b45572a563f0":["name"],"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["name","serial_number"],"c0a35c4c-8b00-418f-a144-bad72933f7b3":["record"],"5e14ef7f-5243-4b0e-880b-1eb32eb2824e":["record"],"db6e3275-3959-420d-bc4c-ee1e26082efd":["asset_tag"],"62060d27-161b-4bc4-a7c8-cd9cd1c5dce0":["record"],"41ff63b6-0d9a-47d5-a2b8-21f362f5f276":["record"],"a8ed9fad-077f-4229-9c54-2faa4a568508":["record"]},"attributes":{}},{"name":"Created_1.current.model.name","label":"Trigger - Record Created➛Hardware Record➛Model➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmdb_model","column_name":"name","usedInstances":{"a2366282-ea70-459d-bbef-b45572a563f0":["name"],"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["name"],"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["name"],"db6e3275-3959-420d-bc4c-ee1e26082efd":["name"],"624e7580-c76d-4ef6-aa66-1ab339047daf":["name"],"48e7ca6f-bd72-4df3-83f1-406c66a1be2c":["name"]}},{"name":"Created_1.current.model_category","label":"Trigger - Record Created➛Hardware Record➛Model category","reference":"cmdb_model_category","reference_display":"Model category","type":"reference","base_type":"reference","parent_table_name":"alm_hardware","column_name":"model_category","usedInstances":{"f5ec9e5a-7c53-4a61-9d18-a501f77615c3":["condition"],"9faf4c72-33a3-4956-850d-ac63e2b92b79":["condition"],"0b09c2a6-6bba-4df2-8fa1-ab8580f05310":["condition"],"4a24c36b-4e3f-42ac-a6e0-4bbc32723a2b":["condition"],"1623f94d-44af-4c82-aa86-42a474c5b72b":["condition"]}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Hardware Table","reference":"alm_hardware","reference_display":"Hardware","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"25be1dbb-6e72-48c9-8e9b-15a6443fe76d.record","label":"2 - Create Record➛Communication Device Record","reference":"cmdb_ci_comm","reference_display":"Communication Device Record","type":"reference","base_type":"reference","usedInstances":{"c0a35c4c-8b00-418f-a144-bad72933f7b3":["ci"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.x_sigh_a_a_portal_attribute_1","label":"Trigger - Record Created➛Hardware Record➛Attribute 1","reference":"","reference_display":"Attribute 1","type":"string","base_type":"string","parent_table_name":"alm_hardware","column_name":"x_sigh_a_a_portal_attribute_1","usedInstances":{"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["disk_space"]}},{"name":"ac4b988f-aa8d-4d53-8512-0210b42bfc7b.record","label":"5 - Create Record➛Personal Computer Record","reference":"cmdb_ci_pc_hardware","reference_display":"Personal Computer Record","type":"reference","base_type":"reference","usedInstances":{"5e14ef7f-5243-4b0e-880b-1eb32eb2824e":["ci"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"48e7ca6f-bd72-4df3-83f1-406c66a1be2c.record","label":"14 - Create Record➛Computer Peripheral Record","reference":"cmdb_ci_peripheral","reference_display":"Computer Peripheral","type":"reference","base_type":"reference","usedInstances":{"a8ed9fad-077f-4229-9c54-2faa4a568508":["ci"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
-        <latest_snapshot/>
-        <master_snapshot/>
+        <label_cache>[{"name":"48e7ca6f-bd72-4df3-83f1-406c66a1be2c.record","label":"14 - Create Record➛Computer Peripheral Record","reference":"cmdb_ci_peripheral","reference_display":"Computer Peripheral","type":"reference","base_type":"reference","usedInstances":{"a8ed9fad-077f-4229-9c54-2faa4a568508":["ci"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac4b988f-aa8d-4d53-8512-0210b42bfc7b.record","label":"5 - Create Record➛Personal Computer Record","reference":"cmdb_ci_pc_hardware","reference_display":"Personal Computer","type":"reference","base_type":"reference","usedInstances":{"5e14ef7f-5243-4b0e-880b-1eb32eb2824e":["ci"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.x_sigh_a_a_portal_attribute_1","label":"Trigger - Record Created➛Hardware Record➛Attribute 1","reference":"","reference_display":"Attribute 1","type":"string","base_type":"string","parent_table_name":"alm_hardware","column_name":"x_sigh_a_a_portal_attribute_1","usedInstances":{"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["disk_space"]}},{"name":"25be1dbb-6e72-48c9-8e9b-15a6443fe76d.record","label":"2 - Create Record➛Communication Device Record","reference":"cmdb_ci_comm","reference_display":"Communication Device","type":"reference","base_type":"reference","usedInstances":{"c0a35c4c-8b00-418f-a144-bad72933f7b3":["ci"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Hardware Table","reference":"alm_hardware","reference_display":"Hardware","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.model_category","label":"Trigger - Record Created➛Hardware Record➛Model category","reference":"cmdb_model_category","reference_display":"Model Category","type":"reference","base_type":"reference","parent_table_name":"alm_hardware","column_name":"model_category","usedInstances":{"f5ec9e5a-7c53-4a61-9d18-a501f77615c3":["condition"],"9faf4c72-33a3-4956-850d-ac63e2b92b79":["condition"],"0b09c2a6-6bba-4df2-8fa1-ab8580f05310":["condition"],"4a24c36b-4e3f-42ac-a6e0-4bbc32723a2b":["condition"],"1623f94d-44af-4c82-aa86-42a474c5b72b":["condition"]}},{"name":"Created_1.current.model.name","label":"Trigger - Record Created➛Hardware Record➛Model➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmdb_model","column_name":"name","usedInstances":{"a2366282-ea70-459d-bbef-b45572a563f0":["name"],"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["name"],"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["name"],"db6e3275-3959-420d-bc4c-ee1e26082efd":["name"],"624e7580-c76d-4ef6-aa66-1ab339047daf":["name"],"48e7ca6f-bd72-4df3-83f1-406c66a1be2c":["name"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Hardware Record","reference":"alm_hardware","reference_display":"Hardware","type":"reference","base_type":"reference","usedInstances":{"a2366282-ea70-459d-bbef-b45572a563f0":["name"],"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["name","serial_number"],"c0a35c4c-8b00-418f-a144-bad72933f7b3":["record"],"5e14ef7f-5243-4b0e-880b-1eb32eb2824e":["record"],"db6e3275-3959-420d-bc4c-ee1e26082efd":["asset_tag"],"62060d27-161b-4bc4-a7c8-cd9cd1c5dce0":["record"],"41ff63b6-0d9a-47d5-a2b8-21f362f5f276":["record"],"a8ed9fad-077f-4229-9c54-2faa4a568508":["record"]},"attributes":{}},{"name":"Created_1.current.model.manufacturer","label":"Trigger - Record Created➛Hardware Record➛Model➛Manufacturer","reference":"core_company","reference_display":"Company","type":"reference","base_type":"reference","parent_table_name":"cmdb_model","column_name":"manufacturer","usedInstances":{"a2366282-ea70-459d-bbef-b45572a563f0":["manufacturer"],"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["manufacturer"],"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["manufacturer"],"db6e3275-3959-420d-bc4c-ee1e26082efd":["manufacturer"],"624e7580-c76d-4ef6-aa66-1ab339047daf":["manufacturer"]}},{"name":"Created_1.current.display_name","label":"Trigger - Record Created➛Hardware Record➛Display name","reference":"","reference_display":"Display name","type":"string","base_type":"string","parent_table_name":"alm_hardware","column_name":"display_name","usedInstances":{"a2366282-ea70-459d-bbef-b45572a563f0":["name"]}},{"name":"Created_1.current.model","label":"Trigger - Record Created➛Hardware Record➛Model","reference":"cmdb_model","reference_display":"Product Model","type":"reference","base_type":"reference","parent_table_name":"alm_hardware","column_name":"model","usedInstances":{"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["model_id"],"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["model_id"],"db6e3275-3959-420d-bc4c-ee1e26082efd":["model_id"],"624e7580-c76d-4ef6-aa66-1ab339047daf":["model_id"],"48e7ca6f-bd72-4df3-83f1-406c66a1be2c":["model_id"]}},{"name":"Created_1.current.serial_number","label":"Trigger - Record Created➛Hardware Record➛Serial number","reference":"","reference_display":"Serial number","type":"string","base_type":"string","parent_table_name":"alm_hardware","column_name":"serial_number","usedInstances":{"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["serial_number"],"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["serial_number"],"db6e3275-3959-420d-bc4c-ee1e26082efd":["serial_number"],"624e7580-c76d-4ef6-aa66-1ab339047daf":["serial_number"],"48e7ca6f-bd72-4df3-83f1-406c66a1be2c":["serial_number"]}},{"name":"Created_1.current.company","label":"Trigger - Record Created➛Hardware Record➛Company","reference":"core_company","reference_display":"Company","type":"reference","base_type":"reference","parent_table_name":"alm_hardware","column_name":"company","usedInstances":{"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["company"]}},{"name":"Created_1.current.asset_tag","label":"Trigger - Record Created➛Hardware Record➛Asset tag","reference":"","reference_display":"Asset tag","type":"string","base_type":"string","parent_table_name":"alm_hardware","column_name":"asset_tag","usedInstances":{"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["asset_tag"],"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["asset_tag"],"db6e3275-3959-420d-bc4c-ee1e26082efd":["asset_tag"],"624e7580-c76d-4ef6-aa66-1ab339047daf":["asset_tag"],"48e7ca6f-bd72-4df3-83f1-406c66a1be2c":["asset_tag"]}},{"name":"Created_1.current.x_sigh_a_a_portal_attribute_2","label":"Trigger - Record Created➛Hardware Record➛Attribute 2","reference":"","reference_display":"Attribute 2","type":"string","base_type":"string","parent_table_name":"alm_hardware","column_name":"x_sigh_a_a_portal_attribute_2","usedInstances":{"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["ram"]}},{"name":"db6e3275-3959-420d-bc4c-ee1e26082efd.record","label":"8 - Create Record➛Server Record","reference":"cmdb_ci_server","reference_display":"Server","type":"reference","base_type":"reference","usedInstances":{"62060d27-161b-4bc4-a7c8-cd9cd1c5dce0":["ci"],"41ff63b6-0d9a-47d5-a2b8-21f362f5f276":["values"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"624e7580-c76d-4ef6-aa66-1ab339047daf.record","label":"11 - Create Record➛Printer Record","reference":"cmdb_ci_printer","reference_display":"Printer","type":"reference","base_type":"reference","usedInstances":{"41ff63b6-0d9a-47d5-a2b8-21f362f5f276":["ci"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>2472d44ceb821a50f5c4f897cad0cd49</master_snapshot>
         <name>Create CI for Asset</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id/>
+        <remote_trigger_id>2572184ceb821a50f5c4f897cad0cd76</remote_trigger_id>
         <run_as>user</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>draft</status>
+        <status>published</status>
         <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
@@ -38,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ce7ceff3ebfdd650f5c4f897cad0cd4f</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>Create CI for Asset</sys_name>
         <sys_overrides/>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
@@ -47,10 +45,56 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>sys_hub_flow_ce7ceff3ebfdd650f5c4f897cad0cd4f</sys_update_name>
         <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 10:35:48</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:37:45</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_variable_value action="delete_multiple" query="document_key=ce7ceff3ebfdd650f5c4f897cad0cd4f"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="alm_hardware">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2572184ceb821a50f5c4f897cad0cd76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:03</sys_updated_on>
+        <table>alm_hardware</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>ce7ceff3ebfdd650f5c4f897cad0cd4f</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:03</sys_created_on>
+        <sys_id>a172184ceb821a50f5c4f897cad0cd77</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:37:48</sys_updated_on>
+        <trigger display_value="">2572184ceb821a50f5c4f897cad0cd76</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=ce7ceff3ebfdd650f5c4f897cad0cd4f^sys_idNOT INa172184ceb821a50f5c4f897cad0cd77"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=ce7ceff3ebfdd650f5c4f897cad0cd4f^sys_idNOT IN6ce1bf7febfdd650f5c4f897cad0cdbe"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -63,7 +107,7 @@
         <sys_created_on>2024-11-18 09:42:44</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6ce1bf7febfdd650f5c4f897cad0cdbe</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -71,7 +115,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 10:35:47</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:05:04</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -132,7 +176,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -192,7 +236,7 @@
         <sys_created_on>2024-11-18 09:42:43</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a8e1bf7febfdd650f5c4f897cad0cd87</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -200,7 +244,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 09:42:43</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:05:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -218,7 +262,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -278,7 +322,7 @@
         <sys_created_on>2024-11-18 09:42:43</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e0e1bf7febfdd650f5c4f897cad0cd83</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -286,7 +330,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 09:42:43</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:05:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -310,7 +354,6 @@
         <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create CI for Asset">ce7ceff3ebfdd650f5c4f897cad0cd4f</flow>
         <generation_source/>
@@ -321,7 +364,7 @@
         <sys_created_on>2024-11-18 10:26:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>2c0c7b73eb711a50f5c4f897cad0cd6a</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -329,7 +372,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 10:35:47</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:06:07</sys_updated_on>
         <ui_id>624e7580-c76d-4ef6-aa66-1ab339047daf</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2c0c7b73eb711a50f5c4f897cad0cd6a"/>
@@ -381,7 +424,6 @@
         <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create CI for Asset">ce7ceff3ebfdd650f5c4f897cad0cd4f</flow>
         <generation_source/>
@@ -392,7 +434,7 @@
         <sys_created_on>2024-11-18 10:02:32</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>32663fb7eb311a50f5c4f897cad0cdfa</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -400,7 +442,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 10:35:47</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:06:07</sys_updated_on>
         <ui_id>ac4b988f-aa8d-4d53-8512-0210b42bfc7b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=32663fb7eb311a50f5c4f897cad0cdfa"/>
@@ -452,7 +494,6 @@
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create CI for Asset">ce7ceff3ebfdd650f5c4f897cad0cd4f</flow>
         <generation_source/>
@@ -463,7 +504,7 @@
         <sys_created_on>2024-11-18 10:26:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>600c7b73eb711a50f5c4f897cad0cd72</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -471,7 +512,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 10:35:47</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:06:07</sys_updated_on>
         <ui_id>41ff63b6-0d9a-47d5-a2b8-21f362f5f276</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=600c7b73eb711a50f5c4f897cad0cd72"/>
@@ -535,7 +576,6 @@
         <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create CI for Asset">ce7ceff3ebfdd650f5c4f897cad0cd4f</flow>
         <generation_source/>
@@ -546,7 +586,7 @@
         <sys_created_on>2024-11-18 09:42:44</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>68e1bf7febfdd650f5c4f897cad0cde6</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -554,7 +594,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 10:35:47</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:06:07</sys_updated_on>
         <ui_id>25be1dbb-6e72-48c9-8e9b-15a6443fe76d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=68e1bf7febfdd650f5c4f897cad0cde6"/>
@@ -606,7 +646,6 @@
         <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create CI for Asset">ce7ceff3ebfdd650f5c4f897cad0cd4f</flow>
         <generation_source/>
@@ -617,7 +656,7 @@
         <sys_created_on>2024-11-18 10:35:48</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>8e0efb37eb711a50f5c4f897cad0cdad</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -625,7 +664,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 10:35:48</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:06:07</sys_updated_on>
         <ui_id>48e7ca6f-bd72-4df3-83f1-406c66a1be2c</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8e0efb37eb711a50f5c4f897cad0cdad"/>
@@ -677,7 +716,6 @@
         <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create CI for Asset">ce7ceff3ebfdd650f5c4f897cad0cd4f</flow>
         <generation_source/>
@@ -688,7 +726,7 @@
         <sys_created_on>2024-11-18 10:17:44</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>95e9bf3feb311a50f5c4f897cad0cdb6</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -696,7 +734,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 10:35:47</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:06:07</sys_updated_on>
         <ui_id>db6e3275-3959-420d-bc4c-ee1e26082efd</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=95e9bf3feb311a50f5c4f897cad0cdb6"/>
@@ -748,7 +786,6 @@
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create CI for Asset">ce7ceff3ebfdd650f5c4f897cad0cd4f</flow>
         <generation_source/>
@@ -759,7 +796,7 @@
         <sys_created_on>2024-11-18 09:47:05</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a8e237ffebfdd650f5c4f897cad0cd30</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -767,7 +804,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 10:35:47</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:06:07</sys_updated_on>
         <ui_id>c0a35c4c-8b00-418f-a144-bad72933f7b3</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a8e237ffebfdd650f5c4f897cad0cd30"/>
@@ -831,7 +868,6 @@
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create CI for Asset">ce7ceff3ebfdd650f5c4f897cad0cd4f</flow>
         <generation_source/>
@@ -842,7 +878,7 @@
         <sys_created_on>2024-11-18 10:35:48</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c60efb37eb711a50f5c4f897cad0cdb5</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -850,7 +886,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 10:35:48</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:06:07</sys_updated_on>
         <ui_id>a8ed9fad-077f-4229-9c54-2faa4a568508</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c60efb37eb711a50f5c4f897cad0cdb5"/>
@@ -914,7 +950,6 @@
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create CI for Asset">ce7ceff3ebfdd650f5c4f897cad0cd4f</flow>
         <generation_source/>
@@ -925,7 +960,7 @@
         <sys_created_on>2024-11-18 10:04:44</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cfe67bf7eb311a50f5c4f897cad0cd14</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -933,7 +968,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 10:35:47</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:06:07</sys_updated_on>
         <ui_id>5e14ef7f-5243-4b0e-880b-1eb32eb2824e</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cfe67bf7eb311a50f5c4f897cad0cd14"/>
@@ -997,7 +1032,6 @@
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Create CI for Asset">ce7ceff3ebfdd650f5c4f897cad0cd4f</flow>
         <generation_source/>
@@ -1008,7 +1042,7 @@
         <sys_created_on>2024-11-18 10:18:16</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d50a377feb311a50f5c4f897cad0cd32</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1016,7 +1050,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 10:35:47</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:06:07</sys_updated_on>
         <ui_id>62060d27-161b-4bc4-a7c8-cd9cd1c5dce0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d50a377feb311a50f5c4f897cad0cd32"/>
@@ -1100,7 +1134,7 @@
         <sys_created_on>2024-11-18 10:17:44</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1de9bf3feb311a50f5c4f897cad0cdad</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1108,7 +1142,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 10:35:47</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:05:04</sys_updated_on>
         <ui_id>0b09c2a6-6bba-4df2-8fa1-ab8580f05310</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1180,7 +1214,7 @@
         <sys_created_on>2024-11-18 10:26:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>2c0c7b73eb711a50f5c4f897cad0cd55</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1188,7 +1222,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 10:35:47</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:05:04</sys_updated_on>
         <ui_id>4a24c36b-4e3f-42ac-a6e0-4bbc32723a2b</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1260,7 +1294,7 @@
         <sys_created_on>2024-11-18 10:35:47</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>350efb37eb711a50f5c4f897cad0cda5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1268,7 +1302,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 10:35:48</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:05:05</sys_updated_on>
         <ui_id>1623f94d-44af-4c82-aa86-42a474c5b72b</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1340,7 +1374,7 @@
         <sys_created_on>2024-11-18 09:42:44</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6ce1bf7febfdd650f5c4f897cad0cdc2</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1348,7 +1382,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 10:35:47</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:05:04</sys_updated_on>
         <ui_id>f5ec9e5a-7c53-4a61-9d18-a501f77615c3</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1420,7 +1454,7 @@
         <sys_created_on>2024-11-18 10:02:32</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f2663fb7eb311a50f5c4f897cad0cdf1</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1428,7 +1462,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
         <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 10:35:47</sys_updated_on>
+        <sys_updated_on>2024-11-18 12:05:04</sys_updated_on>
         <ui_id>9faf4c72-33a3-4956-850d-ac63e2b92b79</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1599,6 +1633,1618 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ce7ceff3ebfdd650f5c4f897cad0cd4f"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_ce7ceff3ebfdd650f5c4f897cad0cd4f"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ce7ceff3ebfdd650f5c4f897cad0cd4f"/>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=ce7ceff3ebfdd650f5c4f897cad0cd4f"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>create_ci_for_asset</internal_name>
+        <label_cache>[{"name":"48e7ca6f-bd72-4df3-83f1-406c66a1be2c.record","label":"14 - Create Record➛Computer Peripheral Record","reference":"cmdb_ci_peripheral","reference_display":"Computer Peripheral","type":"reference","base_type":"reference","usedInstances":{"a8ed9fad-077f-4229-9c54-2faa4a568508":["ci"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac4b988f-aa8d-4d53-8512-0210b42bfc7b.record","label":"5 - Create Record➛Personal Computer Record","reference":"cmdb_ci_pc_hardware","reference_display":"Personal Computer","type":"reference","base_type":"reference","usedInstances":{"5e14ef7f-5243-4b0e-880b-1eb32eb2824e":["ci"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.x_sigh_a_a_portal_attribute_1","label":"Trigger - Record Created➛Hardware Record➛Attribute 1","reference":"","reference_display":"Attribute 1","type":"string","base_type":"string","parent_table_name":"alm_hardware","column_name":"x_sigh_a_a_portal_attribute_1","usedInstances":{"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["disk_space"]}},{"name":"25be1dbb-6e72-48c9-8e9b-15a6443fe76d.record","label":"2 - Create Record➛Communication Device Record","reference":"cmdb_ci_comm","reference_display":"Communication Device","type":"reference","base_type":"reference","usedInstances":{"c0a35c4c-8b00-418f-a144-bad72933f7b3":["ci"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Hardware Table","reference":"alm_hardware","reference_display":"Hardware","type":"table_name","base_type":"table_name","usedInstances":{},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.model_category","label":"Trigger - Record Created➛Hardware Record➛Model category","reference":"cmdb_model_category","reference_display":"Model Category","type":"reference","base_type":"reference","parent_table_name":"alm_hardware","column_name":"model_category","usedInstances":{"f5ec9e5a-7c53-4a61-9d18-a501f77615c3":["condition"],"9faf4c72-33a3-4956-850d-ac63e2b92b79":["condition"],"0b09c2a6-6bba-4df2-8fa1-ab8580f05310":["condition"],"4a24c36b-4e3f-42ac-a6e0-4bbc32723a2b":["condition"],"1623f94d-44af-4c82-aa86-42a474c5b72b":["condition"]}},{"name":"Created_1.current.model.name","label":"Trigger - Record Created➛Hardware Record➛Model➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"cmdb_model","column_name":"name","usedInstances":{"a2366282-ea70-459d-bbef-b45572a563f0":["name"],"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["name"],"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["name"],"db6e3275-3959-420d-bc4c-ee1e26082efd":["name"],"624e7580-c76d-4ef6-aa66-1ab339047daf":["name"],"48e7ca6f-bd72-4df3-83f1-406c66a1be2c":["name"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Hardware Record","reference":"alm_hardware","reference_display":"Hardware","type":"reference","base_type":"reference","usedInstances":{"a2366282-ea70-459d-bbef-b45572a563f0":["name"],"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["name","serial_number"],"c0a35c4c-8b00-418f-a144-bad72933f7b3":["record"],"5e14ef7f-5243-4b0e-880b-1eb32eb2824e":["record"],"db6e3275-3959-420d-bc4c-ee1e26082efd":["asset_tag"],"62060d27-161b-4bc4-a7c8-cd9cd1c5dce0":["record"],"41ff63b6-0d9a-47d5-a2b8-21f362f5f276":["record"],"a8ed9fad-077f-4229-9c54-2faa4a568508":["record"]},"attributes":{}},{"name":"Created_1.current.model.manufacturer","label":"Trigger - Record Created➛Hardware Record➛Model➛Manufacturer","reference":"core_company","reference_display":"Company","type":"reference","base_type":"reference","parent_table_name":"cmdb_model","column_name":"manufacturer","usedInstances":{"a2366282-ea70-459d-bbef-b45572a563f0":["manufacturer"],"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["manufacturer"],"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["manufacturer"],"db6e3275-3959-420d-bc4c-ee1e26082efd":["manufacturer"],"624e7580-c76d-4ef6-aa66-1ab339047daf":["manufacturer"]}},{"name":"Created_1.current.display_name","label":"Trigger - Record Created➛Hardware Record➛Display name","reference":"","reference_display":"Display name","type":"string","base_type":"string","parent_table_name":"alm_hardware","column_name":"display_name","usedInstances":{"a2366282-ea70-459d-bbef-b45572a563f0":["name"]}},{"name":"Created_1.current.model","label":"Trigger - Record Created➛Hardware Record➛Model","reference":"cmdb_model","reference_display":"Product Model","type":"reference","base_type":"reference","parent_table_name":"alm_hardware","column_name":"model","usedInstances":{"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["model_id"],"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["model_id"],"db6e3275-3959-420d-bc4c-ee1e26082efd":["model_id"],"624e7580-c76d-4ef6-aa66-1ab339047daf":["model_id"],"48e7ca6f-bd72-4df3-83f1-406c66a1be2c":["model_id"]}},{"name":"Created_1.current.serial_number","label":"Trigger - Record Created➛Hardware Record➛Serial number","reference":"","reference_display":"Serial number","type":"string","base_type":"string","parent_table_name":"alm_hardware","column_name":"serial_number","usedInstances":{"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["serial_number"],"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["serial_number"],"db6e3275-3959-420d-bc4c-ee1e26082efd":["serial_number"],"624e7580-c76d-4ef6-aa66-1ab339047daf":["serial_number"],"48e7ca6f-bd72-4df3-83f1-406c66a1be2c":["serial_number"]}},{"name":"Created_1.current.company","label":"Trigger - Record Created➛Hardware Record➛Company","reference":"core_company","reference_display":"Company","type":"reference","base_type":"reference","parent_table_name":"alm_hardware","column_name":"company","usedInstances":{"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["company"]}},{"name":"Created_1.current.asset_tag","label":"Trigger - Record Created➛Hardware Record➛Asset tag","reference":"","reference_display":"Asset tag","type":"string","base_type":"string","parent_table_name":"alm_hardware","column_name":"asset_tag","usedInstances":{"25be1dbb-6e72-48c9-8e9b-15a6443fe76d":["asset_tag"],"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["asset_tag"],"db6e3275-3959-420d-bc4c-ee1e26082efd":["asset_tag"],"624e7580-c76d-4ef6-aa66-1ab339047daf":["asset_tag"],"48e7ca6f-bd72-4df3-83f1-406c66a1be2c":["asset_tag"]}},{"name":"Created_1.current.x_sigh_a_a_portal_attribute_2","label":"Trigger - Record Created➛Hardware Record➛Attribute 2","reference":"","reference_display":"Attribute 2","type":"string","base_type":"string","parent_table_name":"alm_hardware","column_name":"x_sigh_a_a_portal_attribute_2","usedInstances":{"ac4b988f-aa8d-4d53-8512-0210b42bfc7b":["ram"]}},{"name":"db6e3275-3959-420d-bc4c-ee1e26082efd.record","label":"8 - Create Record➛Server Record","reference":"cmdb_ci_server","reference_display":"Server","type":"reference","base_type":"reference","usedInstances":{"62060d27-161b-4bc4-a7c8-cd9cd1c5dce0":["ci"],"41ff63b6-0d9a-47d5-a2b8-21f362f5f276":["values"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"624e7580-c76d-4ef6-aa66-1ab339047daf.record","label":"11 - Create Record➛Printer Record","reference":"cmdb_ci_printer","reference_display":"Printer","type":"reference","base_type":"reference","usedInstances":{"41ff63b6-0d9a-47d5-a2b8-21f362f5f276":["ci"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Create CI for Asset</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Create CI for Asset">ce7ceff3ebfdd650f5c4f897cad0cd4f</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:04:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2472d44ceb821a50f5c4f897cad0cd49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:04:59</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=2472d44ceb821a50f5c4f897cad0cd49"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=2472d44ceb821a50f5c4f897cad0cd49^sys_idNOT IN8972184ceb821a50f5c4f897cad0cd2e"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Create CI for Asset">2472d44ceb821a50f5c4f897cad0cd49</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8972184ceb821a50f5c4f897cad0cd2e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:03</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8972184ceb821a50f5c4f897cad0cd2e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>8972184ceb821a50f5c4f897cad0cd2e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_id>8d72184ceb821a50f5c4f897cad0cd3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <value>alm_hardware</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>8972184ceb821a50f5c4f897cad0cd2e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_id>c972184ceb821a50f5c4f897cad0cd3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=2472d44ceb821a50f5c4f897cad0cd49"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=2472d44ceb821a50f5c4f897cad0cd49^sys_idNOT INe472d44ceb821a50f5c4f897cad0cd4a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>2472d44ceb821a50f5c4f897cad0cd49</id>
+        <name>Create CI for Asset</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:04:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e472d44ceb821a50f5c4f897cad0cd4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:04:59</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=e472d44ceb821a50f5c4f897cad0cd4a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=2472d44ceb821a50f5c4f897cad0cd49^sys_idNOT IN2472d44ceb821a50f5c4f897cad0cd79,e872d44ceb821a50f5c4f897cad0cd4b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Create CI for Asset">2472d44ceb821a50f5c4f897cad0cd49</model>
+        <model_id>2472d44ceb821a50f5c4f897cad0cd49</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2472d44ceb821a50f5c4f897cad0cd49</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2472d44ceb821a50f5c4f897cad0cd79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2472d44ceb821a50f5c4f897cad0cd79"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Create CI for Asset">2472d44ceb821a50f5c4f897cad0cd49</model>
+        <model_id>2472d44ceb821a50f5c4f897cad0cd49</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2472d44ceb821a50f5c4f897cad0cd49</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:04:59</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e872d44ceb821a50f5c4f897cad0cd4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:04:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e872d44ceb821a50f5c4f897cad0cd4b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=2472d44ceb821a50f5c4f897cad0cd49"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2472d44ceb821a50f5c4f897cad0cd49"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=2472d44ceb821a50f5c4f897cad0cd49^sys_idNOT IN0172d44ceb821a50f5c4f897cad0cdf1,3072d44ceb821a50f5c4f897cad0cde5,4572184ceb821a50f5c4f897cad0cd08,4972184ceb821a50f5c4f897cad0cd02,4d72184ceb821a50f5c4f897cad0cd2c,7472d44ceb821a50f5c4f897cad0cdd0,7472d44ceb821a50f5c4f897cad0cdeb,8172184ceb821a50f5c4f897cad0cd27,8972d44ceb821a50f5c4f897cad0cdfc,cd72d44ceb821a50f5c4f897cad0cdf6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create CI for Asset">2472d44ceb821a50f5c4f897cad0cd49</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>9faf4c72-33a3-4956-850d-ac63e2b92b79</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0172d44ceb821a50f5c4f897cad0cdf1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <ui_id>5e14ef7f-5243-4b0e-880b-1eb32eb2824e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0172d44ceb821a50f5c4f897cad0cdf1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0172d44ceb821a50f5c4f897cad0cdf1</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>4972d44ceb821a50f5c4f897cad0cdf2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <value>alm_hardware</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0172d44ceb821a50f5c4f897cad0cdf1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>0172d44ceb821a50f5c4f897cad0cdf1</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>c572d44ceb821a50f5c4f897cad0cdf2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>0172d44ceb821a50f5c4f897cad0cdf1</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>4172d44ceb821a50f5c4f897cad0cdf2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>0172d44ceb821a50f5c4f897cad0cdf1</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>0572d44ceb821a50f5c4f897cad0cdf2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>ci={{ac4b988f-aa8d-4d53-8512-0210b42bfc7b.record}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0172d44ceb821a50f5c4f897cad0cdf1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0172d44ceb821a50f5c4f897cad0cdf1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create CI for Asset">2472d44ceb821a50f5c4f897cad0cd49</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>f5ec9e5a-7c53-4a61-9d18-a501f77615c3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3072d44ceb821a50f5c4f897cad0cde5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <ui_id>c0a35c4c-8b00-418f-a144-bad72933f7b3</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3072d44ceb821a50f5c4f897cad0cde5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3072d44ceb821a50f5c4f897cad0cde5</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>7c72d44ceb821a50f5c4f897cad0cde6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <value>alm_hardware</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3072d44ceb821a50f5c4f897cad0cde5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>3072d44ceb821a50f5c4f897cad0cde5</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>f872d44ceb821a50f5c4f897cad0cde6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>3072d44ceb821a50f5c4f897cad0cde5</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>7472d44ceb821a50f5c4f897cad0cde6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>3072d44ceb821a50f5c4f897cad0cde5</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>3872d44ceb821a50f5c4f897cad0cde6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>ci={{25be1dbb-6e72-48c9-8e9b-15a6443fe76d.record}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3072d44ceb821a50f5c4f897cad0cde5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3072d44ceb821a50f5c4f897cad0cde5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create CI for Asset">2472d44ceb821a50f5c4f897cad0cd49</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>4a24c36b-4e3f-42ac-a6e0-4bbc32723a2b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4572184ceb821a50f5c4f897cad0cd08</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <ui_id>41ff63b6-0d9a-47d5-a2b8-21f362f5f276</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4572184ceb821a50f5c4f897cad0cd08"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4572184ceb821a50f5c4f897cad0cd08</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_id>8d72184ceb821a50f5c4f897cad0cd09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <value>alm_hardware</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4572184ceb821a50f5c4f897cad0cd08"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4572184ceb821a50f5c4f897cad0cd08</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_id>0d72184ceb821a50f5c4f897cad0cd09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4572184ceb821a50f5c4f897cad0cd08</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_id>8572184ceb821a50f5c4f897cad0cd09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>4572184ceb821a50f5c4f897cad0cd08</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_id>4972184ceb821a50f5c4f897cad0cd09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>ci={{624e7580-c76d-4ef6-aa66-1ab339047daf.record}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4572184ceb821a50f5c4f897cad0cd08"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4572184ceb821a50f5c4f897cad0cd08"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create CI for Asset">2472d44ceb821a50f5c4f897cad0cd49</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>4a24c36b-4e3f-42ac-a6e0-4bbc32723a2b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4972184ceb821a50f5c4f897cad0cd02</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <ui_id>624e7580-c76d-4ef6-aa66-1ab339047daf</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4972184ceb821a50f5c4f897cad0cd02"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4972184ceb821a50f5c4f897cad0cd02</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_id>4d72184ceb821a50f5c4f897cad0cd03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <value>cmdb_ci_printer</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4972184ceb821a50f5c4f897cad0cd02"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4972184ceb821a50f5c4f897cad0cd02</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_id>0972184ceb821a50f5c4f897cad0cd03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>4972184ceb821a50f5c4f897cad0cd02</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_id>c972184ceb821a50f5c4f897cad0cd03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>name={{Created_1.current.model.name}}^asset_tag={{Created_1.current.asset_tag}}^serial_number={{Created_1.current.serial_number}}^manufacturer={{Created_1.current.model.manufacturer}}^model_id={{Created_1.current.model}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4972184ceb821a50f5c4f897cad0cd02"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4972184ceb821a50f5c4f897cad0cd02"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create CI for Asset">2472d44ceb821a50f5c4f897cad0cd49</flow>
+        <generation_source/>
+        <order>15</order>
+        <parent_ui_id>1623f94d-44af-4c82-aa86-42a474c5b72b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4d72184ceb821a50f5c4f897cad0cd2c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <ui_id>a8ed9fad-077f-4229-9c54-2faa4a568508</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4d72184ceb821a50f5c4f897cad0cd2c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4d72184ceb821a50f5c4f897cad0cd2c</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_id>8572184ceb821a50f5c4f897cad0cd2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <value>alm_hardware</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4d72184ceb821a50f5c4f897cad0cd2c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4d72184ceb821a50f5c4f897cad0cd2c</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_id>0572184ceb821a50f5c4f897cad0cd2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4d72184ceb821a50f5c4f897cad0cd2c</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_id>8d72184ceb821a50f5c4f897cad0cd2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>4d72184ceb821a50f5c4f897cad0cd2c</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_id>4172184ceb821a50f5c4f897cad0cd2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>ci={{48e7ca6f-bd72-4df3-83f1-406c66a1be2c.record}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4d72184ceb821a50f5c4f897cad0cd2c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4d72184ceb821a50f5c4f897cad0cd2c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create CI for Asset">2472d44ceb821a50f5c4f897cad0cd49</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>f5ec9e5a-7c53-4a61-9d18-a501f77615c3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7472d44ceb821a50f5c4f897cad0cdd0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <ui_id>25be1dbb-6e72-48c9-8e9b-15a6443fe76d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7472d44ceb821a50f5c4f897cad0cdd0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7472d44ceb821a50f5c4f897cad0cdd0</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>b072d44ceb821a50f5c4f897cad0cdd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <value>cmdb_ci_comm</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7472d44ceb821a50f5c4f897cad0cdd0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>7472d44ceb821a50f5c4f897cad0cdd0</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>7c72d44ceb821a50f5c4f897cad0cdd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>7472d44ceb821a50f5c4f897cad0cdd0</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>3072d44ceb821a50f5c4f897cad0cdd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>name={{Created_1.current.model.name}}^type=cellphone^manufacturer={{Created_1.current.model.manufacturer}}^model_id={{Created_1.current.model}}^serial_number={{Created_1.current.serial_number}}^asset_tag={{Created_1.current.asset_tag}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7472d44ceb821a50f5c4f897cad0cdd0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7472d44ceb821a50f5c4f897cad0cdd0"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create CI for Asset">2472d44ceb821a50f5c4f897cad0cd49</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>9faf4c72-33a3-4956-850d-ac63e2b92b79</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7472d44ceb821a50f5c4f897cad0cdeb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <ui_id>ac4b988f-aa8d-4d53-8512-0210b42bfc7b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7472d44ceb821a50f5c4f897cad0cdeb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7472d44ceb821a50f5c4f897cad0cdeb</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>7872d44ceb821a50f5c4f897cad0cdec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <value>cmdb_ci_pc_hardware</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7472d44ceb821a50f5c4f897cad0cdeb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>7472d44ceb821a50f5c4f897cad0cdeb</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>3472d44ceb821a50f5c4f897cad0cdec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>7472d44ceb821a50f5c4f897cad0cdeb</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>f472d44ceb821a50f5c4f897cad0cdec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>name={{Created_1.current.model.name}}^asset_tag={{Created_1.current.asset_tag}}^manufacturer={{Created_1.current.model.manufacturer}}^model_id={{Created_1.current.model}}^serial_number={{Created_1.current.serial_number}}^disk_space={{fd_transform:72bf1ca7-f7d6-4cc0-b48f-ac70d0fb2b48}}^ram={{fd_transform:d9948a5e-856b-49c0-8682-ff5d61116815}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7472d44ceb821a50f5c4f897cad0cdeb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7472d44ceb821a50f5c4f897cad0cdeb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create CI for Asset">2472d44ceb821a50f5c4f897cad0cd49</flow>
+        <generation_source/>
+        <order>14</order>
+        <parent_ui_id>1623f94d-44af-4c82-aa86-42a474c5b72b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8172184ceb821a50f5c4f897cad0cd27</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <ui_id>48e7ca6f-bd72-4df3-83f1-406c66a1be2c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8172184ceb821a50f5c4f897cad0cd27"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8172184ceb821a50f5c4f897cad0cd27</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_id>8572184ceb821a50f5c4f897cad0cd28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <value>cmdb_ci_peripheral</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8172184ceb821a50f5c4f897cad0cd27"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>8172184ceb821a50f5c4f897cad0cd27</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_id>4172184ceb821a50f5c4f897cad0cd28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>8172184ceb821a50f5c4f897cad0cd27</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_id>0572184ceb821a50f5c4f897cad0cd28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>name={{Created_1.current.model.name}}^asset_tag={{Created_1.current.asset_tag}}^model_id={{Created_1.current.model}}^serial_number={{Created_1.current.serial_number}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8172184ceb821a50f5c4f897cad0cd27"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8172184ceb821a50f5c4f897cad0cd27"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create CI for Asset">2472d44ceb821a50f5c4f897cad0cd49</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>0b09c2a6-6bba-4df2-8fa1-ab8580f05310</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8972d44ceb821a50f5c4f897cad0cdfc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <ui_id>62060d27-161b-4bc4-a7c8-cd9cd1c5dce0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8972d44ceb821a50f5c4f897cad0cdfc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8972d44ceb821a50f5c4f897cad0cdfc</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>c172d44ceb821a50f5c4f897cad0cdfe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <value>alm_hardware</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8972d44ceb821a50f5c4f897cad0cdfc"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>8972d44ceb821a50f5c4f897cad0cdfc</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>4172d44ceb821a50f5c4f897cad0cdfe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>8972d44ceb821a50f5c4f897cad0cdfc</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>c972d44ceb821a50f5c4f897cad0cdfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>8972d44ceb821a50f5c4f897cad0cdfc</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>8d72d44ceb821a50f5c4f897cad0cdfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>ci={{db6e3275-3959-420d-bc4c-ee1e26082efd.record}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8972d44ceb821a50f5c4f897cad0cdfc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8972d44ceb821a50f5c4f897cad0cdfc"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create CI for Asset">2472d44ceb821a50f5c4f897cad0cd49</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>0b09c2a6-6bba-4df2-8fa1-ab8580f05310</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cd72d44ceb821a50f5c4f897cad0cdf6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <ui_id>db6e3275-3959-420d-bc4c-ee1e26082efd</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cd72d44ceb821a50f5c4f897cad0cdf6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cd72d44ceb821a50f5c4f897cad0cdf6</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>c172d44ceb821a50f5c4f897cad0cdf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <value>cmdb_ci_server</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=cd72d44ceb821a50f5c4f897cad0cdf6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>cd72d44ceb821a50f5c4f897cad0cdf6</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>8d72d44ceb821a50f5c4f897cad0cdf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>cd72d44ceb821a50f5c4f897cad0cdf6</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:01</sys_created_on>
+        <sys_id>4172d44ceb821a50f5c4f897cad0cdf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>name={{Created_1.current.model.name}}^asset_tag={{Created_1.current.asset_tag}}^manufacturer={{Created_1.current.model.manufacturer}}^model_id={{Created_1.current.model}}^serial_number={{Created_1.current.serial_number}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cd72d44ceb821a50f5c4f897cad0cdf6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cd72d44ceb821a50f5c4f897cad0cdf6"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=2472d44ceb821a50f5c4f897cad0cd49"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=2472d44ceb821a50f5c4f897cad0cd49^sys_idNOT IN3072d44ceb821a50f5c4f897cad0cdc7,7472d44ceb821a50f5c4f897cad0cdc3,b872d44ceb821a50f5c4f897cad0cdbf,bc72d44ceb821a50f5c4f897cad0cd95,e472d44ceb821a50f5c4f897cad0cd90"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f50efb37eb711a50f5c4f897cad0cda4</block>
+        <comment/>
+        <connected_to>f5ec9e5a-7c53-4a61-9d18-a501f77615c3</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create CI for Asset">2472d44ceb821a50f5c4f897cad0cd49</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>13</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3072d44ceb821a50f5c4f897cad0cdc7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <ui_id>1623f94d-44af-4c82-aa86-42a474c5b72b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3072d44ceb821a50f5c4f897cad0cdc7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>3072d44ceb821a50f5c4f897cad0cdc7</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_id>bc72d44ceb821a50f5c4f897cad0cdc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <value>Model is Peripherie</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3072d44ceb821a50f5c4f897cad0cdc7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>3072d44ceb821a50f5c4f897cad0cdc7</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_id>3c72d44ceb821a50f5c4f897cad0cdc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Created_1.current.model_category}}=1833129e3b351e1013b9202a85e45a5c</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>3072d44ceb821a50f5c4f897cad0cdc7</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_id>7872d44ceb821a50f5c4f897cad0cdc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3072d44ceb821a50f5c4f897cad0cdc7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3072d44ceb821a50f5c4f897cad0cdc7"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ec0c7b73eb711a50f5c4f897cad0cd54</block>
+        <comment/>
+        <connected_to>f5ec9e5a-7c53-4a61-9d18-a501f77615c3</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create CI for Asset">2472d44ceb821a50f5c4f897cad0cd49</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7472d44ceb821a50f5c4f897cad0cdc3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <ui_id>4a24c36b-4e3f-42ac-a6e0-4bbc32723a2b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7472d44ceb821a50f5c4f897cad0cdc3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>7472d44ceb821a50f5c4f897cad0cdc3</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_id>f072d44ceb821a50f5c4f897cad0cdc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <value>Model is Printer</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7472d44ceb821a50f5c4f897cad0cdc3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>7472d44ceb821a50f5c4f897cad0cdc3</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_id>7072d44ceb821a50f5c4f897cad0cdc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Created_1.current.model_category}}=db035a5e3b351e1013b9202a85e45a0c</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>7472d44ceb821a50f5c4f897cad0cdc3</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_id>bc72d44ceb821a50f5c4f897cad0cdc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7472d44ceb821a50f5c4f897cad0cdc3"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7472d44ceb821a50f5c4f897cad0cdc3"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">dde9bf3feb311a50f5c4f897cad0cdac</block>
+        <comment/>
+        <connected_to>f5ec9e5a-7c53-4a61-9d18-a501f77615c3</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create CI for Asset">2472d44ceb821a50f5c4f897cad0cd49</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b872d44ceb821a50f5c4f897cad0cdbf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <ui_id>0b09c2a6-6bba-4df2-8fa1-ab8580f05310</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b872d44ceb821a50f5c4f897cad0cdbf"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>b872d44ceb821a50f5c4f897cad0cdbf</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_id>3872d44ceb821a50f5c4f897cad0cdc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <value>Model is Server</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b872d44ceb821a50f5c4f897cad0cdbf"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>b872d44ceb821a50f5c4f897cad0cdbf</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_id>b472d44ceb821a50f5c4f897cad0cdc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Created_1.current.model_category}}=8d23d29e3b351e1013b9202a85e45a2a</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>b872d44ceb821a50f5c4f897cad0cdbf</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_id>f072d44ceb821a50f5c4f897cad0cdc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b872d44ceb821a50f5c4f897cad0cdbf"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b872d44ceb821a50f5c4f897cad0cdbf"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b6663fb7eb311a50f5c4f897cad0cdf0</block>
+        <comment/>
+        <connected_to>f5ec9e5a-7c53-4a61-9d18-a501f77615c3</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create CI for Asset">2472d44ceb821a50f5c4f897cad0cd49</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>bc72d44ceb821a50f5c4f897cad0cd95</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <ui_id>9faf4c72-33a3-4956-850d-ac63e2b92b79</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=bc72d44ceb821a50f5c4f897cad0cd95"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>bc72d44ceb821a50f5c4f897cad0cd95</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_id>b472d44ceb821a50f5c4f897cad0cd99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <value>Model is Computer</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=bc72d44ceb821a50f5c4f897cad0cd95"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>bc72d44ceb821a50f5c4f897cad0cd95</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_id>3472d44ceb821a50f5c4f897cad0cd99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{Created_1.current.model_category}}=1cf2d25e3b351e1013b9202a85e45a5c</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>bc72d44ceb821a50f5c4f897cad0cd95</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_id>7072d44ceb821a50f5c4f897cad0cd99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=bc72d44ceb821a50f5c4f897cad0cd95"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bc72d44ceb821a50f5c4f897cad0cd95"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ece1bf7febfdd650f5c4f897cad0cdc1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create CI for Asset">2472d44ceb821a50f5c4f897cad0cd49</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e472d44ceb821a50f5c4f897cad0cd90</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <ui_id>f5ec9e5a-7c53-4a61-9d18-a501f77615c3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e472d44ceb821a50f5c4f897cad0cd90"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e472d44ceb821a50f5c4f897cad0cd90</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_id>6872d44ceb821a50f5c4f897cad0cd94</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <value>Model is Mobile</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e472d44ceb821a50f5c4f897cad0cd90"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>e472d44ceb821a50f5c4f897cad0cd90</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_id>e472d44ceb821a50f5c4f897cad0cd94</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created_1.current.model_category}}=6112561e3b351e1013b9202a85e45a75</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>e472d44ceb821a50f5c4f897cad0cd90</id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_id>2072d44ceb821a50f5c4f897cad0cd94</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e472d44ceb821a50f5c4f897cad0cd90"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e472d44ceb821a50f5c4f897cad0cd90"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=2472d44ceb821a50f5c4f897cad0cd49^sys_idNOT IN4972184ceb821a50f5c4f897cad0cd3d,4d72184ceb821a50f5c4f897cad0cd3d,c172184ceb821a50f5c4f897cad0cd3d,c972184ceb821a50f5c4f897cad0cd3d"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>2472d44ceb821a50f5c4f897cad0cd49</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>72bf1ca7-f7d6-4cc0-b48f-ac70d0fb2b48</source_ui_id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_id>4972184ceb821a50f5c4f897cad0cd3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <transform_compositions>[{"id":"9c4cf2c60f4130106d1a3a3485767ef7","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="convert_string_to_number">bfac1e0e0f0130106d1a3a3485767e8a</transform_definition_id>
+        <ui_id>7d9fa00a-61bd-4745-90a6-c531e66d8492</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>2472d44ceb821a50f5c4f897cad0cd49</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.x_sigh_a_a_portal_attribute_2}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_id>4d72184ceb821a50f5c4f897cad0cd3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>d9948a5e-856b-49c0-8682-ff5d61116815</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>2472d44ceb821a50f5c4f897cad0cd49</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>d9948a5e-856b-49c0-8682-ff5d61116815</source_ui_id>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_id>c172184ceb821a50f5c4f897cad0cd3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <transform_compositions>[{"id":"9c4cf2c60f4130106d1a3a3485767ef7","transformType":null,"transformDefinition":null,"order":0,"parameters":[]}]</transform_compositions>
+        <transform_definition_id display_value="convert_string_to_number">bfac1e0e0f0130106d1a3a3485767e8a</transform_definition_id>
+        <ui_id>9525b801-52f9-4f09-8501-a523ebc88677</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>2472d44ceb821a50f5c4f897cad0cd49</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.x_sigh_a_a_portal_attribute_1}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:02</sys_created_on>
+        <sys_id>c972184ceb821a50f5c4f897cad0cd3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:02</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>72bf1ca7-f7d6-4cc0-b48f-ac70d0fb2b48</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=2472d44ceb821a50f5c4f897cad0cd49"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_2472d44ceb821a50f5c4f897cad0cd49^sys_idNOT INa872d44ceb821a50f5c4f897cad0cd75,e472d44ceb821a50f5c4f897cad0cd7d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2472d44ceb821a50f5c4f897cad0cd49</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a872d44ceb821a50f5c4f897cad0cd75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2472d44ceb821a50f5c4f897cad0cd49</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e472d44ceb821a50f5c4f897cad0cd7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_2472d44ceb821a50f5c4f897cad0cd49"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_2472d44ceb821a50f5c4f897cad0cd49"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_2472d44ceb821a50f5c4f897cad0cd49"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>ce7ceff3ebfdd650f5c4f897cad0cd4f</sys_id>
+        <latest_snapshot>2472d44ceb821a50f5c4f897cad0cd49</latest_snapshot>
+        <compiler_build>glide-washingtondc-12-20-2023__patch7a-09-23-2024_10-06-2024_0822.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=ce7ceff3ebfdd650f5c4f897cad0cd4f^sys_idNOT IN6972184ceb821a50f5c4f897cad0cd78"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"6972184ceb821a50f5c4f897cad0cd78","name":"plan","plan_signature":null}}</plan>
+        <plan_id>ce7ceff3ebfdd650f5c4f897cad0cd4f</plan_id>
+        <snapshot>38b2dc4ceb821a50f5c4f897cad0cd2d</snapshot>
+        <sys_class_name>sys_flow_trigger_plan</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-18 12:05:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6972184ceb821a50f5c4f897cad0cd78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 12:05:03</sys_updated_on>
+        <trigger display_value="">2572184ceb821a50f5c4f897cad0cd76</trigger>
+    </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=ce7ceff3ebfdd650f5c4f897cad0cd4f"/>
 </record_update>

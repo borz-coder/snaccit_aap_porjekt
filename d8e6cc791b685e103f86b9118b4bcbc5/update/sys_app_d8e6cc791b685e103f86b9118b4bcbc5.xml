@@ -32,15 +32,15 @@
         <sys_created_by>steven.mueller@agineo.de</sys_created_by>
         <sys_created_on>2024-09-10 08:09:39</sys_created_on>
         <sys_id>d8e6cc791b685e103f86b9118b4bcbc5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>steven.mueller@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-09-10 08:09:39</sys_updated_on>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>christoph.schmitz@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-18 14:11:25</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
         <user_role/>
         <vendor/>
         <vendor_prefix/>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
     </sys_app>
 </record_update>
