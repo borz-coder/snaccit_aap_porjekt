@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <sc_cat_item display_value="Return Hardware">8af12b933bf5925013b9202a85e45a71</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>matthias.ferstl@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-20 11:06:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e7489ae43b8a1a5013b9202a85e45a9a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>AAP_HardwareReturnFilter.Return Hardware</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>io_set_item_e7489ae43b8a1a5013b9202a85e45a9a</sys_update_name>
+        <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-20 11:06:48</sys_updated_on>
+        <variable_set display_value="AAP_HardwareReturnFilter">d3b7dea43b8a1a5013b9202a85e45ac2</variable_set>
+    </io_set_item>
+</record_update>
