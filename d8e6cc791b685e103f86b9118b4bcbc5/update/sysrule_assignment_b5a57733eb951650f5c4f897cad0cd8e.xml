@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_assignment">
     <sysrule_assignment action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <condition/>
         <description/>
-        <group/>
+        <group display_value="Service Desk" name="Service Desk">163f4a1048a661002f1988b31877b238</group>
         <match_conditions>ALL</match_conditions>
         <name>AAP Group Assignment</name>
         <order>50</order>
@@ -54,7 +54,7 @@ current.assignment_group = groupName;&#13;
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b5a57733eb951650f5c4f897cad0cd8e</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>AAP Group Assignment</sys_name>
         <sys_overrides/>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
@@ -62,8 +62,8 @@ current.assignment_group = groupName;&#13;
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>sysrule_assignment_b5a57733eb951650f5c4f897cad0cd8e</sys_update_name>
-        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-10-25 07:31:40</sys_updated_on>
+        <sys_updated_by>milan.schulze@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-26 09:44:15</sys_updated_on>
         <table>incident</table>
         <user/>
     </sysrule_assignment>

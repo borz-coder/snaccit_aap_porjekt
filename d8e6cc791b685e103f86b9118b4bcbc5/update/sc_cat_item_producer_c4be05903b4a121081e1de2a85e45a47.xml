@@ -32,7 +32,7 @@
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
         <model/>
         <name>Create New Computer Asset</name>
-        <no_attachment_v2>true</no_attachment_v2>
+        <no_attachment_v2>false</no_attachment_v2>
         <no_cart>false</no_cart>
         <no_cart_v2>false</no_cart_v2>
         <no_delivery_time_v2>false</no_delivery_time_v2>
@@ -48,13 +48,13 @@
         <order>0</order>
         <ordered_item_link/>
         <owner display_value="Milan Schulze">8940f9ca1b645650e6ae740f8b4bcb49</owner>
-        <picture/>
+        <picture>c92e0ee03b4a1a5013b9202a85e45a88</picture>
         <post_insert_script/>
         <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=c4be05903b4a121081e1de2a85e45a47&amp;sysparm_preview=true", "summary");</preview>
         <price>0</price>
         <published_ref/>
         <recurring_frequency/>
-        <redirect_url>generated_record</redirect_url>
+        <redirect_url>catalog_home</redirect_url>
         <request_method/>
         <roles/>
         <save_options/>
@@ -64,7 +64,7 @@
         <sc_ic_version/>
         <sc_template/>
         <script/>
-        <short_description/>
+        <short_description>Create a new Computer</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
         <state>published</state>
@@ -73,15 +73,15 @@
         <sys_created_on>2024-11-19 11:08:47</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c4be05903b4a121081e1de2a85e45a47</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>66</sys_mod_count>
         <sys_name>Create New Computer Asset</sys_name>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>sc_cat_item_producer_c4be05903b4a121081e1de2a85e45a47</sys_update_name>
-        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-20 10:21:23</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-10 10:26:22</sys_updated_on>
         <table_name>cmdb_ci_computer</table_name>
         <taxonomy_topic/>
         <template/>
@@ -89,7 +89,7 @@
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>22</version>
+        <version>66</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
@@ -115,4 +115,45 @@
         <table>sc_cat_item_producer</table>
         <type>calculated</type>
     </fx_price>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#2f819d</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>picture</file_name>
+        <hash>21b3cf280880cf3605f9db56e6de1565841d7bd94d054bd42f922b6e5069a488</hash>
+        <image_height>512</image_height>
+        <image_width>512</image_width>
+        <size_bytes>5871</size_bytes>
+        <size_compressed>4535</size_compressed>
+        <state>available</state>
+        <sys_created_by>milan.schulze@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-20 10:22:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c92e0ee03b4a1a5013b9202a85e45a88</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>milan.schulze@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-20 10:22:24</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item_producer</table_name>
+        <table_sys_id>c4be05903b4a121081e1de2a85e45a47</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="picture" sys_id="c92e0ee03b4a1a5013b9202a85e45a88">c92e0ee03b4a1a5013b9202a85e45a88</sys_attachment>
+        <sys_created_by>milan.schulze@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-20 10:22:24</sys_created_on>
+        <sys_id>0d2e0ee03b4a1a5013b9202a85e45a88</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>6036</length>
+        <position>1</position>
+        <sys_attachment display_value="picture" sys_id="c92e0ee03b4a1a5013b9202a85e45a88">c92e0ee03b4a1a5013b9202a85e45a88</sys_attachment>
+        <sys_created_by>milan.schulze@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-20 10:22:24</sys_created_on>
+        <sys_id>8d2e0ee03b4a1a5013b9202a85e45a88</sys_id>
+    </sys_attachment_doc>
 </record_update>

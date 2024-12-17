@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Adding the correct category in our catalog item</description>
+        <flow_priority/>
+        <ih_action>false</ih_action>
+        <internal_name>category</internal_name>
+        <label_cache/>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Category</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>rofaida.daabis@agineo.de</sys_created_by>
+        <sys_created_on>2024-12-04 08:28:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>aa4abd053bd2de9013b9202a85e45aa3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Category</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_aa4abd053bd2de9013b9202a85e45aa3</sys_update_name>
+        <sys_updated_by>rofaida.daabis@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-12-04 08:28:19</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_variable_value action="delete_multiple" query="document_key=aa4abd053bd2de9013b9202a85e45aa3"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=aa4abd053bd2de9013b9202a85e45aa3"/>
+    <sys_hub_action_input action="delete_multiple" query="model=aa4abd053bd2de9013b9202a85e45aa3"/>
+    <sys_hub_action_output action="delete_multiple" query="model=aa4abd053bd2de9013b9202a85e45aa3"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=aa4abd053bd2de9013b9202a85e45aa3"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=aa4abd053bd2de9013b9202a85e45aa3"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_aa4abd053bd2de9013b9202a85e45aa3"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_aa4abd053bd2de9013b9202a85e45aa3"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_aa4abd053bd2de9013b9202a85e45aa3"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_aa4abd053bd2de9013b9202a85e45aa3"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=aa4abd053bd2de9013b9202a85e45aa3"/>
+</record_update>

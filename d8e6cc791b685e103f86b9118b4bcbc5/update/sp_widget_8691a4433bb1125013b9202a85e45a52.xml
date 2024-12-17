@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller = function($scope, $http) {
+        <client_script><![CDATA[
+api.controller = function($scope, $http) {
+
+		var c = this;
     // Initialisieren der Variablen
     $scope.selectedRitm = null; // Für die Auswahl des Requested Items
     $scope.deliveryDates = [];  // Array zur Speicherung mehrerer Liefertermine
     $scope.data.successMessage = ''; // Für Erfolgsmeldungen
-		debugger;
-		$scope.data.requestedItems = function() {
-        alert($scope.requestedItems());
-    };
+
+
     // Überprüfen, ob die Requested Items korrekt geladen wurden
     console.log("Loaded Requested Items:", $scope.data.requestedItems);
 
@@ -40,13 +41,19 @@
         }
 
         // Payload für das Server Script vorbereiten
-        const payload = {
-            ritmSysId: $scope.selectedRitm.sys_id,
-            dates: $scope.deliveryDates.map(date => date.date)
+        var payloadSaveDeliveryDates = {
+						action: 'saveDeliveryDates',
+						requestedItem: $scope.selectedRitm,
+            deliveryDates: $scope.deliveryDates.map(date => date.date)
         };
-				debugger;
+
+				c.server.get(payloadSaveDeliveryDates).then(function(response) {
+						debugger;
+						console.log('Server Response:', response.result);
+				});
+				
         // HTTP POST-Anfrage an das Server Script senden
-        $http.post('/api/now/ui/widget/' + $scope.data.widgetInstance, payload).then(function(response) {
+        /*$http.post('/api/now/ui/widget/' + $scope.data.widgetInstance, payload).then(function(response) {
             if (response.data.result.success) {
                 $scope.data.successMessage = "Liefertermine wurden erfolgreich gespeichert!";
                 $scope.deliveryDates = [];
@@ -57,7 +64,7 @@
         }, function(error) {
             console.error("Fehler bei der HTTP-Anfrage:", error);
             alert("Fehler beim Speichern der Liefertermine");
-        });
+        });*/
     };
 };
 ]]></client_script>
@@ -95,24 +102,60 @@
         <public>false</public>
         <roles/>
         <script><![CDATA[(function() {
-	 requestedItems = function() {
-			var requestedItems = [];
-      var gr = new GlideRecord('sc_req_item');
-      gr.addQuery('state', '=', 1);
-      gr.orderByDesc('sys_created_on');
-      gr.query();
+			function formatISODate(isoDateStr) {
+					// Erstellen eines Date-Objekts aus dem ISO-Datumstring
+					const date = new Date(isoDateStr);
 
-       while (gr.next()) {
-					requestedItems.push({
-						sys_id: gr.getValue('sys_id'),
-						number: gr.getValue('number'),
-						short_description: gr.getValue('short_description')
-					});
-        }
-				return requestedItems;
-    };
+					// Extrahieren der einzelnen Komponenten
+					const day = String(date.getUTCDate()).padStart(2, '0');
+					const month = String(date.getUTCMonth() + 1).padStart(2, '0'); // Monate sind 0-basiert
+					const year = date.getUTCFullYear();
 
+					const hours = String(date.getUTCHours()).padStart(2, '0');
+					const minutes = String(date.getUTCMinutes()).padStart(2, '0');
+
+					// Zusammenfügen in das gewünschte Format
+					return `${day}.${month}.${year} ${hours}:${minutes}`;
+			}
+			if(!input){
+				data.requestedItems = [];
+				var gr = new GlideRecord('sc_req_item');
+				gr.addQuery('state', '=', 1);
+				gr.orderByDesc('sys_created_on');
+				gr.query();
+
+				 while (gr.next()) {
+						data.requestedItems.push({
+							sys_id: gr.getValue('sys_id'),
+							number: gr.getValue('number'),
+							short_description: gr.getValue('short_description')
+						});
+				 }
+			}
+			
+			if (input) {
+				data.result = [];
+        // Übermittelte POST-Daten verarbeiten
+        if (input.action === 'saveDeliveryDates') {
+						console.log(input.requestedItem.sys_id);
+						input.deliveryDates.forEach(function(deliveryDate) {
+								var suggestedDeliveryDate = formatISODate(deliveryDate);
+								var ritmGR = new GlideRecord('sc_req_item');
+								if (ritmGR.get(input.requestedItem.sys_id)) {
+									var taskGR = new GlideRecord('sc_task');
+									taskGR.initialize();
+									taskGR.short_description = 'Lieferterminvorschlag';
+									taskGR.request_item = ritmGR.sys_id; // Verknüpfung mit dem Requested Item
+									taskGR.assignment_group = ''; // Optional: Gruppe zuweisen
+									taskGR.state = -5; // Status Offen
+									taskGR.expected_start = suggestedDeliveryDate; // Termin setzen
+									taskGR.insert();
+								}
+						});
+    		}
+			}
 })();
+
 ]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
@@ -120,7 +163,7 @@
         <sys_created_on>2024-11-15 10:37:16</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>8691a4433bb1125013b9202a85e45a52</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>113</sys_mod_count>
         <sys_name>Delivery Scheduling</sys_name>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
         <sys_policy/>
@@ -128,7 +171,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>sp_widget_8691a4433bb1125013b9202a85e45a52</sys_update_name>
         <sys_updated_by>juri.deisling@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-11-18 10:46:24</sys_updated_on>
+        <sys_updated_on>2024-11-19 09:58:22</sys_updated_on>
         <template><![CDATA[<div>{"label":"Delivery Scheduling","type":"widget","sp_widget":"8691a4433bb1125013b9202a85e45a52","data_table":"sp_instance"}
     <!-- Überschrift -->
     <h3 class="widget-title">Lieferteminvorschläge erstellen</h3>

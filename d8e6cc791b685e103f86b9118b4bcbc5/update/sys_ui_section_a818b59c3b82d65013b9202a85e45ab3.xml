@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="New Section" section_id="a818b59c3b82d65013b9202a85e45ab3" sys_domain="global" table="cmdb_ci_computer" version="3" view="agency_asset_portal">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>install_status</element>
+            <position>0</position>
+            <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-11-20 09:10:32</sys_created_on>
+            <sys_id>e4bd316c3b861a5013b9202a85e45a53</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="cmdb_ci_computer" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">a818b59c3b82d65013b9202a85e45ab3</sys_ui_section>
+            <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-11-20 09:10:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-11-20 09:10:33</sys_created_on>
+            <sys_id>64bd316c3b861a5013b9202a85e45a54</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="cmdb_ci_computer" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">a818b59c3b82d65013b9202a85e45ab3</sys_ui_section>
+            <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-11-20 09:10:33</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>hardware_status</element>
+            <position>2</position>
+            <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-11-20 09:10:33</sys_created_on>
+            <sys_id>6cbd316c3b861a5013b9202a85e45a54</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="cmdb_ci_computer" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">a818b59c3b82d65013b9202a85e45ab3</sys_ui_section>
+            <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-11-20 09:10:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>New Section</caption>
+            <header>false</header>
+            <name>cmdb_ci_computer</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-11-19 14:07:29</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a818b59c3b82d65013b9202a85e45ab3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cmdb_ci_computer</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+            <sys_update_name>sys_ui_section_a818b59c3b82d65013b9202a85e45ab3</sys_update_name>
+            <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-11-19 14:07:29</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Agency Asset Portal" name="agency_asset_portal">f94dc8b51b285e101ef387306b4bcb71</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

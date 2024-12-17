@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_sigh_a_a_portal.ExcelToCMDB</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>This script defines a ServiceNow server-side class, ExcelToCMDB, for processing Excel files to create Configuration Item (CI) records in various CMDB tables based on the model category. It uses the GlideExcelParser to read Excel rows and dynamically maps them to appropriate CI tables such as Computers, Mobile Devices, Peripherals, Printers, or Servers.</description>
+        <name>ExcelToCMDB</name>
+        <script><![CDATA[//Author: Suleyman Shaipov
+var ExcelToCMDB = Class.create();
+ExcelToCMDB.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    processExcelAndCreateCI: function(attachmentSysId) {
+        try {
+            // Excel-Parser initialisieren
+            var parser = new sn_impex.GlideExcelParser();
+            var attachment = new GlideSysAttachment();
+            var attachmentStream = attachment.getContentStream(attachmentSysId);
+
+            // Wenn kein Attachment gefunden wurde, dann Fehlermeldung
+            if (!attachmentStream) {
+                gs.error("Attachment not found or unable to read stream for sys_id: " + attachmentSysId);
+                return;
+            }
+
+            parser.setSource(attachmentStream);
+            if (parser.parse()) {
+                while (parser.next()) {
+                    var row = parser.getRow();
+
+                    // Model holen
+                    var modelSysId = this.getModel(row['Model']);
+                    gs.info("Model: " + row['Model'] + " - Sys ID: " + modelSysId);
+                    // Model Category holen
+                    var modelCategory = this.getModelCategory(modelSysId);
+                    gs.info("Model Category: " + modelCategory);
+
+                    //Switch Case für Model Category
+                    switch (modelCategory) {
+                        case '81feb9c137101000deeabfc8bcbe5dc4': // Computer
+                            this.createComputerCI(row);
+                            break;
+                        case 'b7d5bc14c3031000b959fd251eba8fd0': // Mobile
+                            this.createMobileCI(row);
+                            break;
+                        case '57d5bc14c3031000b959fd251eba8fd7': // Peripheral
+                            this.createPeripheralCI(row);
+                            break;
+                        case '3dfe3854c3031000b959fd251eba8f42': // Printer
+                            this.createPrinterCI(row);
+                            break;
+                        case 'c4d4fe4937101000deeabfc8bcbe5d91': // Server
+                            this.createServerCI(row);
+                            break;
+                        default:
+                            gs.error("Model Category not found for Model: " + row['Model']);
+                            break;
+                    }
+                }
+                parser.close(); // Schließe den Parser
+            } else {
+                gs.error("Error parsing Excel: " + parser.getErrorMessage()); // Fehlermeldung, wenn Excel nicht geparst werden kann
+            }
+        } catch (ex) {
+            gs.error("Exception caught while processing Excel: " + ex.message); // Fehlermeldung, wenn ein Fehler auftritt
+        }
+    },
+
+    // Funktion um Computer CI zu erstellen
+    createComputerCI: function(row) {
+        var ciGr = new GlideRecord('cmdb_ci_computer'); // Tabelle für Configuration Items
+        ciGr.initialize();
+
+        // Felder aus Excel zuweisen
+        ciGr.name = row['Name'];
+        ciGr.serial_number = row['Serial Number'];
+        ciGr.disk_space = row['Disk Space'];
+        ciGr.ram = row['RAM'];
+        ciGr.short_description = row['Short Description'];
+        
+        // Setze den Hersteller (übergeben aus dem Record Producer)
+        ciGr.manufacturer = this.getManufacturer(row['Manufacturer']);
+
+        // Setze das Model ID (übergeben aus dem Record Producer)
+        ciGr.model_id = this.getModel(row['Model']); 
+
+        // Automatisch generiertes Asset Tag
+        var assetTag = this.generateAssetTag();
+        ciGr.asset_tag = assetTag;
+        
+        // Hardware Status auf "In Stock" setzen
+        ciGr.hardware_status = "in_stock";
+
+        // CI-Datensatz speichern
+        ciGr.insert();
+        gs.info("CI created with Asset Tag: " + assetTag);
+    },
+
+    // Funktion um Mobile CI zu erstellen
+    createMobileCI: function(row) {
+        var ciGr = new GlideRecord('cmdb_ci_comm'); // Tabelle für Configuration Items
+        ciGr.initialize();
+
+        // Felder aus Excel zuweisen
+        ciGr.name = row['Name'];
+        ciGr.serial_number = row['Serial Number'];
+        ciGr.x_sigh_a_a_portal_u_color = row['Color'];
+        ciGr. x_sigh_a_a_portal_u_memory_size = row['Disk Space'];
+        ciGr.short_description = row['Short Description'];
+        
+        // Setze den Hersteller (übergeben aus dem Record Producer)
+        ciGr.manufacturer = this.getManufacturer(row['Manufacturer']);
+
+        // Setze das Model ID (übergeben aus dem Record Producer)
+        ciGr.model_id = this.getModel(row['Model']); 
+
+        // Automatisch generiertes Asset Tag
+        var assetTag = this.generateAssetTag();
+        ciGr.asset_tag = assetTag;
+        
+        // Hardware Status auf "In Stock" setzen
+        ciGr.install_status = 6;
+
+        // CI-Datensatz speichern
+        ciGr.insert();
+        gs.info("CI created with Asset Tag: " + assetTag);
+    },
+
+    // Funktion um Peripherie CI zu erstellen
+    createPeripheralCI: function(row) {
+        var ciGr = new GlideRecord('cmdb_ci_peripheral'); // Tabelle für Configuration Items
+        ciGr.initialize();
+
+        // Felder aus Excel zuweisen
+        ciGr.name = row['Name'];
+        ciGr.serial_number = row['Serial Number'];
+        ciGr.type = row['Type'];
+        ciGr.short_description = row['Short Description'];
+        
+        // Setze den Hersteller
+        ciGr.manufacturer = this.getManufacturer(row['Manufacturer']);
+
+        // Setze das Model ID
+        ciGr.model_id = this.getModel(row['Model']); 
+
+        // Automatisch generiertes Asset Tag
+        var assetTag = this.generateAssetTag();
+        ciGr.asset_tag = assetTag;
+        
+        // Hardware Status auf "In Stock" setzen
+        ciGr.install_status = 6;
+
+        // CI-Datensatz speichern
+        ciGr.insert();
+        gs.info("CI created with Asset Tag: " + assetTag);
+    },
+
+    // Funktion um Drucker CI zu erstellen
+    createPrinterCI: function(row) {
+        var ciGr = new GlideRecord('cmdb_ci_printer'); // Tabelle für Configuration Items
+        ciGr.initialize();
+
+        // Felder aus Excel zuweisen
+        ciGr.name = row['Name'];
+        ciGr.serial_number = row['Serial Number'];
+        ciGr.print_type = row['Type'];
+        ciGr.short_description = row['Short Description'];
+        
+        // Setze den Hersteller
+        ciGr.manufacturer = this.getManufacturer(row['Manufacturer']);
+
+        // Setze das Model ID
+        ciGr.model_id = this.getModel(row['Model']); 
+
+        // Automatisch generiertes Asset Tag
+        var assetTag = this.generateAssetTag();
+        ciGr.asset_tag = assetTag;
+        
+        // Hardware Status auf "In Stock" setzen
+        ciGr.hardware_status = "in_stock";
+		ciGr.install_status = 6;
+
+        // CI-Datensatz speichern
+        ciGr.insert();
+        gs.info("CI created with Asset Tag: " + assetTag);
+    },
+
+    // Funktion um Server CI zu erstellen
+    createServerCI: function(row) {
+        var ciGr = new GlideRecord('cmdb_ci_server'); // Tabelle für Configuration Items
+        ciGr.initialize();
+
+        // Felder aus Excel zuweisen
+        ciGr.name = row['Name'];
+        ciGr.serial_number = row['Serial Number'];
+        ciGr.short_description = row['Short Description'];
+        
+        // Setze den Hersteller
+        ciGr.manufacturer = this.getManufacturer(row['Manufacturer']);
+
+        // Setze das Model ID
+        ciGr.model_id = this.getModel(row['Model']); 
+
+        // Automatisch generiertes Asset Tag
+        var assetTag = this.generateAssetTag();
+        ciGr.asset_tag = assetTag;
+        
+        // Hardware Status auf "In Stock" setzen
+        ciGr.hardware_status = "in_stock";
+
+        // CI-Datensatz speichern
+        ciGr.insert();
+        gs.info("CI created with Asset Tag: " + assetTag);
+    },
+
+    // Funktion um Hersteller zu holen
+    getManufacturer: function(manufacturerName) {
+        var manufacturerGr = new GlideRecord('core_company');
+        manufacturerGr.addQuery('name', manufacturerName);
+        manufacturerGr.query();
+        if (manufacturerGr.next()) {
+            return manufacturerGr.sys_id;
+        }
+        return null;
+    },
+
+    // Funktion um Model zu holen
+    getModel: function(modelName) {
+        var modelGr = new GlideRecord('cmdb_hardware_product_model');
+        modelGr.addQuery('name', modelName);
+        modelGr.query();
+        if (modelGr.next()) {
+            return modelGr.sys_id.toString();
+        }
+        else {
+            gs.error("Model not found: " + modelName);
+            return null;
+        }
+    },
+
+    // Funktion um Model Category zu holen
+    getModelCategory: function(modelSysId) {
+        var modelGr = new GlideRecord('cmdb_hardware_product_model');
+        if (modelGr.get(modelSysId)) {
+            return modelGr.cmdb_model_category.toString();
+        } else {
+            gs.error("Model Category not found for sys_id: " + modelSysId);
+            return null;
+        }
+    },
+
+    // Funktion zum Generieren eines Asset Tags
+    generateAssetTag: function() {
+        var prefix = "AAP-";
+        var timestamp = new GlideDateTime().getNumericValue();
+        var randomNum = Math.floor(Math.random() * 1000);
+        return prefix + timestamp + "-" + randomNum;
+    },
+    type: 'ExcelToCMDB'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-26 14:39:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9742c62e3bcada1081e1de2a85e45a8e</sys_id>
+        <sys_mod_count>75</sys_mod_count>
+        <sys_name>ExcelToCMDB</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_script_include_9742c62e3bcada1081e1de2a85e45a8e</sys_update_name>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-12-16 11:19:20</sys_updated_on>
+    </sys_script_include>
+</record_update>

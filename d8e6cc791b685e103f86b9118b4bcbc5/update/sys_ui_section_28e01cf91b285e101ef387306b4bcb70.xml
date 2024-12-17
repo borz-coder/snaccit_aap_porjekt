@@ -3,84 +3,154 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>name</element>
             <position>0</position>
-            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
-            <sys_created_on>2024-09-10 08:55:17</sys_created_on>
-            <sys_id>7451d43d1b285e101ef387306b4bcbec</sys_id>
+            <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-11-19 13:18:27</sys_created_on>
+            <sys_id>1edc615c3b42d65013b9202a85e45a1d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">28e01cf91b285e101ef387306b4bcb70</sys_ui_section>
-            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
-            <sys_updated_on>2024-09-10 08:55:17</sys_updated_on>
+            <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-11-19 13:18:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>type</element>
+            <position>1</position>
+            <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-11-19 13:18:27</sys_created_on>
+            <sys_id>16dc615c3b42d65013b9202a85e45a1e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">28e01cf91b285e101ef387306b4bcb70</sys_ui_section>
+            <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-11-19 13:18:27</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>model_id</element>
-            <position>1</position>
-            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
-            <sys_created_on>2024-09-10 08:55:17</sys_created_on>
-            <sys_id>7c51d43d1b285e101ef387306b4bcbec</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">28e01cf91b285e101ef387306b4bcb70</sys_ui_section>
-            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
-            <sys_updated_on>2024-09-10 08:55:17</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>serial_number</element>
             <position>2</position>
-            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
-            <sys_created_on>2024-09-10 08:55:17</sys_created_on>
-            <sys_id>7451d43d1b285e101ef387306b4bcbed</sys_id>
+            <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-11-19 13:18:27</sys_created_on>
+            <sys_id>1edc615c3b42d65013b9202a85e45a1e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">28e01cf91b285e101ef387306b4bcb70</sys_ui_section>
-            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
-            <sys_updated_on>2024-09-10 08:55:17</sys_updated_on>
+            <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-11-19 13:18:27</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>company</element>
+            <element>asset</element>
             <position>3</position>
-            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
-            <sys_created_on>2024-09-10 08:55:17</sys_created_on>
-            <sys_id>7c51d43d1b285e101ef387306b4bcbed</sys_id>
+            <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-11-19 13:18:27</sys_created_on>
+            <sys_id>16dc615c3b42d65013b9202a85e45a1f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">28e01cf91b285e101ef387306b4bcb70</sys_ui_section>
-            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
-            <sys_updated_on>2024-09-10 08:55:17</sys_updated_on>
+            <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-11-19 13:18:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_sigh_a_a_portal_u_color</element>
+            <position>4</position>
+            <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-11-19 13:18:27</sys_created_on>
+            <sys_id>1edc615c3b42d65013b9202a85e45a1f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">28e01cf91b285e101ef387306b4bcb70</sys_ui_section>
+            <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-11-19 13:18:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-11-19 13:18:27</sys_created_on>
+            <sys_id>16dc615c3b42d65013b9202a85e45a20</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">28e01cf91b285e101ef387306b4bcb70</sys_ui_section>
+            <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-11-19 13:18:27</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>asset_tag</element>
+            <position>6</position>
+            <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-11-19 13:18:27</sys_created_on>
+            <sys_id>1edc615c3b42d65013b9202a85e45a20</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">28e01cf91b285e101ef387306b4bcb70</sys_ui_section>
+            <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-11-19 13:18:27</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>manufacturer</element>
-            <position>4</position>
-            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
-            <sys_created_on>2024-09-10 08:55:17</sys_created_on>
-            <sys_id>7451d43d1b285e101ef387306b4bcbee</sys_id>
+            <position>7</position>
+            <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-11-19 13:18:27</sys_created_on>
+            <sys_id>16dc615c3b42d65013b9202a85e45a21</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">28e01cf91b285e101ef387306b4bcb70</sys_ui_section>
-            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
-            <sys_updated_on>2024-09-10 08:55:17</sys_updated_on>
+            <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-11-19 13:18:27</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>assigned_to</element>
-            <position>5</position>
-            <sys_created_by>mohammad_haris.mansour@snacc-it.de</sys_created_by>
-            <sys_created_on>2024-09-10 08:55:17</sys_created_on>
-            <sys_id>7c51d43d1b285e101ef387306b4bcbee</sys_id>
+            <element>serial_number</element>
+            <position>8</position>
+            <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-11-19 13:18:27</sys_created_on>
+            <sys_id>1edc615c3b42d65013b9202a85e45a21</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">28e01cf91b285e101ef387306b4bcb70</sys_ui_section>
-            <sys_updated_by>mohammad_haris.mansour@snacc-it.de</sys_updated_by>
-            <sys_updated_on>2024-09-10 08:55:17</sys_updated_on>
+            <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-11-19 13:18:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>company</element>
+            <position>9</position>
+            <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-11-19 13:18:27</sys_created_on>
+            <sys_id>dadc615c3b42d65013b9202a85e45a2e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">28e01cf91b285e101ef387306b4bcb70</sys_ui_section>
+            <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-11-19 13:18:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_sigh_a_a_portal_u_memory_size</element>
+            <position>10</position>
+            <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+            <sys_created_on>2024-11-19 13:18:27</sys_created_on>
+            <sys_id>d2dc615c3b42d65013b9202a85e45a2f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="cmdb_ci_comm" sys_domain="global" view="f94dc8b51b285e101ef387306b4bcb71">28e01cf91b285e101ef387306b4bcb70</sys_ui_section>
+            <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+            <sys_updated_on>2024-11-19 13:18:27</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

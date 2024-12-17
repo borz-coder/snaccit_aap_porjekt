@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes>ref_ac_columns=asset_tag;display_name</attributes>
-        <cat_item display_value="Return some Hardware">c52ff6ef1b6c56501ef387306b4bcbba</cat_item>
+        <cat_item/>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field/>

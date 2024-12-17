@@ -48,7 +48,7 @@ while(agentComps.next()){
 	while(currInvInActualMonth.next()) {
 		var val = new GlideDateTime(currInvInActualMonth.getValue('date'));
 		if(formattedDate.getMonthLocalTime() === val.getMonthLocalTime()) {
-			gs.info("Skipping invoice creation for company: " + agentComps.getValue('name') + " because Inoice already exists in this month");
+			gs.info("Skipping invoice creation for company: " + agentComps.getValue('name') + " because Invoice already exists in this month");
 			skipCompanyLoop = true;
 			break;
 		}
@@ -93,7 +93,7 @@ while(agentComps.next()){
 	
 	// Codeabschnitt zum Erstellen eines Hashes. Notwendig um später beurteilen zu könnnen ob sich der Bestand verändert hat.
 	var agentAssets = new GlideAggregate('alm_asset');
-	agentAssets.addQuery('owned_by', 'IN', agMembIDs);
+	agentAssets.addQuery('company', 'IN', agMembIDs);
 	agentAssets.addAggregate('COUNT');
 	agentAssets.addAggregate('SUM', 'cost');
 	agentAssets.groupBy('model.display_name');
@@ -177,15 +177,15 @@ while(agentComps.next()){
         <sys_created_on>2024-09-11 09:37:47</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>b454a18e1be0de103f86b9118b4bcbce</sys_id>
-        <sys_mod_count>63</sys_mod_count>
+        <sys_mod_count>64</sys_mod_count>
         <sys_name>Agency Asset Portal: Create Invoices for agencies</sys_name>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>sysauto_script_b454a18e1be0de103f86b9118b4bcbce</sys_update_name>
-        <sys_updated_by>maximilian.broekel@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-10-16 09:11:56</sys_updated_on>
+        <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-20 12:33:18</sys_updated_on>
         <time_zone/>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>

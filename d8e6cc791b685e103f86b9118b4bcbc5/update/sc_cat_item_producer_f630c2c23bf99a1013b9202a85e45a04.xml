@@ -63,7 +63,14 @@
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
-        <script/>
+        <script><![CDATA[/*(function execute(current, producer) {
+    // Überprüfe, ob der Name des Models existiert
+    if (current.name && !current.name.startsWith('AAP')) {
+        // Präfix 'AAP' hinzufügen
+        current.name = 'AAP ' + current.name;
+    }
+})(current, producer);
+*/]]></script>
         <short_description>Create a new model</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
@@ -73,15 +80,15 @@
         <sys_created_on>2024-11-12 14:58:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f630c2c23bf99a1013b9202a85e45a04</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Create New Model</sys_name>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>sc_cat_item_producer_f630c2c23bf99a1013b9202a85e45a04</sys_update_name>
-        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-13 11:03:20</sys_updated_on>
+        <sys_updated_by>milan.schulze@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-29 11:04:57</sys_updated_on>
         <table_name>cmdb_hardware_product_model</table_name>
         <taxonomy_topic/>
         <template/>
@@ -89,7 +96,7 @@
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>10</version>
+        <version>12</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>

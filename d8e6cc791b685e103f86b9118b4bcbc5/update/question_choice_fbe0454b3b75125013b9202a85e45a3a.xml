@@ -3,7 +3,7 @@
         <inactive>false</inactive>
         <order>100</order>
         <published_ref/>
-        <question display_value="iphone_24_color">07e0054b3b75125013b9202a85e45a1f</question>
+        <question display_value="phone_color">07e0054b3b75125013b9202a85e45a1f</question>
         <sys_class_name>question_choice</sys_class_name>
         <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
         <sys_created_on>2024-11-15 12:55:43</sys_created_on>

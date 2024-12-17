@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item/>
+        <catalog_variable>IO:19a4d1d83b4a121081e1de2a85e45a9b</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-19 14:37:15</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1ede31183bc2d65013b9202a85e45a14</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>model_id</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_1ede31183bc2d65013b9202a85e45a14</sys_update_name>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-20 09:41:34</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Display Model">dd8e79d43bc2d65013b9202a85e45a73</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>model_id</variable>
+        <variable_set display_value="HW Asset Variablen">df3355183b4a121081e1de2a85e45ac1</variable_set>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

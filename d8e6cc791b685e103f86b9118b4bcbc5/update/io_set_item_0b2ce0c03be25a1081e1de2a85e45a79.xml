@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <sc_cat_item display_value="Apple MacBook Pro 14&quot; - Space Schwarz">96477ed33b9e961013b9202a85e45a4b</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-12-13 10:29:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0b2ce0c03be25a1081e1de2a85e45a79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ComputerVar.Apple MacBook Pro 14" - Space Schwarz</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>io_set_item_0b2ce0c03be25a1081e1de2a85e45a79</sys_update_name>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-12-13 10:29:28</sys_updated_on>
+        <variable_set display_value="ComputerVar">4e3c64c03be25a1081e1de2a85e45a7c</variable_set>
+    </io_set_item>
+</record_update>

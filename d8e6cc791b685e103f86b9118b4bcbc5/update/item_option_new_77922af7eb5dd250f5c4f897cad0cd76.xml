@@ -37,7 +37,7 @@
         <lookup_value/>
         <macro/>
         <macroponent/>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
@@ -56,7 +56,13 @@
         <record/>
         <record_producer_table/>
         <reference>alm_asset</reference>
-        <reference_qual/>
+        <reference_qual>javascript: 'sys_idIN' + new x_sigh_a_a_portal.FilterAssetsByCompany().filter(current.variables.company);&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+</reference_qual>
         <reference_qual_condition/>
         <rich_text/>
         <roles_to_use_also_request_for/>
@@ -78,22 +84,22 @@
         <sys_created_on>2024-10-24 07:29:28</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>77922af7eb5dd250f5c4f897cad0cd76</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>x_sigh_a_a_portal_asset</sys_name>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>item_option_new_77922af7eb5dd250f5c4f897cad0cd76</sys_update_name>
-        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-10-24 08:35:30</sys_updated_on>
+        <sys_updated_by>milan.schulze@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-27 14:14:19</sys_updated_on>
         <table/>
         <tooltip/>
         <type>8</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set display_value="AAP Incident Set">48282e6f3b9d125013b9202a85e45a8c</variable_set>

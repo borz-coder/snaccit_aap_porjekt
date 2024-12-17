@@ -6,7 +6,7 @@
         <condition_script/>
         <description/>
         <event_name>email.read</event_name>
-        <filter_condition table="sys_email">subjectLIKEIncident^EQ<item endquery="false" field="subject" goto="false" newquery="false" operator="LIKE" or="false" value="Incident"/>
+        <filter_condition table="sys_email">subjectLIKEReopen^EQ<item endquery="false" field="subject" goto="false" newquery="false" operator="LIKE" or="false" value="Reopen"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <from/>
@@ -18,13 +18,26 @@
 	// Get the incident record based on the sys_id in the email instance    
     var incidentGR = new GlideRecord('incident');
     if (incidentGR.get(email.instance.sys_id)) { // Reopen the incident      
-        incidentGR.state = 1; // Set the state to "Reopened" (adjust the state value based on your workflow)    
+        incidentGR.state = 2; // Set the state to "Reopened" (adjust the state value based on your workflow)    
         // Add the email body text as a work note      
         incidentGR.work_notes = "Customer response via email: \n" + email.body_text;
         // Update the incident record        
         incidentGR.update(); // Log the action for debugging purposes (optional)   
         gs.log("Incident " + incidentGR.number + " has been reopened based on customer email response.");
     }
+
+	else {
+		var incidentSysId = email.body.match(/sys_id=(\w+)/)[1];
+        if (incidentGR.get(incidentSysId)) {
+        incidentGR.state = 2; // In Arbeit
+		incidentGR.work_notes = "Customer response via email: \n" + email.body_text;
+        incidentGR.update();
+		gs.log("Incident " + incidentGR.number + " has been reopened based on customer email response.");
+    }
+	}
+	
+  
+
 })(current, email, email_action, event);]]></script>
         <stop_processing>false</stop_processing>
         <sys_class_name>sysevent_in_email_action</sys_class_name>
@@ -34,7 +47,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>71d9a4f73b25561013b9202a85e45ad7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Reopen Incident on Customer Reply</sys_name>
         <sys_overrides/>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
@@ -42,8 +55,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>sysevent_in_email_action_71d9a4f73b25561013b9202a85e45ad7</sys_update_name>
-        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-11-05 09:21:13</sys_updated_on>
+        <sys_updated_by>milan.schulze@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-27 13:58:02</sys_updated_on>
         <table>incident</table>
         <template/>
         <type>reply</type>

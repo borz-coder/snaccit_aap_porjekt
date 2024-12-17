@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_sigh_a_a_portal.filterModelForAsset</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>filterModelForAsset</name>
+        <script><![CDATA[var filterModelForAsset = Class.create();
+filterModelForAsset.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	filter: function(manufacturer) {
+		//gs.info('Filter erstellt für model_category: ' + manufacturer);
+		//gs.addInfoMessage("Zeile5");
+        if (!manufacturer) {
+			//gs.log('keine Model Category gefunden');
+            return ''; // Wenn kein Wert vorhanden ist, wird ein leerer Filter zurückgegeben
+        }
+
+        var gr = new GlideRecord('cmdb_model');
+        gr.addQuery('manufacturer', manufacturer); // Filtere nach der übergebenen Kategorie
+        gr.query();
+
+        var sysIdList = [];
+        while (gr.next()) {
+            sysIdList.push(gr.getValue('sys_id'));
+        }
+
+        // Rückgabe des Filters im passenden Format ("sys_idIN...")
+        return sysIdList.join(',');
+    },
+    type: 'filterModelForAsset'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-19 14:30:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5f8bb9d03bc2d65013b9202a85e45a9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>filterModelForAsset</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_script_include_5f8bb9d03bc2d65013b9202a85e45a9e</sys_update_name>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-19 14:30:19</sys_updated_on>
+    </sys_script_include>
+</record_update>

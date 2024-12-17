@@ -65,7 +65,7 @@
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
-        <va_supported>false</va_supported>
+        <va_supported>true</va_supported>
         <variable_set display_value="AAP Incident Set">48282e6f3b9d125013b9202a85e45a8c</variable_set>
         <view/>
     </catalog_script_client>

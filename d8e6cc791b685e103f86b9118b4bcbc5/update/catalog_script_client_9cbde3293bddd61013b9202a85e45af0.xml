@@ -7,7 +7,7 @@
         <applies_sc_task>true</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
-        <cat_item display_value="Return some Hardware">c52ff6ef1b6c56501ef387306b4bcbba</cat_item>
+        <cat_item/>
         <cat_variable>IO:235003631bac56501ef387306b4bcb83</cat_variable>
         <condition/>
         <description/>

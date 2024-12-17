@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>read</operation>
+        <source_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>milan.schulze@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-26 13:06:56</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>b95d25ea3b4ada1081e1de2a85e45a2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>alm_hardware</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sys_scope_privilege_b95d25ea3b4ada1081e1de2a85e45a2e</sys_update_name>
+        <sys_updated_by>milan.schulze@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-26 13:06:56</sys_updated_on>
+        <target_name>alm_hardware</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+</record_update>

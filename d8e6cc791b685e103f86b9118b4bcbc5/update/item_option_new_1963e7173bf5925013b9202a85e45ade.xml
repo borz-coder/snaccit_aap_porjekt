@@ -56,7 +56,7 @@
         <record/>
         <record_producer_table/>
         <reference/>
-        <reference_qual/>
+        <reference_qual>javascript:new x_sigh_a_a_portal.returnFilter().getFilter();</reference_qual>
         <reference_qual_condition/>
         <rich_text/>
         <roles_to_use_also_request_for/>
@@ -78,7 +78,7 @@
         <sys_created_on>2024-11-16 20:04:00</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1963e7173bf5925013b9202a85e45ade</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>device</sys_name>
         <sys_package/>
         <sys_policy/>
@@ -86,14 +86,14 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>item_option_new_1963e7173bf5925013b9202a85e45ade</sys_update_name>
         <sys_updated_by>ahmet.topal@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-20 11:13:30</sys_updated_on>
+        <sys_updated_on>2024-11-20 12:49:06</sys_updated_on>
         <table/>
         <tooltip/>
         <type>18</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <validate_regex/>
         <variable_name/>
         <variable_set/>

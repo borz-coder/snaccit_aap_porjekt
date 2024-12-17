@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>102</order>
+        <published_ref/>
+        <question display_value="ram_size">967c6cc03be25a1081e1de2a85e45ad6</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-12-13 10:35:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>967d20443be25a1081e1de2a85e45a90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>24000</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>question_choice_967d20443be25a1081e1de2a85e45a90</sys_update_name>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-12-13 10:35:07</sys_updated_on>
+        <text>24000</text>
+        <value>24000</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=967d20443be25a1081e1de2a85e45a90"/>
+</record_update>

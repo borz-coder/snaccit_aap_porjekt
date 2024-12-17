@@ -75,15 +75,15 @@
         <sys_created_on>2024-10-23 12:55:28</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>8ed3eae73b9d125013b9202a85e45ab3</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>Request support</sys_name>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>sc_cat_item_producer_8ed3eae73b9d125013b9202a85e45ab3</sys_update_name>
-        <sys_updated_by>matthias.ferstl@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-11-12 13:15:04</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-11-27 14:11:47</sys_updated_on>
         <table_name>incident</table_name>
         <taxonomy_topic/>
         <template/>
@@ -91,7 +91,7 @@
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>23</version>
+        <version>26</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
