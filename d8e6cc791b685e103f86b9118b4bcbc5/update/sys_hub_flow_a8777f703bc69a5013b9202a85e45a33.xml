@@ -2,7 +2,7 @@
     <sys_hub_flow action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
-        <active>true</active>
+        <active>false</active>
         <annotation/>
         <attributes>browserActivatedIn=safari,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=4010000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>25000</authored_on_release_version>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a8777f703bc69a5013b9202a85e45a33</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>myPhone24 Order with Approval</sys_name>
         <sys_overrides/>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
@@ -44,8 +44,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>sys_hub_flow_a8777f703bc69a5013b9202a85e45a33</sys_update_name>
-        <sys_updated_by>ahmet.topal@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-28 15:30:58</sys_updated_on>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-12-20 13:51:26</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_variable_value action="delete_multiple" query="document_key=a8777f703bc69a5013b9202a85e45a33"/>

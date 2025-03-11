@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item">
+    <sc_cat_item action="DELETE">
+        <access_type>restricted</access_type>
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <category/>
+        <checked_out/>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description/>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow/>
+        <fulfillment_automation_level>unspecified</fulfillment_automation_level>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>true</ignore_price>
+        <image/>
+        <location/>
+        <make_item_non_conversational>false</make_item_non_conversational>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>AAP Model 12</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_save_as_draft>false</no_save_as_draft>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <owner display_value="">system</owner>
+        <picture/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=6a52b2db3b5e961013b9202a85e45aba&amp;sysparm_preview=true", "summary");</preview>
+        <published_ref/>
+        <recurring_frequency/>
+        <request_method/>
+        <roles/>
+        <sc_catalogs/>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <sc_template/>
+        <short_description/>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <state/>
+        <sys_class_name>sc_cat_item</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-12-11 12:19:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6a52b2db3b5e961013b9202a85e45aba</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>AAP Model 12</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sc_cat_item_6a52b2db3b5e961013b9202a85e45aba</sys_update_name>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-12-16 12:58:23</sys_updated_on>
+        <taxonomy_topic/>
+        <template/>
+        <template_manager_roles/>
+        <type>item</type>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <version>2</version>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item>
+    <sys_translated_text action="DELETE" query="documentkey=6a52b2db3b5e961013b9202a85e45aba"/>
+    <fx_price action="DELETE" query="id=6a52b2db3b5e961013b9202a85e45aba"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</application>
+        <file_path/>
+        <instance_id>4c69c7719bcecfcca4e16b8af359ff93</instance_id>
+        <instance_name>snaccdev</instance_name>
+        <name>sc_cat_item_6a52b2db3b5e961013b9202a85e45aba</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item"><sc_cat_item action="INSERT_OR_UPDATE"><access_type>restricted</access_type><active>true</active><availability>on_desktop</availability><billable>false</billable><category/><checked_out/><cost>0</cost><custom_cart/><delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan><delivery_plan_script/><delivery_time>1970-01-03 00:00:00</delivery_time><description/><display_price_property>non_zero</display_price_property><entitlement_script/><flow_designer_flow/><fulfillment_automation_level>unspecified</fulfillment_automation_level><group/><hide_sp>false</hide_sp><icon/><ignore_price>true</ignore_price><image/><location/><make_item_non_conversational>false</make_item_non_conversational><mandatory_attachment>false</mandatory_attachment><meta/><mobile_hide_price>false</mobile_hide_price><mobile_picture/><mobile_picture_type>use_desktop_picture</mobile_picture_type><model/><name>AAP Model 12</name><no_attachment_v2>false</no_attachment_v2><no_cart>false</no_cart><no_cart_v2>false</no_cart_v2><no_delivery_time_v2>false</no_delivery_time_v2><no_order>false</no_order><no_order_now>false</no_order_now><no_proceed_checkout>false</no_proceed_checkout><no_quantity>false</no_quantity><no_quantity_v2>false</no_quantity_v2><no_save_as_draft>false</no_save_as_draft><no_search>false</no_search><no_wishlist_v2>false</no_wishlist_v2><omit_price>false</omit_price><order>0</order><ordered_item_link/><owner display_value="">system</owner><picture/><preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=6a52b2db3b5e961013b9202a85e45aba&amp;sysparm_preview=true", "summary");</preview><published_ref/><recurring_frequency/><request_method/><roles/><sc_catalogs/><sc_ic_item_staging/><sc_ic_version/><sc_template/><short_description/><show_variable_help_on_load>false</show_variable_help_on_load><start_closed>false</start_closed><state/><sys_class_name>sc_cat_item</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2024-12-11 12:19:36</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>6a52b2db3b5e961013b9202a85e45aba</sys_id><sys_mod_count>2</sys_mod_count><sys_name>AAP Model 12</sys_name><sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope><sys_update_name>sc_cat_item_6a52b2db3b5e961013b9202a85e45aba</sys_update_name><sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by><sys_updated_on>2024-12-16 12:58:23</sys_updated_on><taxonomy_topic/><template/><template_manager_roles/><type>item</type><use_sc_layout>true</use_sc_layout><vendor/><version>2</version><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><workflow/></sc_cat_item><sys_translated_text action="delete_multiple" query="documentkey=6a52b2db3b5e961013b9202a85e45aba"/><fx_price action="delete_multiple" query="id=6a52b2db3b5e961013b9202a85e45aba"/></record_update>]]></payload>
+        <payload_hash>1389928794</payload_hash>
+        <record_name>AAP Model 12</record_name>
+        <reverted_from/>
+        <source>e683765f3b5e961013b9202a85e45a54</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-12-16 12:58:24</sys_created_on>
+        <sys_id>a72b24813bae5e1081e1de2a85e45a8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>193cf8c622b0000001</sys_recorded_at>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-12-16 12:58:24</sys_updated_on>
+        <type>Catalog Item</type>
+        <update_guid>eb2b24813eae5e10ab5850a5fa53498a</update_guid>
+        <update_guid_history>eb2b24813eae5e10ab5850a5fa53498a:1389928794,ae52b2dbec5e9610af45348cd98f8bf4:2045421980,ee52b2db365e96108574b9d353384de4:1250007846</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 16.12.2024 13:58:24">672b24813bae5e1081e1de2a85e45a8e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-12-16 12:58:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sc_cat_item">sc_cat_item</sys_db_object>
+        <sys_id>11d7c00fd81945989104af10463ee701</sys_id>
+        <sys_metadata>6a52b2db3b5e961013b9202a85e45aba</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AAP Model 12</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_scope_delete display_value="">6a17d7e3ef7642f0a746febbb6347040</sys_scope_delete>
+        <sys_update_name>sc_cat_item_6a52b2db3b5e961013b9202a85e45aba</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_6a52b2db3b5e961013b9202a85e45aba">a72b24813bae5e1081e1de2a85e45a8b</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-16 12:58:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

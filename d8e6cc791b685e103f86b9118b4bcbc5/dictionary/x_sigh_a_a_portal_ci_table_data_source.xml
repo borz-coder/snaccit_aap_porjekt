@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="500cd9ef3b8ad69013b9202a85e45ae0" extends="sys_import_set_row" label="Data Source for CI Table" max_length="40" name="x_sigh_a_a_portal_ci_table_data_source" type="collection">
+        <element attributes="import_attribute_name=Disk Space (GB)" label="Disk Space (GB)" max_length="40" name="u_disk_space__gb_" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Manufacturer" label="Manufacturer" max_length="40" name="u_manufacturer" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Model" label="Model" max_length="40" name="u_model" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Name" label="Name" max_length="40" name="u_name" type="string"/>
+        <element attributes="import_attribute_name=RAM (MB)" label="RAM (MB)" max_length="40" name="u_ram__mb_" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Serial Number" label="Serial Number" max_length="40" name="u_serial_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Short Description" label="Short Description" max_length="40" name="u_short_description" type="string"/>
+    </element>
+</database>

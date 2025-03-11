@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="230cd8751be85e103f86b9118b4bcb97" label="Invoices" max_length="40" name="x_sigh_a_a_portal_invoices" type="collection">
+        <element label="Attachment" max_length="40" name="attachment" reference="sys_attachment" type="reference"/>
+        <element label="Gross Price" max_length="15" name="brutto_price" type="currency"/>
+        <element label="Company" max_length="32" name="company" reference="core_company" type="reference"/>
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <element label="Inventar Hash" max_length="255" name="inventar_hash" read_only="true" type="string_full_utf8"/>
+        <element label="Net Price" max_length="15" name="netto_price" type="currency"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <index name="index">
+            <element name="company"/>
+        </index>
+    </element>
+</database>

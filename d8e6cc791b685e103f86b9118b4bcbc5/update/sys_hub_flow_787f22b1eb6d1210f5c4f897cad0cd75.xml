@@ -490,15 +490,15 @@
         <sys_created_on>2024-10-30 13:34:21</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>00b0b6f1eb6d1210f5c4f897cad0cd40</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>rofaida.daabis@agineo.de</sys_updated_by>
-        <sys_updated_on>2024-12-11 15:04:54</sys_updated_on>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2025-01-06 09:27:40</sys_updated_on>
         <ui_id>49a2c7e6-2434-4bb8-84a1-e2a7eba77f40</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=00b0b6f1eb6d1210f5c4f897cad0cd40"/>
@@ -1218,14 +1218,14 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>787f22b1eb6d1210f5c4f897cad0cd75</sys_id>
         <latest_snapshot>905b74263bc2da1081e1de2a85e45adc</latest_snapshot>
-        <compiler_build>glide-washingtondc-12-20-2023__patch8-hotfix3-11-13-2024_11-19-2024_1745.zip</compiler_build>
+        <compiler_build>glide-washingtondc-12-20-2023__patch9-11-20-2024_11-26-2024_1946.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=787f22b1eb6d1210f5c4f897cad0cd75^sys_idNOT INe45bb4263bc2da1081e1de2a85e45ab2"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"e45bb4263bc2da1081e1de2a85e45ab2","name":"plan","plan_signature":null}}</plan>
         <plan_id>787f22b1eb6d1210f5c4f897cad0cd75</plan_id>
-        <snapshot>cc38571f3b92d61013b9202a85e45a95</snapshot>
+        <snapshot>ad548cbf3b32d21013b9202a85e45a1b</snapshot>
         <sys_class_name>sys_flow_trigger_plan</sys_class_name>
         <sys_created_by>milan.schulze@snacc-it.de</sys_created_by>
         <sys_created_on>2024-11-26 09:28:24</sys_created_on>

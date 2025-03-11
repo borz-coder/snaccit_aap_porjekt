@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item">
+    <sc_cat_item action="DELETE">
+        <access_type>restricted</access_type>
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <category/>
+        <checked_out/>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description/>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow/>
+        <fulfillment_automation_level>unspecified</fulfillment_automation_level>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>true</ignore_price>
+        <image/>
+        <location/>
+        <make_item_non_conversational>false</make_item_non_conversational>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Keyboard</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_save_as_draft>false</no_save_as_draft>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <owner display_value="Rofaida Daabis">fa122414dbbb4250a1aefef1f3961974</owner>
+        <picture/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=d79f0e8eeb3dde10f5c4f897cad0cd8a&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <published_ref/>
+        <recurring_frequency/>
+        <recurring_price>0</recurring_price>
+        <request_method/>
+        <roles/>
+        <sc_catalogs/>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <sc_template/>
+        <short_description>Keyboards of different models</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <state/>
+        <sys_class_name>sc_cat_item</sys_class_name>
+        <sys_created_by>rofaida.daabis@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-12 16:04:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d79f0e8eeb3dde10f5c4f897cad0cd8a</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Keyboard</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sc_cat_item_d79f0e8eeb3dde10f5c4f897cad0cd8a</sys_update_name>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-12-16 12:52:16</sys_updated_on>
+        <taxonomy_topic/>
+        <template/>
+        <template_manager_roles/>
+        <type>item</type>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <version>10</version>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item>
+    <sys_translated_text action="DELETE" query="documentkey=d79f0e8eeb3dde10f5c4f897cad0cd8a"/>
+    <fx_price action="DELETE" query="id=d79f0e8eeb3dde10f5c4f897cad0cd8a"/>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>price</field>
+        <id>d79f0e8eeb3dde10f5c4f897cad0cd8a</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="EUR">EUR</reference_currency>
+        <sys_created_by>rofaida.daabis@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-12 16:04:34</sys_created_on>
+        <sys_id>a7bf02ceeb3dde10f5c4f897cad0cd1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rofaida.daabis@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-12 16:04:34</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>recurring_price</field>
+        <id>d79f0e8eeb3dde10f5c4f897cad0cd8a</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="EUR">EUR</reference_currency>
+        <sys_created_by>rofaida.daabis@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-12 16:04:34</sys_created_on>
+        <sys_id>efbf02ceeb3dde10f5c4f897cad0cd1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>rofaida.daabis@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-12 16:04:34</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</application>
+        <file_path/>
+        <instance_id>4c69c7719bcecfcca4e16b8af359ff93</instance_id>
+        <instance_name>snaccdev</instance_name>
+        <name>sc_cat_item_d79f0e8eeb3dde10f5c4f897cad0cd8a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item"><sc_cat_item action="INSERT_OR_UPDATE"><access_type>restricted</access_type><active>true</active><availability>on_desktop</availability><billable>false</billable><category/><checked_out/><cost>0</cost><custom_cart/><delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan><delivery_plan_script/><delivery_time>1970-01-03 00:00:00</delivery_time><description/><display_price_property>non_zero</display_price_property><entitlement_script/><flow_designer_flow/><fulfillment_automation_level>unspecified</fulfillment_automation_level><group/><hide_sp>false</hide_sp><icon/><ignore_price>true</ignore_price><image/><location/><make_item_non_conversational>false</make_item_non_conversational><mandatory_attachment>false</mandatory_attachment><meta/><mobile_hide_price>false</mobile_hide_price><mobile_picture/><mobile_picture_type>use_desktop_picture</mobile_picture_type><model/><name>Keyboard</name><no_attachment_v2>false</no_attachment_v2><no_cart>false</no_cart><no_cart_v2>false</no_cart_v2><no_delivery_time_v2>false</no_delivery_time_v2><no_order>false</no_order><no_order_now>false</no_order_now><no_proceed_checkout>false</no_proceed_checkout><no_quantity>false</no_quantity><no_quantity_v2>false</no_quantity_v2><no_save_as_draft>false</no_save_as_draft><no_search>false</no_search><no_wishlist_v2>false</no_wishlist_v2><omit_price>false</omit_price><order>0</order><ordered_item_link/><owner display_value="Rofaida Daabis">fa122414dbbb4250a1aefef1f3961974</owner><picture/><preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=d79f0e8eeb3dde10f5c4f897cad0cd8a&amp;sysparm_preview=true", "summary");</preview><price>0</price><published_ref/><recurring_frequency/><recurring_price>0</recurring_price><request_method/><roles/><sc_catalogs/><sc_ic_item_staging/><sc_ic_version/><sc_template/><short_description>Keyboards of different models</short_description><show_variable_help_on_load>false</show_variable_help_on_load><start_closed>false</start_closed><state/><sys_class_name>sc_cat_item</sys_class_name><sys_created_by>rofaida.daabis@agineo.de</sys_created_by><sys_created_on>2024-11-12 16:04:34</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>d79f0e8eeb3dde10f5c4f897cad0cd8a</sys_id><sys_mod_count>10</sys_mod_count><sys_name>Keyboard</sys_name><sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope><sys_update_name>sc_cat_item_d79f0e8eeb3dde10f5c4f897cad0cd8a</sys_update_name><sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by><sys_updated_on>2024-12-16 12:52:16</sys_updated_on><taxonomy_topic/><template/><template_manager_roles/><type>item</type><use_sc_layout>true</use_sc_layout><vendor/><version>10</version><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><workflow/></sc_cat_item><sys_translated_text action="delete_multiple" query="documentkey=d79f0e8eeb3dde10f5c4f897cad0cd8a"/><fx_price action="delete_multiple" query="id=d79f0e8eeb3dde10f5c4f897cad0cd8a"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="EUR">EUR</currency><field>price</field><id>d79f0e8eeb3dde10f5c4f897cad0cd8a</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="EUR">EUR</reference_currency><sys_created_by>rofaida.daabis@agineo.de</sys_created_by><sys_created_on>2024-11-12 16:04:34</sys_created_on><sys_id>a7bf02ceeb3dde10f5c4f897cad0cd1d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>rofaida.daabis@agineo.de</sys_updated_by><sys_updated_on>2024-11-12 16:04:34</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="EUR">EUR</currency><field>recurring_price</field><id>d79f0e8eeb3dde10f5c4f897cad0cd8a</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="EUR">EUR</reference_currency><sys_created_by>rofaida.daabis@agineo.de</sys_created_by><sys_created_on>2024-11-12 16:04:34</sys_created_on><sys_id>efbf02ceeb3dde10f5c4f897cad0cd1d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>rofaida.daabis@agineo.de</sys_updated_by><sys_updated_on>2024-11-12 16:04:34</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price></record_update>]]></payload>
+        <payload_hash>-430408472</payload_hash>
+        <record_name>Keyboard</record_name>
+        <reverted_from/>
+        <source>e683765f3b5e961013b9202a85e45a54</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>suleyman.shaipov@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-12-16 12:52:16</sys_created_on>
+        <sys_id>cac9accd3b6e5e1081e1de2a85e45ad5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>193cf86c7d40000001</sys_recorded_at>
+        <sys_updated_by>suleyman.shaipov@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-12-16 12:52:16</sys_updated_on>
+        <type>Catalog Item</type>
+        <update_guid>02c9accd876e5e10fcb22f0cc3b1f5d5</update_guid>
+        <update_guid_history>02c9accd876e5e10fcb22f0cc3b1f5d5:-430408472,dd68645d6f8256100c26456fd7c1cbf3:-280865306,68864c8cae421a5051a91f563e2c60a7:2102723237,208d510b2939125051426312a74e0e90:191344484,e88d110b223912500db7073e1552fb51:-1720034269,a27d110b89391250c2c53675d8ba8a39:663554274,0b67150fe9f51250f4b8302b3ef5ae92:-1247824479,dac01602147dde106cdf3e3ccc62636a:1135764064,9db0d202fb7dde1035ff054579dbe009:-775614689,ebbf02ced33dde10f3c191aed75f3634:1607973854,a3bf02ce0e3dde10514051553bfea32b:-1741150458</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 16.12.2024 13:52:17">0ec9accd3b6e5e1081e1de2a85e45ad8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-12-16 12:52:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sc_cat_item">sc_cat_item</sys_db_object>
+        <sys_id>13633b2cd35f45788bc077ef354e68e4</sys_id>
+        <sys_metadata>d79f0e8eeb3dde10f5c4f897cad0cd8a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Keyboard</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_scope_delete display_value="">6a17d7e3ef7642f0a746febbb6347040</sys_scope_delete>
+        <sys_update_name>sc_cat_item_d79f0e8eeb3dde10f5c4f897cad0cd8a</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_d79f0e8eeb3dde10f5c4f897cad0cd8a">cac9accd3b6e5e1081e1de2a85e45ad5</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-16 12:52:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

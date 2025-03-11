@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="AAP Model 11">afa1be5b3b5e961013b9202a85e45a0e</sc_cat_item>
+        <sc_catalog display_value="Agency Asset Portal Services">954e0f921b6812501ef387306b4bcb28</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-12-11 12:16:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6fa1be5b3b5e961013b9202a85e45a1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Agency Asset Portal Services.AAP Model 11</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_6fa1be5b3b5e961013b9202a85e45a1f</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-11 12:16:40</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</application>
+        <file_path/>
+        <instance_id>4c69c7719bcecfcca4e16b8af359ff93</instance_id>
+        <instance_name>snaccdev</instance_name>
+        <name>sc_cat_item_catalog_6fa1be5b3b5e961013b9202a85e45a1f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="AAP Model 11">afa1be5b3b5e961013b9202a85e45a0e</sc_cat_item><sc_catalog display_value="Agency Asset Portal Services">954e0f921b6812501ef387306b4bcb28</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2024-12-11 12:16:40</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>6fa1be5b3b5e961013b9202a85e45a1f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Agency Asset Portal Services.AAP Model 11</sys_name><sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope><sys_update_name>sc_cat_item_catalog_6fa1be5b3b5e961013b9202a85e45a1f</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2024-12-11 12:16:40</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>1716580990</payload_hash>
+        <record_name>Agency Asset Portal Services.AAP Model 11</record_name>
+        <reverted_from/>
+        <source>3f9dd3763b4a5e1081e1de2a85e45a44</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-12-11 12:16:40</sys_created_on>
+        <sys_id>6fa1be5b3b5e961013b9202a85e45a23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>193b5a660fd0000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-11 12:16:40</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>efa1be5ba05e961064bec0b244e9d722</update_guid>
+        <update_guid_history>efa1be5ba05e961064bec0b244e9d722:1716580990</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 16.12.2024 13:56:04">d5aa20413bae5e1081e1de2a85e45ae9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-12-16 12:56:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>2ae6ad7a4cb9425687951ce0469dfe41</sys_id>
+        <sys_metadata>6fa1be5b3b5e961013b9202a85e45a1f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Agency Asset Portal Services.AAP Model 11</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_parent display_value="">afa1be5b3b5e961013b9202a85e45a0e</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_scope_delete display_value="">6a17d7e3ef7642f0a746febbb6347040</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_6fa1be5b3b5e961013b9202a85e45a1f</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_6fa1be5b3b5e961013b9202a85e45a1f">6fa1be5b3b5e961013b9202a85e45a23</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-16 12:56:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

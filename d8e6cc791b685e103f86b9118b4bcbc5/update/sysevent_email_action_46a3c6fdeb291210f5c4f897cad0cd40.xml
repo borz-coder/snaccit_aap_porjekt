@@ -28,7 +28,7 @@
         <event_parm_2>false</event_parm_2>
         <exclude_delegates>false</exclude_delegates>
         <force_delivery>false</force_delivery>
-        <from/>
+        <from>milan.schulze@snacc-it.de</from>
         <generation_type>triggered</generation_type>
         <importance/>
         <include_attachments>false</include_attachments>
@@ -54,7 +54,7 @@
         <recipient_fields>caller_id</recipient_fields>
         <recipient_groups/>
         <recipient_users/>
-        <reply_to/>
+        <reply_to>milan.schulze@snacc-it.de</reply_to>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
@@ -67,7 +67,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>46a3c6fdeb291210f5c4f897cad0cd40</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>Incident-Evaluation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
@@ -76,7 +76,7 @@
         <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
         <sys_update_name>sysevent_email_action_46a3c6fdeb291210f5c4f897cad0cd40</sys_update_name>
         <sys_updated_by>milan.schulze@snacc-it.de</sys_updated_by>
-        <sys_updated_on>2024-11-27 13:23:59</sys_updated_on>
+        <sys_updated_on>2024-12-18 09:44:44</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="global_search_config_handler=CompanySearchConfig,hasLabels=true,kagami_csindex_enabled=true,slushbucket_omit_embedded=true,text_index_translations=true" create_roles="user_admin" db_object_id="5835127a4f38ae00d6c750528110c77e" label="Unternehmen" max_length="40" name="core_company" text_index="true" type="collection">
+        <element label="No VAT" max_length="40" name="x_sigh_a_a_portal_no_vat" type="boolean"/>
+    </element>
+</database>

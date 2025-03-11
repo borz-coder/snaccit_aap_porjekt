@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="email_client=true,hasLabels=true,hasWorkflow=true,live_feed=true,query_hints=true,text_index_translations=true" audit="true" db_object_id="3ae7127e4f38ae00d6c750528110c7a2" extends="task" label="Incident" max_length="40" name="incident" text_index="true" type="collection">
+        <element label="Asset" max_length="32" name="x_sigh_a_a_portal_asset" reference="alm_asset" type="reference"/>
+    </element>
+</database>

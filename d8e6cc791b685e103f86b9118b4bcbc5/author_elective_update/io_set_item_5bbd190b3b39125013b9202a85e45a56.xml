@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="DELETE">
+        <order>100</order>
+        <sc_cat_item display_value="myMac">391c8606eb3dde10f5c4f897cad0cd7b</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-15 15:00:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5bbd190b3b39125013b9202a85e45a56</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>AAP_Hardware.myMac</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>io_set_item_5bbd190b3b39125013b9202a85e45a56</sys_update_name>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-15 15:00:05</sys_updated_on>
+        <variable_set display_value="AAP_Hardware">9abc418b3bb5125013b9202a85e45a5a</variable_set>
+    </io_set_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</application>
+        <file_path/>
+        <instance_id>4c69c7719bcecfcca4e16b8af359ff93</instance_id>
+        <instance_name>snaccdev</instance_name>
+        <name>io_set_item_5bbd190b3b39125013b9202a85e45a56</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item"><io_set_item action="INSERT_OR_UPDATE"><order>100</order><sc_cat_item display_value="myMac">391c8606eb3dde10f5c4f897cad0cd7b</sc_cat_item><sys_class_name>io_set_item</sys_class_name><sys_created_by>taniya.ghaderi@agineo.de</sys_created_by><sys_created_on>2024-11-15 15:00:05</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>5bbd190b3b39125013b9202a85e45a56</sys_id><sys_mod_count>1</sys_mod_count><sys_name>AAP_Hardware.myMac</sys_name><sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope><sys_update_name>io_set_item_5bbd190b3b39125013b9202a85e45a56</sys_update_name><sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by><sys_updated_on>2024-11-15 15:00:05</sys_updated_on><variable_set display_value="AAP_Hardware">9abc418b3bb5125013b9202a85e45a5a</variable_set></io_set_item></record_update>]]></payload>
+        <payload_hash>912915162</payload_hash>
+        <record_name>AAP_Hardware.myMac</record_name>
+        <reverted_from/>
+        <source>a801cbe63b319e1013b9202a85e45a33</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-15 15:00:06</sys_created_on>
+        <sys_id>5ccd990b3b39125013b9202a85e45a3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1933056a9e10000001</sys_recorded_at>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-15 15:00:06</sys_updated_on>
+        <type>Catalog Variable Set</type>
+        <update_guid>10cd990b2c39125008f689a34682073e</update_guid>
+        <update_guid_history>10cd990b2c39125008f689a34682073e:912915162</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 16.12.2024 13:34:20">0ba5a0493b6e5e1081e1de2a85e45a15</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>taniya.ghaderi@agineo.de</sys_created_by>
+        <sys_created_on>2024-12-16 12:34:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="io_set_item">io_set_item</sys_db_object>
+        <sys_id>ca31e983f3a34c1ab2838412cff6e3c4</sys_id>
+        <sys_metadata>5bbd190b3b39125013b9202a85e45a56</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AAP_Hardware.myMac</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_scope_delete display_value="">6a17d7e3ef7642f0a746febbb6347040</sys_scope_delete>
+        <sys_update_name>io_set_item_5bbd190b3b39125013b9202a85e45a56</sys_update_name>
+        <sys_update_version display_value="io_set_item_5bbd190b3b39125013b9202a85e45a56">5ccd990b3b39125013b9202a85e45a3e</sys_update_version>
+        <sys_updated_by>taniya.ghaderi@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-12-16 12:34:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="a547123e4f38ae00d6c750528110c747" extends="cmdb_ci" label="Kommunikationsgerät" max_length="40" name="cmdb_ci_comm" type="collection">
+        <element label="color" max_length="40" name="x_sigh_a_a_portal_u_color" type="string"/>
+        <element label="Memory Size" max_length="40" name="x_sigh_a_a_portal_u_memory_size" type="integer"/>
+    </element>
+</database>

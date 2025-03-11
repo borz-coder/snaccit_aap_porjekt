@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="myMac">391c8606eb3dde10f5c4f897cad0cd7b</sc_cat_item>
+        <sc_catalog display_value="Agency Asset Portal Services">954e0f921b6812501ef387306b4bcb28</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>rofaida.daabis@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-12 15:51:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>cccc8e0aeb3dde10f5c4f897cad0cd4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Agency Asset Portal Services.myMac</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_cccc8e0aeb3dde10f5c4f897cad0cd4b</sys_update_name>
+        <sys_updated_by>rofaida.daabis@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-12 15:51:30</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</application>
+        <file_path/>
+        <instance_id>4c69c7719bcecfcca4e16b8af359ff93</instance_id>
+        <instance_name>snaccdev</instance_name>
+        <name>sc_cat_item_catalog_cccc8e0aeb3dde10f5c4f897cad0cd4b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="myMac">391c8606eb3dde10f5c4f897cad0cd7b</sc_cat_item><sc_catalog display_value="Agency Asset Portal Services">954e0f921b6812501ef387306b4bcb28</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>rofaida.daabis@agineo.de</sys_created_by><sys_created_on>2024-11-12 15:51:30</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>cccc8e0aeb3dde10f5c4f897cad0cd4b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Agency Asset Portal Services.myMac</sys_name><sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope><sys_update_name>sc_cat_item_catalog_cccc8e0aeb3dde10f5c4f897cad0cd4b</sys_update_name><sys_updated_by>rofaida.daabis@agineo.de</sys_updated_by><sys_updated_on>2024-11-12 15:51:30</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>-1649182139</payload_hash>
+        <record_name>Agency Asset Portal Services.myMac</record_name>
+        <reverted_from/>
+        <source>98e604b91b685e103f86b9118b4bcb10</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rofaida.daabis@agineo.de</sys_created_by>
+        <sys_created_on>2024-11-12 15:51:30</sys_created_on>
+        <sys_id>c4cc024aeb3dde10f5c4f897cad0cdc9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1932112a5070000001</sys_recorded_at>
+        <sys_updated_by>rofaida.daabis@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-11-12 15:51:30</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>88cc024a763dde10c0fcc1e5eba1cfc8</update_guid>
+        <update_guid_history>88cc024a763dde10c0fcc1e5eba1cfc8:-1649182139</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 16.12.2024 13:34:19">47a56c093b6e5e1081e1de2a85e45a68</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rofaida.daabis@agineo.de</sys_created_by>
+        <sys_created_on>2024-12-16 12:34:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>51eb4ebc1db4400bb5fb8049dfefbf79</sys_id>
+        <sys_metadata>cccc8e0aeb3dde10f5c4f897cad0cd4b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Agency Asset Portal Services.myMac</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_parent display_value="">391c8606eb3dde10f5c4f897cad0cd7b</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_scope_delete display_value="">6a17d7e3ef7642f0a746febbb6347040</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_cccc8e0aeb3dde10f5c4f897cad0cd4b</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_cccc8e0aeb3dde10f5c4f897cad0cd4b">c4cc024aeb3dde10f5c4f897cad0cdc9</sys_update_version>
+        <sys_updated_by>rofaida.daabis@agineo.de</sys_updated_by>
+        <sys_updated_on>2024-12-16 12:34:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

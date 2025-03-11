@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="kagami_csindex_enabled=true" audit="true" db_object_id="e908927e4f38ae00d6c750528110c763" label="Asset" max_length="40" name="alm_asset" type="collection">
+        <element default="19" label="VAT" max_length="40" name="x_sigh_a_a_portal_vat" type="float"/>
+    </element>
+</database>

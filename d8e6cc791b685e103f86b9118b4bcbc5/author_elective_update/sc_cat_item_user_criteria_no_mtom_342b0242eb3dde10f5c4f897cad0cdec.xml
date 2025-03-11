@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="DELETE">
+        <sc_cat_item display_value="ProLion">daba0a02eb3dde10f5c4f897cad0cd5c</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>milan.schulze@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-11-12 15:44:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>342b0242eb3dde10f5c4f897cad0cdec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ProLion.SNC External</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_342b0242eb3dde10f5c4f897cad0cdec</sys_update_name>
+        <sys_updated_by>milan.schulze@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-11-12 15:44:27</sys_updated_on>
+        <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</application>
+        <file_path/>
+        <instance_id>4c69c7719bcecfcca4e16b8af359ff93</instance_id>
+        <instance_name>snaccdev</instance_name>
+        <name>sc_cat_item_user_criteria_no_mtom_342b0242eb3dde10f5c4f897cad0cdec</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom"><sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="ProLion">daba0a02eb3dde10f5c4f897cad0cd5c</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name><sys_created_by>milan.schulze@snacc-it.de</sys_created_by><sys_created_on>2024-11-12 15:44:27</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>342b0242eb3dde10f5c4f897cad0cdec</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ProLion.SNC External</sys_name><sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope><sys_update_name>sc_cat_item_user_criteria_no_mtom_342b0242eb3dde10f5c4f897cad0cdec</sys_update_name><sys_updated_by>milan.schulze@snacc-it.de</sys_updated_by><sys_updated_on>2024-11-12 15:44:27</sys_updated_on><user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria></sc_cat_item_user_criteria_no_mtom></record_update>]]></payload>
+        <payload_hash>-1386559854</payload_hash>
+        <record_name>ProLion.SNC External</record_name>
+        <reverted_from/>
+        <source>7c32f9023b12121013b9202a85e45acb</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2024-12-07 10:26:54</sys_created_on>
+        <sys_id>d73ba4813bae5e1081e1de2a85e45a6b</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>193a0a871b00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Catalog Item Not Available for</type>
+        <update_guid>973ba481e0ae5e101c1ab7e0d5d9ff6b</update_guid>
+        <update_guid_history>973ba481e0ae5e101c1ab7e0d5d9ff6b:-1386559854</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 16.12.2024 13:58:39">573ba4813bae5e1081e1de2a85e45a78</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>milan.schulze@snacc-it.de</sys_created_by>
+        <sys_created_on>2024-12-16 12:58:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
+        <sys_id>17b62a7493cb450dbfae87b2e70fa1f9</sys_id>
+        <sys_metadata>342b0242eb3dde10f5c4f897cad0cdec</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ProLion.SNC External</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_scope_delete display_value="">6a17d7e3ef7642f0a746febbb6347040</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_342b0242eb3dde10f5c4f897cad0cdec</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_342b0242eb3dde10f5c4f897cad0cdec">d73ba4813bae5e1081e1de2a85e45a6b</sys_update_version>
+        <sys_updated_by>milan.schulze@snacc-it.de</sys_updated_by>
+        <sys_updated_on>2024-12-16 12:58:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

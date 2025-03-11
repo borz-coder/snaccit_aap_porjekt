@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a7d0203d1be85e103f86b9118b4bcbae" label="x_sigh_a_a_portal_m2m_Assets_Invoices" max_length="40" name="x_sigh_a_a_portal_m2m_alm_asset_x_sigh_a_a_p" type="collection">
+        <element attributes="encode_utf8=false" label="Assets" max_length="32" name="alm_asset" reference="alm_asset" type="reference"/>
+        <element attributes="encode_utf8=false" label="Invoices" max_length="32" name="x_sigh_a_a_portal_invoices" reference="x_sigh_a_a_portal_invoices" type="reference"/>
+        <index name="index">
+            <element name="alm_asset"/>
+        </index>
+        <index name="index2">
+            <element name="x_sigh_a_a_portal_invoices"/>
+        </index>
+    </element>
+</database>

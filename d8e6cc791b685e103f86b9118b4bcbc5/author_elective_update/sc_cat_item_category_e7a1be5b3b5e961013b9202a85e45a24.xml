@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="AAP Model 11">afa1be5b3b5e961013b9202a85e45a0e</sc_cat_item>
+        <sc_category display_value="Printer">829b21caeb39de10f5c4f897cad0cdf5</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-12-11 12:16:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e7a1be5b3b5e961013b9202a85e45a24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Printer.AAP Model 11</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sc_cat_item_category_e7a1be5b3b5e961013b9202a85e45a24</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-11 12:16:40</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</application>
+        <file_path/>
+        <instance_id>4c69c7719bcecfcca4e16b8af359ff93</instance_id>
+        <instance_name>snaccdev</instance_name>
+        <name>sc_cat_item_category_e7a1be5b3b5e961013b9202a85e45a24</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="AAP Model 11">afa1be5b3b5e961013b9202a85e45a0e</sc_cat_item><sc_category display_value="Printer">829b21caeb39de10f5c4f897cad0cdf5</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2024-12-11 12:16:40</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>e7a1be5b3b5e961013b9202a85e45a24</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Printer.AAP Model 11</sys_name><sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope><sys_update_name>sc_cat_item_category_e7a1be5b3b5e961013b9202a85e45a24</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2024-12-11 12:16:40</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>417393400</payload_hash>
+        <record_name>Printer.AAP Model 11</record_name>
+        <reverted_from/>
+        <source>3f9dd3763b4a5e1081e1de2a85e45a44</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-12-11 12:16:40</sys_created_on>
+        <sys_id>63a1be5b3b5e961013b9202a85e45a28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>193b5a661370000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-11 12:16:40</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>27a1be5b2d5e9610b7c61b73690d5e27</update_guid>
+        <update_guid_history>27a1be5b2d5e9610b7c61b73690d5e27:417393400</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 16.12.2024 13:56:04">25aa24413bae5e1081e1de2a85e45a5b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-12-16 12:56:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>0ead57b84807432893a10c78e8ab3c64</sys_id>
+        <sys_metadata>e7a1be5b3b5e961013b9202a85e45a24</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Printer.AAP Model 11</sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_scope_delete display_value="">6a17d7e3ef7642f0a746febbb6347040</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_e7a1be5b3b5e961013b9202a85e45a24</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_e7a1be5b3b5e961013b9202a85e45a24">63a1be5b3b5e961013b9202a85e45a28</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-16 12:56:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="peripherie and Accessories flow test ">b6148e813b16de9013b9202a85e45a11</sc_cat_item>
+        <sc_category display_value="Peripherie and Accessories">50bbe1caeb39de10f5c4f897cad0cd77</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-12-04 09:11:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>87148e813b16de9013b9202a85e45a1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Peripherie and Accessories.peripherie and Accessories flow test </sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_update_name>sc_cat_item_category_87148e813b16de9013b9202a85e45a1a</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-04 09:11:13</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</application>
+        <file_path/>
+        <instance_id>4c69c7719bcecfcca4e16b8af359ff93</instance_id>
+        <instance_name>snaccdev</instance_name>
+        <name>sc_cat_item_category_87148e813b16de9013b9202a85e45a1a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="peripherie and Accessories flow test ">b6148e813b16de9013b9202a85e45a11</sc_cat_item><sc_category display_value="Peripherie and Accessories">50bbe1caeb39de10f5c4f897cad0cd77</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2024-12-04 09:11:13</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>87148e813b16de9013b9202a85e45a1a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Peripherie and Accessories.peripherie and Accessories flow test </sys_name><sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope><sys_update_name>sc_cat_item_category_87148e813b16de9013b9202a85e45a1a</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2024-12-04 09:11:13</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>618542266</payload_hash>
+        <record_name>Peripherie and Accessories.peripherie and Accessories flow test </record_name>
+        <reverted_from/>
+        <source>0e1ed35f3bb5925013b9202a85e45aca</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-12-04 09:11:13</sys_created_on>
+        <sys_id>c7148e813b16de9013b9202a85e45a2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19390f015470000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-04 09:11:13</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>8b148e813a16de908abc0c4845436129</update_guid>
+        <update_guid_history>8b148e813a16de908abc0c4845436129:618542266</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Record deleted 16.12.2024 13:53:19">9d0a24013bae5e1081e1de2a85e45ae8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-12-16 12:53:19</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>02116e92504940738022d37083d4b8d9</sys_id>
+        <sys_metadata>87148e813b16de9013b9202a85e45a1a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Peripherie and Accessories.peripherie and Accessories flow test </sys_name>
+        <sys_package display_value="Agency Asset Portal" source="x_sigh_a_a_portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Agency Asset Portal">d8e6cc791b685e103f86b9118b4bcbc5</sys_scope>
+        <sys_scope_delete display_value="">6a17d7e3ef7642f0a746febbb6347040</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_87148e813b16de9013b9202a85e45a1a</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_87148e813b16de9013b9202a85e45a1a">c7148e813b16de9013b9202a85e45a2a</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-16 12:53:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
